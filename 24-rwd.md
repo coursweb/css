@@ -4,13 +4,17 @@ title: RWD
 permalink: /css/responsive
 ---
 
+Le "responsive web design" est un terme popularisé par Ethan Marcotte en 2010, d'abord lors de sa conférence "A Dao of Flexibility" (An Event Apart, Seattle, avril 2010), puis [dans un article](http://alistapart.com/article/responsive-web-design) (mai 2010), puis [dans un livre](https://abookapart.com/products/responsive-web-design) (2011).
+
 Media Queries et RWD (Responsive Web Design)
 ---------
 
-Styles CSS pour l'impression
+L'élément-clé qui est au coeur de cette approche "responsive" du web design sont les **Media Queries**, un propriété introduite avec le CSS3.
+
+L'ancêtre des Media Queries: les styles CSS pour l'impression
 ===
 
-Déjà en HTML4/CSS2, un attribut "media" est disponible.
+Depuis le standard HTML4/CSS2, introduit en 1997, un attribut "media" est disponible, permettant de réserver des styles CSS à un certain type de médias. Voici leur liste:
 
 ```
 media = { 
@@ -21,9 +25,9 @@ media = {
 }
 ```
 
-Le CSS prévoit donc des styles particuliers pour les logiciels de synthèse vocale (aural), les appareils rendant les contenus de manière tactile (braille, embossed). 
+En théorie, le CSS peut donc définir des styles particuliers pour des "médias" – ces médias pouvant être des écrans ("screen"), moniteurs de télévision ("tv"), projecteurs ("projection"), mais aussi des systèmes de synthèse vocale ("aural"), voire des appareils rendant les contenus de manière tactile ("braille, embossed"). 
 
-Ceci étant, dans la pratique réelle, les seuls medias qui soient réellement supportés par les navigateurs sont "screen" et "print".
+Cependant, dans la pratique réelle, les seuls medias qui soient supportés par les navigateurs sont "screen" et "print".
 
 On utilise l'attribut media "print" pour charger des styles CSS spécifiques pour l'impression d'une page web:
 
@@ -31,7 +35,7 @@ On utilise l'attribut media "print" pour charger des styles CSS spécifiques pou
 <link rel="stylesheet" type="text/css" media="print" href="serif.css">
 ```
 
-Ou à l'intérieur d'une feuille de styles CSS:
+Ou à l'intérieur d'une feuille de styles CSS, avec la syntaxe suivante:
 
 ```css
 @media screen {
@@ -39,14 +43,19 @@ Ou à l'intérieur d'une feuille de styles CSS:
 }
 ```
 
-Références concernant @print:    
+Pour un bon exemple de styles destinés à optimiser une page web pour l'impression, on peut se référer au HTML5 Boilerplate.
+
+<h4>Références concernant @print:</h4> 
 
 - [Faites bonne impression avec les CSS](http://www.pompage.net/traduction/impression), par Eric A. Meyer, 2002
 - [Maîtriser l’impression CSS](http://openweb.eu.org/articles/maitriser_impression_css), par Nicolas Hoffmann, 2010
 - [La spécification CSS 2.1](https://www.w3.org/TR/CSS21/media.html)
 - [Les styles @print](https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L197) du HTML5Boilerplate - ces styles sont aussi utilisés [dans Bootstrap](https://github.com/twbs/bootstrap/blob/master/dist/css/bootstrap.css#L190).
 
-Avec l'évolution du HTML5, les possibilités de l'attribut "media" sont étendues: on peut maintenant charger des styles selon le format de la fenêtre du navigateur, la largeur, la hauteur, la densité des pixels...
+Les nouvelles Media Queries du CSS3
+===
+
+Avec l'évolution du HTML5 et CSS3, les possibilités de l'attribut "media" sont étendues: on peut maintenant charger des styles selon le format de la fenêtre du navigateur, la largeur, la hauteur, la densité des pixels...
 
 Cela a rendu possible le "Responsive Web Design" (RWD).
 
