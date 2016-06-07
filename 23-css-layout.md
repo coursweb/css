@@ -26,7 +26,7 @@ Pendant longtemps, des mises en page ont été créées avec le positionnement *
 Positionnement avec Float
 ===
 
-"In October 2002, wired.com redesigned using no tables at all", dit Eric Meyer (alors employé de Netscape) dans sa keynote[^1] pour la conférence TODCON MX Vegas (The Other Dreamweaver Conference) en 2003. "Basically he presented proof of how much bandwidth and time CSS layouts can save you".
+"In October 2002, wired.com redesigned using no tables at all", dit Eric Meyer (alors employé de Netscape) dans sa keynote[^1] pour la conférence TODCON (The Other Dreamweaver Conference) en 2003. "Basically he presented proof of how much bandwidth and time CSS layouts can save you".
 
 [^1]: http://meyerweb.com/eric/talks/2003/todcon/payoff/keynote.html
 
@@ -39,10 +39,10 @@ En 2004, des designers web font campagne pour pousser à l'abandon des tableaux.
 
 Pour maîtriser la méthode de mise en page CSS préconisée, il est essentiel de comprendre les propriétés CSS suivantes:
 
-- float (left, right)
-- clear (left, right, both)
+- **float** (left, right)
+- **clear** (left, right, both)
 
-Cette méthode présente toutefois des difficultés, quand il s'agit de créer une mise en page flexible... notamment le "Holy Grail Layout" (le sant graal de la mise en page), comprenant deux colonnes à largeur fixe, et un contenu central à largeur flexible.
+Cette méthode présente toutefois des difficultés, quand il s'agit de créer une mise en page flexible... notamment le "Holy Grail Layout" (le Saint Graal de la mise en page), comprenant deux colonnes à largeur fixe, et un contenu central à largeur flexible.
 
 ![Holy Grail Layout](/cours-web/cours-css/img/holy-grail-div-structure.png)    
 *Une structure complexe pour obtenir le Holy Grail Layout*
@@ -77,7 +77,7 @@ Futur du positionnement? CSS Grid Layout
 
 PS: il est nécessaire d'activer la fonctionalité.
 
-http://igalia.github.io/css-grid-layout/enable.html
+[http://igalia.github.io/css-grid-layout/enable.html](http://igalia.github.io/css-grid-layout/enable.html)
 
 Tutoriel: [http://gridbyexample.com/what/](http://gridbyexample.com/what/)
 
@@ -140,13 +140,14 @@ html {
 }
 ```
 
-Utilisation dans Bootstrap, depuis 2013:    
+Utilisation dans Bootstrap, depuis 2013:
+
 - [http://blog.getbootstrap.com/2013/08/19/bootstrap-3-released/](http://blog.getbootstrap.com/2013/08/19/bootstrap-3-released/)
 - [https://github.com/twbs/bootstrap/issues/12351](https://github.com/twbs/bootstrap/issues/12351)
 
-En 2014, le site CSS Tricks déclare le 1er février comme étant la Journée Internationale du box-sizing (International box-sizing Awareness Day):
+En 2014, le site CSS Tricks déclare le 1er février comme étant la Journée Internationale du box-sizing (International box-sizing Awareness Day):    
 [https://css-tricks.com/international-box-sizing-awareness-day/](https://css-tricks.com/international-box-sizing-awareness-day/)
 
-Un article (en français) qui résume tout cela:
+Un article (en français) qui résume tout cela:    
 [https://la-cascade.io/controler-le-modele-de-boite/](https://la-cascade.io/controler-le-modele-de-boite/)
 
