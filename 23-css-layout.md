@@ -151,3 +151,7 @@ En 2014, le site CSS Tricks déclare le 1er février comme étant la Journée In
 Un article (en français) qui résume tout cela:    
 [https://la-cascade.io/controler-le-modele-de-boite/](https://la-cascade.io/controler-le-modele-de-boite/)
 
+Références:
+
+* *The Magic of CSS*, par Adam Schwartz: http://adamschwartz.co/magic-of-css/
+

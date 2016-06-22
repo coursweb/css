@@ -117,6 +117,8 @@ Quelques références:
 - [De la vraie typographie pour le Web](http://www.pompage.net/traduction/de-la-vraie-typographie-pour-le-web), par Tim Brown, 2009
 - [Web Fonts at the Crossing](http://alistapart.com/article/fonts-at-the-crossing), par Richard Fink, 2010
 - [Pour une typographie qui a du sens](http://www.pompage.net/traduction/pour-une-typographie-qui-a-du-sens), par Tim Brown, 2011 (en anglais: More Meaningful Typography). - Sur les méthodes avancées, le rythme typographique dans le design.
+- [Professional Web Typography](https://prowebtype.com/), par Donny Truong, 2015
+- [Typography Handbook](http://typographyhandbook.com/), par Kenneth Wang, 2016 
 
 
 https://blog.prototypr.io/the-value-of-multi-typeface-design-ccd67227b0ee#.a6neeidbw
