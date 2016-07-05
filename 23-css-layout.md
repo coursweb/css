@@ -152,6 +152,20 @@ Un article (en français) qui résume tout cela:
 [https://la-cascade.io/controler-le-modele-de-boite/](https://la-cascade.io/controler-le-modele-de-boite/)
 
 Références:
+===
 
 * *The Magic of CSS*, par Adam Schwartz: http://adamschwartz.co/magic-of-css/
 
+*Le tournant des CSS vers le Layout*    
+Conférence de Daniel Glazman, à Paris Web 2012    
+http://www.paris-web.fr/2012/conferences/le-tournant-des-css-vers-le-layout.php
+Présente diverses nouveautés: CSS Variables, CSS Flexbox, CSS Regions, CSS Exclusions and Shapes, CSS Grids, Blending & Compositing, Web Fonts, CSS Filter Effects.
+
+*An Introduction to CSS Grid Layout*    
+Conférence de Rachel Andrew, à Paris Web 2015    
+http://www.paris-web.fr/2015/conferences/an-introduction-to-css-grid-layout.php
+Présente le module CSS Grid Layout.
+
+http://www.frontendhandbook.com/learning/html-css.html
+
+http://fr.learnlayout.com/

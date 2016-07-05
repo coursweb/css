@@ -21,13 +21,12 @@ BEM : “Block, Element, Modifier”
 Etat du CSS:     
 http://huangxuan.me/css-sucks-2015/
 
-Préprocesseurs (SASS...)
+Préprocesseurs (Less, Sass...)
 
 Autoprefixer:    
 https://github.com/postcss/autoprefixer
 
-http://cssguidelin.es/
-High-level advice and guidelines for writing sane, manageable, scalable CSS - par Harry Roberts.
+http://cssguidelin.es/ - High-level advice and guidelines for writing sane, manageable, scalable CSS - par Harry Roberts.
 
 http://tympanus.net/codrops/2013/07/17/troubleshooting-css/
 
@@ -36,10 +35,10 @@ Aller plus loin - ressources
 
 Des blogs traitant de CSS:
 
-sites francophones de traduction : 
+Sites francophones: 
 
-Gobanclub.net,    
-letrainde13h37.fr, 
+- [Gobanclub.net](http://Gobanclub.net)   
+- [letrainde13h37.fr](http://letrainde13h37.fr)
 
 [OpenWeb](http://openweb.eu.org/) - site du collectif OpenWebGroup
 
