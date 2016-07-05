@@ -22,6 +22,8 @@ Mais aussi: de nouveaux sélecteurs.
 Futur du CSS (état 2016):
 ===
 
+Les variables en css arrivent...
+
 CSS Variables (Custom Properties)    
 [http://caniuse.com/#search=variables](http://caniuse.com/#search=variables)    
 Encore non-supporté dans IE et Edge...

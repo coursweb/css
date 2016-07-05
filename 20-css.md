@@ -23,7 +23,12 @@ L'année 2010, qui marque une large adoption du standard HTML5, marque aussi la 
 Principes de base
 ----------
 
+"Fundamental concepts of CSS like cascading, specificity rules, selectors, inheritance, box model and stacking context must be well understood."
+
 Exemple de règle CSS...
+
+- selectors
+- inheritance
 
 ### Unités CSS
 
@@ -66,7 +71,7 @@ Réponse: l'un et l'autre ne sont pas faux... Le HTML5Boilerplate utilise HTML p
 Le modèle de boîte
 ===
 
-Le *modèle de boîte* utilisé par les navigateurs est de type "content-box". Si on donne une largeur à un élément, cela ne concerne pas les marges intérieures et extérieures. Un élément auquel on donnerait une largeur de 500px, et des marges intérieures (padding) de 10px, aurait une largeur effective de 520px.
+Le *modèle de boîte* (box-model) utilisé par les navigateurs est de type "content-box". Si on donne une largeur à un élément, cela ne concerne pas les marges intérieures et extérieures. Un élément auquel on donnerait une largeur de 500px, et des marges intérieures (padding) de 10px, aurait une largeur effective de 520px.
 
 Il est possible de modifier ce comportement avec la propriété `box-sizing`. Voir le chapitre **CSS Layout** pour plus de détails.
 
@@ -76,6 +81,10 @@ Il est possible de modifier ce comportement avec la propriété `box-sizing`. Vo
 Le comportement "border-collapsing" peut être surprenant: en cas de juxtaposition verticale, les marges verticales de deux éléments qui se suivent ne sont pas additionnées – elles "fusionnent". C'est uniquement la plus grande des deux marges qui est appliquée.
 
 Exemple: une suite de paragraphes ayant chacun une marge verticale (haut / bas) de 10px. Les marges de deux paragraphes ne s'aditionnent pas, l'espace entre deux paragraphes reste 10px (pas 20px).
+
+### Stacking context
+
+Disposition verticale des éléments d'une page web.
 
 ### Les préfixes (vendor prefixes)
 
