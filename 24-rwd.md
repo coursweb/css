@@ -14,22 +14,15 @@ L'élément-clé qui est au coeur de cette approche "responsive" du web design s
 L'ancêtre des Media Queries: les styles CSS pour l'impression
 ===
 
-Depuis le standard HTML4/CSS2, introduit en 1997, un attribut "media" est disponible, permettant de réserver des styles CSS à un certain type de médias. Voici leur liste:
+Depuis le standard HTML4/CSS2, introduit en 1997, un attribut `media` est disponible, permettant de réserver des styles CSS à un certain type de médias. Voici leur liste:
 
-```
-media = { 
-  all | 
-  aural | braille | embossed | 
-  handheld | print | 
-  projection | screen | tty | tv 
-}
-```
+`all` `aural` `braille` `embossed` `handheld` `print` `projection` `screen` `tty` `tv`
 
-En théorie, le CSS peut donc définir des styles particuliers pour des "médias" – ces médias pouvant être des écrans ("screen"), moniteurs de télévision ("tv"), projecteurs ("projection"), mais aussi des systèmes de synthèse vocale ("aural"), voire des appareils rendant les contenus de manière tactile ("braille, embossed"). 
+En théorie, le CSS peut donc définir des styles particuliers pour des "médias" spécifiques – ces médias pouvant être des écrans (`screen`), moniteurs de télévision (`tv`), projecteurs (`projection`), mais aussi des systèmes de synthèse vocale (`aural`), voire des appareils rendant les contenus de manière tactile (`braille`, `embossed`). 
 
-Cependant, dans la pratique réelle, les seuls medias qui soient supportés par les navigateurs sont "screen" et "print".
+Cependant, dans la pratique réelle, les seuls medias qui soient supportés par les navigateurs sont `screen` et `print`.
 
-On utilise l'attribut media "print" pour charger des styles CSS spécifiques pour l'impression d'une page web:
+On utilise souvent l'attribut media `print` pour charger des styles CSS spécifiques pour l'impression d'une page web:
 
 ```html
 <link rel="stylesheet" type="text/css" media="print" href="serif.css">
@@ -43,7 +36,7 @@ Ou à l'intérieur d'une feuille de styles CSS, avec la syntaxe suivante:
 }
 ```
 
-Pour un bon exemple de styles destinés à optimiser une page web pour l'impression, on peut se référer au HTML5 Boilerplate.
+Pour un bon exemple de styles destinés à optimiser une page web pour l'impression, on peut se référer au [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css#L205).
 
 <h4>Références concernant @print:</h4> 
 
@@ -52,7 +45,7 @@ Pour un bon exemple de styles destinés à optimiser une page web pour l'impress
 - [La spécification CSS 2.1](https://www.w3.org/TR/CSS21/media.html)
 - [Les styles @print](https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L197) du HTML5Boilerplate - ces styles sont aussi utilisés [dans Bootstrap](https://github.com/twbs/bootstrap/blob/master/dist/css/bootstrap.css#L190).
 
-Les nouvelles Media Queries du CSS3
+Les Media Queries du CSS3
 ===
 
 Avec l'évolution du HTML5 et CSS3, les possibilités de l'attribut "media" sont étendues: on peut maintenant charger des styles selon le format de la fenêtre du navigateur, la largeur, la hauteur, la densité des pixels...

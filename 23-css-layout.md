@@ -26,14 +26,14 @@ Pendant longtemps, des mises en page ont été créées avec le positionnement *
 Positionnement avec Float
 ===
 
-"In October 2002, wired.com redesigned using no tables at all", dit Eric Meyer (alors employé de Netscape) dans sa keynote[^1] pour la conférence TODCON (The Other Dreamweaver Conference) en 2003. "Basically he presented proof of how much bandwidth and time CSS layouts can save you".
+"In October 2002, wired.com redesigned using no tables at all", déclare Eric Meyer (alors employé de Netscape) dans sa keynote[^1] pour la conférence TODCON (The Other Dreamweaver Conference) en 2003. "Basically he presented proof of how much bandwidth and time CSS layouts can save you".
 
 [^1]: http://meyerweb.com/eric/talks/2003/todcon/payoff/keynote.html
 
-En 2004, des designers web font campagne pour pousser à l'abandon des tableaux. 
+En 2004, des designers web font campagne pour pousser à l'abandon des tableaux HTML. 
 
-- Dans son livre "More Eric Meyer on CSS" (2004), Eric Meyer décrit comment convertir des tableaux en mises en page CSS ("convert conventional table-based designs into CSS-based layouts").
-- Douglas Bowman donne la présentation "No More Tables, CSS Layout Techniques"[^2] à la conférence Digital Design World à Seattle, durant laquelle il "reconstruit" le site actuel de Microsoft.
+- Dans son livre *More Eric Meyer on CSS* (2004), Eric Meyer décrit comment convertir des tableaux en mises en page CSS ("convert conventional table-based designs into CSS-based layouts").
+- Douglas Bowman donne la présentation *No More Tables, CSS Layout Techniques*[^2] à la conférence Digital Design World à Seattle, durant laquelle il "reconstruit" le site actuel de Microsoft.
 
 [^2]: http://stopdesign.com/archive/2004/07/27/throwing-tables.html
 
@@ -154,18 +154,16 @@ Un article (en français) qui résume tout cela:
 Références:
 ===
 
-* *The Magic of CSS*, par Adam Schwartz: http://adamschwartz.co/magic-of-css/
+Références concernant la mise en page en CSS.
 
-*Le tournant des CSS vers le Layout*    
-Conférence de Daniel Glazman, à Paris Web 2012    
-http://www.paris-web.fr/2012/conferences/le-tournant-des-css-vers-le-layout.php
-Présente diverses nouveautés: CSS Variables, CSS Flexbox, CSS Regions, CSS Exclusions and Shapes, CSS Grids, Blending & Compositing, Web Fonts, CSS Filter Effects.
+**En français: **
 
-*An Introduction to CSS Grid Layout*    
-Conférence de Rachel Andrew, à Paris Web 2015    
-http://www.paris-web.fr/2015/conferences/an-introduction-to-css-grid-layout.php
-Présente le module CSS Grid Layout.
+- *[Le tournant des CSS vers le Layout](http://www.paris-web.fr/2012/conferences/le-tournant-des-css-vers-le-layout.php)* - conférence de Daniel Glazman, à Paris Web 2012. Présente diverses nouveautés: CSS Variables, CSS Flexbox, CSS Regions, CSS Exclusions and Shapes, CSS Grids, Blending & Compositing, Web Fonts, CSS Filter Effects.
+- [Learn CSS Layout](http://fr.learnlayout.com/) - un tutoriel très complet pour apprendre la mise en page CSS. Ecrit par Greg Smith, traduction par Joël Matelli.
 
-http://www.frontendhandbook.com/learning/html-css.html
+**En anglais:**
 
-http://fr.learnlayout.com/
+- *[An Introduction to CSS Grid Layout](http://www.paris-web.fr/2015/conferences/an-introduction-to-css-grid-layout.php)* - conférence de Rachel Andrew, à Paris Web 2015, Présente le module CSS Grid Layout.
+- *[The Magic of CSS](http://adamschwartz.co/magic-of-css/)*, par Adam Schwartz, un tutoriel en six chapitres. Introduction basique, il n'aborde pas Flexbox ou Grid Layout.
+- [Learn HTML & CSS](http://www.frontendhandbook.com/learning/html-css.html), liste de références et tutoriels sur le développement frontend.
+

@@ -54,22 +54,12 @@ Un article très détaillé:
 [Cascade CSS et priorité des sélecteurs](http://openweb.eu.org/articles/cascade_css), par Laurent Denis, 2005
 
 Specificity:
-https://designshack.net/articles/css/what-the-heck-is-css-specificity/
+[https://designshack.net/articles/css/what-the-heck-is-css-specificity/](https://designshack.net/articles/css/what-the-heck-is-css-specificity/)
 
-Calculateur: http://specificity.keegan.st/
-
-***
-
-Question: faut-il définir les fontes et couleurs sur BODY ou sur HTML?
-
-https://css-tricks.com/html-vs-body-in-css/
-
-Réponse: l'un et l'autre ne sont pas faux... Le HTML5Boilerplate utilise HTML pour définir les styles de base. Idem pour normalize.css.
+Calculateur: [http://specificity.keegan.st/](http://specificity.keegan.st/)
 
 
-
-Le modèle de boîte
-===
+### Le modèle de boîte
 
 Le *modèle de boîte* (box-model) utilisé par les navigateurs est de type "content-box". Si on donne une largeur à un élément, cela ne concerne pas les marges intérieures et extérieures. Un élément auquel on donnerait une largeur de 500px, et des marges intérieures (padding) de 10px, aurait une largeur effective de 520px.
 
