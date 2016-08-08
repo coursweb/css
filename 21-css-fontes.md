@@ -6,13 +6,13 @@ permalink: /css/typographie
 
 Propriétés CSS spécifiques à la typographie:
 
-* font-family
-* font-weight
+* font-family : permet de spécifier la police.
+* font-weight : permet de spécifier la graisse (normal, bold, semi-bold, thin...).
 
 Mais aussi:
 
-* text-transform
-* text-decoration
+* text-transform : permet de forcer les majuscules ou minuscules.
+* text-decoration : permet d'appliquer un soulignement.
 
 Hyphenation, césure
 ----------
@@ -24,7 +24,7 @@ Macrotypographie du web
 
 ![](/cours-web/cours-css/img/macrotypographie-titres.png)
 
-Exemples de styles appliqués aux titres, tirés de la conférence "La macrotypographie du web", par Anne-Sophie Fradier (2010).
+Exemples de styles appliqués aux titres, tirés de la conférence *[La macrotypographie de la page Web ](http://www.dailymotion.com/video/xfpf08_la-macrotypographie-de-la-page-web-anne-sophie-fradier_tech)*, par Anne-Sophie Fradier (Paris Web, 2010).
 
 CSS3 et Webfonts
 ----
@@ -35,6 +35,7 @@ Depuis les débuts du web, la palette typographique à disposition des designers
 Méthode classique: le "fontstack". 
 
 Exemple, pour déclarer une fonte: 
+
 ```css
 body {
    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -124,17 +125,17 @@ Références
 
 Références majeures sur la typographie web :
 
-- [Using @font-face](https://css-tricks.com/snippets/css/using-font-face/), Chris Coyier, 2009
-- [Professional Web Typography](https://prowebtype.com/), par Donny Truong, 2015
-- [Typography Handbook](http://typographyhandbook.com/), par Kenneth Wang, 2016 
+- *[Using @font-face](https://css-tricks.com/snippets/css/using-font-face/)*, Chris Coyier, 2009
+- *[Professional Web Typography](https://prowebtype.com/)*, par Donny Truong, 2015
+- *[Typography Handbook](http://typographyhandbook.com/)*, par Kenneth Wang, 2016 
 
 Articles :
 
-- [On Web Typography](http://alistapart.com/article/on-web-typography), par Jason Santa Maria, 2009
-- [De la vraie typographie pour le Web](http://www.pompage.net/traduction/de-la-vraie-typographie-pour-le-web), par Tim Brown, 2009
-- [Web Fonts at the Crossing](http://alistapart.com/article/fonts-at-the-crossing), par Richard Fink, 2010
-- [Pour une typographie qui a du sens](http://www.pompage.net/traduction/pour-une-typographie-qui-a-du-sens), par Tim Brown, 2011 (en anglais: More Meaningful Typography). - Sur le rythme typographique dans le design.
-- [The Value of Multi-Typeface Design](https://blog.prototypr.io/the-value-of-multi-typeface-design-ccd67227b0ee#.a6neeidbw), par Bethany Heck, 2016. - Sur l'art de combiner plusieurs fontes. 
+- *[On Web Typography](http://alistapart.com/article/on-web-typography)*, par Jason Santa Maria, 2009
+- *[De la vraie typographie pour le Web](http://www.pompage.net/traduction/de-la-vraie-typographie-pour-le-web)*, par Tim Brown, 2009
+- *[Web Fonts at the Crossing](http://alistapart.com/article/fonts-at-the-crossing)*, par Richard Fink, 2010
+- *[Pour une typographie qui a du sens](http://www.pompage.net/traduction/pour-une-typographie-qui-a-du-sens)*, par Tim Brown, 2011 (en anglais: *More Meaningful Typography*). - Sur le rythme typographique dans le design.
+- *[The Value of Multi-Typeface Design](https://blog.prototypr.io/the-value-of-multi-typeface-design-ccd67227b0ee#.a6neeidbw)*, par Bethany Heck, 2016. - Sur l'art de combiner plusieurs fontes. 
 
 
 
