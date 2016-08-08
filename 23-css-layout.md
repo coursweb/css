@@ -14,89 +14,21 @@ Deux bonnes introductions à la mise en page et au positionnement CSS:
 * *[Introduction au positionnement CSS](http://www.pompage.net/traduction/introduction-au-positionnement-css)*, par Noah Stokes, 2010 (aussi [en anglais](http://alistapart.com/article/css-positioning-101)).
 * *[Apprendre les mises en page CSS](http://fr.learnlayout.com/)*, par Greg Smith.
 
-Mise en page / layout
-----------
+Le modèle de boîte
+------------------
 
-Depuis le lancement du CSS en 1996, diverses techniques ont été développées pour créer des mises en page avec ce langage.
+Le modèle de mise en page du HTML / CSS repose sur un principe de "boîtes" (en anglais: box-model). Ces boîtes sont définies géométriquement par les paramètres suivants:
 
-Pendant longtemps, des mises en page ont été créées avec le positionnement **"Float"**. Depuis l'introduction du CSS3, on peut utiliser le module **CSS Flexbox**. Pour l'avenir, le module **CSS Grid Layout** propose des solutions intéressantes.
-
-![](/cours-web/cours-css/img/Strips-Vieux-coder-VS-jeune-codeur.jpg)
-
-Positionnement avec Float
-===
-
-"In October 2002, wired.com redesigned using no tables at all", déclare Eric Meyer (alors employé de Netscape) dans sa keynote[^1] pour la conférence TODCON (The Other Dreamweaver Conference) en 2003. "Basically he presented proof of how much bandwidth and time CSS layouts can save you".
-
-[^1]: http://meyerweb.com/eric/talks/2003/todcon/payoff/keynote.html
-
-En 2004, des designers web font campagne pour pousser à l'abandon des tableaux HTML. 
-
-- Dans son livre *More Eric Meyer on CSS* (2004), Eric Meyer décrit comment convertir des tableaux en mises en page CSS ("convert conventional table-based designs into CSS-based layouts").
-- Douglas Bowman donne la présentation *No More Tables, CSS Layout Techniques*[^2] à la conférence Digital Design World à Seattle, durant laquelle il "reconstruit" le site actuel de Microsoft.
-
-[^2]: http://stopdesign.com/archive/2004/07/27/throwing-tables.html
-
-Pour maîtriser la méthode de mise en page CSS préconisée, il est essentiel de comprendre les propriétés CSS suivantes:
-
-- **float** (left, right)
-- **clear** (left, right, both)
-
-Cette méthode présente toutefois des difficultés, quand il s'agit de créer une mise en page flexible... notamment le "Holy Grail Layout" (le Saint Graal de la mise en page), comprenant deux colonnes à largeur fixe, et un contenu central à largeur flexible.
-
-![Holy Grail Layout](/cours-web/cours-css/img/holy-grail-div-structure.png)    
-*Une structure complexe pour obtenir le Holy Grail Layout*
-
-Une nouvelle approche: Flexbox
-===
-
-Candidat à l'inclusion dans le standard CSS.
-
-Passé du statut de "Working Draft" (depuis 2009) à "Candidate Recommendation".
-
-![Flexbox support](/cours-web/cours-css/img/flexbox-caniuse.png)
-*Support des navigateurs pour Flexbox (source: [Can I Use](http://caniuse.com/#feat=flexbox), mars 2016)*
-
-Quelques bonnes ressources pour maîtriser ce module CSS:
-
-Un article: [http://fr.learnlayout.com/flexbox.html](http://fr.learnlayout.com/flexbox.html)
-
-Un autre article sur Alsa Créations:
-[http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html](http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html)
-
-Un article (en anglais): 
-[https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-
-Des exemples d'usages typiques:
-[http://philipwalton.github.io/solved-by-flexbox/](http://philipwalton.github.io/solved-by-flexbox/)
+- Largeur
+- Hauteur
+- Bordure
+- Marge intérieure
+- Marge extérieure
 
 
-
-Futur du positionnement? CSS Grid Layout
-===
-
-PS: il est nécessaire d'activer la fonctionalité.
-
-[http://igalia.github.io/css-grid-layout/enable.html](http://igalia.github.io/css-grid-layout/enable.html)
-
-Tutoriel: [http://gridbyexample.com/what/](http://gridbyexample.com/what/)
-
-Un article-tutoriel:
-[http://www.alsacreations.com/article/lire/1388-css3-grid-layout.html](http://www.alsacreations.com/article/lire/1388-css3-grid-layout.html)
-
-Et un peu de science-fiction...
-===
-
-**GSS - Grid Style Sheets** : "GSS reimagines CSS layout & replaces the browser’s layout engine with one that harnesses the Cassowary Constraint Solver — the same algorithm Apple uses to compute native layout."
-
-Il s'agit d'une librairie JavaScript qui simule un algorithme de mise en page reposant sur des "contraintes", également utilisé dans l'environnement de programmation d'applications proposé par Apple : "GSS is a CSS preprocessor & JS runtime that harnesses Cassowary.js, the JS port of the same constraint solving algorithm Apple uses in Cocoa Autolayout for iOS & OS X."
-
-Source: [https://gridstylesheets.org/](https://gridstylesheets.org/)
-
-Cette technologie est liée à la startup The Grid - [https://thegrid.io/](https://thegrid.io/) - qui a pour slogan "The Grid Is The Website Of The Future: It Builds Itself".
 
 La propriété box-sizing: border-box
-----------
+-----------------------------------
 
 La propriété **box-sizing**, ajoutée en CSS3, permet de définir la manière dont la largeur d'un élément est calculée.
 
@@ -151,10 +83,97 @@ En 2014, le site CSS Tricks déclare le 1er février comme étant la Journée In
 Un article (en français) qui résume tout cela:    
 [https://la-cascade.io/controler-le-modele-de-boite/](https://la-cascade.io/controler-le-modele-de-boite/)
 
-Références:
+Mise en page CSS
+----------
+
+Depuis le lancement du CSS en 1996, diverses techniques ont été développées pour créer des mises en page avec ce langage.
+
+Pendant longtemps, des mises en page ont été créées avec le positionnement **"Float"**. Depuis l'introduction du CSS3, on peut utiliser le module **CSS Flexbox**. Pour l'avenir, le module **CSS Grid Layout** propose des solutions intéressantes.
+
+![](/cours-web/cours-css/img/Strips-Vieux-coder-VS-jeune-codeur.jpg)
+
+Positionnement avec Float
 ===
 
-Références concernant la mise en page en CSS.
+"En octobre 2002, le site du magazine wired.com a bénéficié d'une refonte qui n'utilisait aucune table", déclare Eric Meyer (alors employé de Netscape) dans un discours[^1] à la conférence TODCON (*The Other Dreamweaver Conference*) en 2003. Meyer démontre que l'utilisation du CSS pour la mise mise en page (au lieu des tableaux) permet de gagner du temps de développement, et de réduire le temps de chargement d'un site.
+
+[^1]: "In October 2002, wired.com redesigned using no tables at all. (...) Basically [Eric Meyer] presented proof of how much bandwidth and time CSS layouts can save you" - http://meyerweb.com/eric/talks/2003/todcon/payoff/keynote.html
+
+En 2004, des designers web font une véritable campagne pour pousser leur profession à abandonner les mises en page construites avec des tableaux HTML. 
+
+- Dans son livre *More Eric Meyer on CSS* (2004), Eric Meyer décrit comment convertir des tableaux en mises en page CSS.
+- Douglas Bowman donne la présentation *No More Tables, CSS Layout Techniques*[^2] à la conférence Digital Design World à Seattle, durant laquelle il "reconstruit" le site actuel de Microsoft.
+
+[^2]: http://stopdesign.com/archive/2004/07/27/throwing-tables.html
+
+Pour maîtriser la méthode de mise en page CSS préconisée, il est essentiel de comprendre les propriétés CSS suivantes:
+
+- **float** (left, right)
+- **clear** (left, right, both)
+
+Cette méthode présente toutefois des difficultés, quand il s'agit de créer une mise en page flexible (avec des largeurs de colonnes exprimées en pourcentage). Dans le jargon, on parle du "Holy Grail Layout" (le *Saint Graal* de la mise en page), qui comprend deux colonnes à largeur fixe (les barres latérales), et un contenu central à largeur flexible (qui augmentera avec la taille de l'écran).
+
+![Holy Grail Layout](/cours-web/cours-css/img/holy-grail-div-structure.png)    
+*Une structure HTML complexe pour obtenir le Holy Grail Layout*
+
+Une nouvelle approche: Flexbox
+===
+
+Flexbox est un module CSS récent, qui propose une manière novatrice de définir des mises en page extrêmement "flexibles". Ce module est récemment passé du statut de "Working Draft" (depuis 2009) à "Candidate Recommendation". 
+
+Dans la pratique, le module Flexbox est déjà bien supporté par les navigateurs. On peut donc envisager son utilisation pour des projets réels. Le framework *Bootstrap* a récemment modifié son système de grille de mise en page pour utiliser Flexbox.
+
+![Flexbox support](/cours-web/cours-css/img/flexbox-caniuse.png)
+*Support des navigateurs pour Flexbox (source: [Can I Use](http://caniuse.com/#feat=flexbox), mars 2016)*
+
+Quelques bonnes ressources pour maîtriser ce module CSS:
+
+- Une démonstration: [https://demos.scotch.io/visual-guide-to-css3-flexbox-flexbox-playground/demos/](https://demos.scotch.io/visual-guide-to-css3-flexbox-flexbox-playground/demos/)
+- Un article: [http://fr.learnlayout.com/flexbox.html](http://fr.learnlayout.com/flexbox.html)
+- Un autre article sur Alsa Créations:
+[http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html](http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html)
+- Un article (en anglais): 
+[https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- Des exemples d'usages typiques:
+[http://philipwalton.github.io/solved-by-flexbox/](http://philipwalton.github.io/solved-by-flexbox/)
+
+Musique d'avenir: CSS Grid Layout
+===
+
+Le *CSS Grid Layout* est une nouvelle spécification CSS, en cours d'implémentation, qui a le potentiel de révolutionner la mise en page CSS. Comme son nom l'indique, il s'agit d'un modèle de mise en page basé sur une *grille* à deux dimensions, sur laquelle viennent se placer des blocs de contenu.
+
+Cette fonctionalité CSS a été proposée en 2011 par Microsoft, et implémentée à fins de test dans Internet Explorer 10 et 11. Le projet a été repris par le W3C, et est en cours de développement.
+
+Les navigateurs actuels offrent la possiblité aux développeurs de tester ce module CSS, mais il est nécessaire d'activer la fonctionalité. Voici des informations sur la manière de l'actiever: [http://igalia.github.io/css-grid-layout/enable.html](http://igalia.github.io/css-grid-layout/enable.html)
+
+Support actuel des navigateurs: [http://caniuse.com/#feat=css-grid](http://caniuse.com/#feat=css-grid)
+
+Un tutoriel (le site de référence de Rachel Andrew): [http://gridbyexample.com/what/](http://gridbyexample.com/what/)
+
+Un autre tutoriel (par Alsa Créations):
+[http://www.alsacreations.com/article/lire/1388-css3-grid-layout.html](http://www.alsacreations.com/article/lire/1388-css3-grid-layout.html)
+
+Un livre publié en début 2016 par Rachel Andrew: *Get Ready For CSS Grid Layout*, A Book Apart, 2016
+
+Un peu de science-fiction: Grid Style Sheets
+===
+
+Certains développeurs vont jusqu'à créer leur propre système de mise en page (non-standard et complètement inofficiel): par exemple Grid Style Sheets.
+
+**GSS - Grid Style Sheets** : "Les GSS ré-imaginent la mise en page CSS, et remplacent le moteur de mise en page du navigateur par un système utilisant les contraintes de Cassowary - c'est l'algorithme utilisé par les applications Apple pour calculer la mise en page des interfaces".
+
+[^gss]: "GSS reimagines CSS layout & replaces the browser’s layout engine with one that harnesses the Cassowary Constraint Solver — the same algorithm Apple uses to compute native layout. (...) GSS is a CSS preprocessor & JS runtime that harnesses Cassowary.js, the JS port of the same constraint solving algorithm Apple uses in Cocoa Autolayout for iOS & OS X."
+
+Il s'agit d'une librairie JavaScript qui utilise un algorithme de mise en page reposant sur des "contraintes", également utilisé dans l'environnement de programmation d'applications proposé par Apple.
+
+Source: [https://gridstylesheets.org/](https://gridstylesheets.org/)
+
+Cette technologie est liée à la startup The Grid - [https://thegrid.io/](https://thegrid.io/) - qui vise à produire des sites internet au design automatique et génératif. Leur slogan: "The Grid Is The Website Of The Future: It Builds Itself".
+
+
+
+Références - mise en page CSS:
+===
 
 **En français: **
 

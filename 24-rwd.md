@@ -25,7 +25,7 @@ Cependant, dans la pratique réelle, les seuls medias qui soient supportés par 
 On utilise souvent l'attribut media `print` pour charger des styles CSS spécifiques pour l'impression d'une page web:
 
 ```html
-<link rel="stylesheet" type="text/css" media="print" href="serif.css">
+<link rel="stylesheet" media="print" href="serif.css">
 ```
 
 Ou à l'intérieur d'une feuille de styles CSS, avec la syntaxe suivante:
