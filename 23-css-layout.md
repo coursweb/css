@@ -19,20 +19,18 @@ Le modèle de boîte
 
 Le modèle de mise en page du HTML / CSS repose sur un principe de "boîtes" (en anglais: box-model). Ces boîtes sont définies géométriquement par les paramètres suivants:
 
-- Largeur
-- Hauteur
-- Bordure
-- Marge intérieure
-- Marge extérieure
-
-
+- **Largeur** (width)
+- **Hauteur** (heigth)
+- **Bordure** (border)
+- **Marge intérieure** (padding)
+- **Marge extérieure** (margin)
 
 La propriété box-sizing: border-box
 -----------------------------------
 
 La propriété **box-sizing**, ajoutée en CSS3, permet de définir la manière dont la largeur d'un élément est calculée.
 
-La valeur par défaut est "content-box", elle signifie que la largeur est celle du contenu uniquement. Le padding (marge intérieure), la bordure et la marge extérieure vont s'ajouter.
+La valeur par défaut est "content-box", elle signifie que la **largeur** est celle du **contenu** uniquement. Le padding (marge intérieure), la bordure et la marge extérieure vont s'ajouter.
 
 Imaginons un élément auquel on donne ces règles:
 
@@ -47,12 +45,12 @@ Imaginons un élément auquel on donne ces règles:
 
 Cet élément aura une largeur effective de 200+(2x10)+(2x2)+(2x10) = 244 pixels. Tout s'additionne, y compris le padding, la bordure, la marge.
 
-Si on utilise `box-sizing: border-box`, alors la la marge intérieure et la bordure sont compris dans la largeur (width). Un paragraphe situé dans cet élément de 200px n'aura donc que 176px de large (on soustrait aux 200px les 2x10px de padding et 2x2px de bordure). Il n'y a que la marge extérieure (2x10px) qui s'additionne. L'élément fait donc 220px de large. 
+Si on utilise `box-sizing: border-box`, alors la **marge intérieure** et la **bordure** sont compris dans la largeur (width). Un paragraphe situé dans cet élément de 200px n'aura donc que 176px de large (on soustrait aux 200px les 2x10px de padding et 2x2px de bordure). Il n'y a que la **marge extérieure** (2x10px) qui s'additionne. L'élément fait donc 220px de large. 
 
 Le mode `box-sizing: border-box` est bien supporté par les navigateurs actuels (état mai 2016):
 [http://caniuse.com/#feat=css3-boxsizing](http://caniuse.com/#feat=css3-boxsizing)
 
-De nombreux designers ont commencé à appliquer le mode `box-sizing: border-box` sur tous leurs éléments de mise en page. Le framework *Boostrap* suit cette pratique.
+De nombreux designers ont commencé à appliquer le mode `box-sizing: border-box` sur tous leurs éléments de mise en page, jugeant ce comportement plus intuitif. Le framework *Boostrap* suit cette pratique.
 
 **Références:**
 
@@ -77,7 +75,7 @@ Utilisation dans Bootstrap, depuis 2013:
 - [http://blog.getbootstrap.com/2013/08/19/bootstrap-3-released/](http://blog.getbootstrap.com/2013/08/19/bootstrap-3-released/)
 - [https://github.com/twbs/bootstrap/issues/12351](https://github.com/twbs/bootstrap/issues/12351)
 
-En 2014, le site CSS Tricks déclare le 1er février comme étant la Journée Internationale du box-sizing (International box-sizing Awareness Day):    
+En 2014, le site CSS Tricks déclare le 1er février comme étant la Journée Internationale du box-sizing (*International box-sizing Awareness Day*):    
 [https://css-tricks.com/international-box-sizing-awareness-day/](https://css-tricks.com/international-box-sizing-awareness-day/)
 
 Un article (en français) qui résume tout cela:    
@@ -108,8 +106,10 @@ En 2004, des designers web font une véritable campagne pour pousser leur profes
 
 Pour maîtriser la méthode de mise en page CSS préconisée, il est essentiel de comprendre les propriétés CSS suivantes:
 
-- **float** (left, right)
-- **clear** (left, right, both)
+- **float** (valeurs possibles: left, right)
+- **clear** (valeurs possibles: left, right, both)
+
+![Un exemple d'utilisation de {float: left}](/cours-web/cours-css/img/layout-float2p.png)
 
 Cette méthode présente toutefois des difficultés, quand il s'agit de créer une mise en page flexible (avec des largeurs de colonnes exprimées en pourcentage). Dans le jargon, on parle du "Holy Grail Layout" (le *Saint Graal* de la mise en page), qui comprend deux colonnes à largeur fixe (les barres latérales), et un contenu central à largeur flexible (qui augmentera avec la taille de l'écran).
 
@@ -155,27 +155,10 @@ Un autre tutoriel (par Alsa Créations):
 
 Un livre publié en début 2016 par Rachel Andrew: *Get Ready For CSS Grid Layout*, A Book Apart, 2016
 
-Un peu de science-fiction: Grid Style Sheets
-===
-
-Certains développeurs vont jusqu'à créer leur propre système de mise en page (non-standard et complètement inofficiel): par exemple Grid Style Sheets.
-
-**GSS - Grid Style Sheets** : "Les GSS ré-imaginent la mise en page CSS, et remplacent le moteur de mise en page du navigateur par un système utilisant les contraintes de Cassowary - c'est l'algorithme utilisé par les applications Apple pour calculer la mise en page des interfaces".
-
-[^gss]: "GSS reimagines CSS layout & replaces the browser’s layout engine with one that harnesses the Cassowary Constraint Solver — the same algorithm Apple uses to compute native layout. (...) GSS is a CSS preprocessor & JS runtime that harnesses Cassowary.js, the JS port of the same constraint solving algorithm Apple uses in Cocoa Autolayout for iOS & OS X."
-
-Il s'agit d'une librairie JavaScript qui utilise un algorithme de mise en page reposant sur des "contraintes", également utilisé dans l'environnement de programmation d'applications proposé par Apple.
-
-Source: [https://gridstylesheets.org/](https://gridstylesheets.org/)
-
-Cette technologie est liée à la startup The Grid - [https://thegrid.io/](https://thegrid.io/) - qui vise à produire des sites internet au design automatique et génératif. Leur slogan: "The Grid Is The Website Of The Future: It Builds Itself".
-
-
-
 Références - mise en page CSS:
 ===
 
-**En français: **
+**En français:**
 
 - *[Le tournant des CSS vers le Layout](http://www.paris-web.fr/2012/conferences/le-tournant-des-css-vers-le-layout.php)* - conférence de Daniel Glazman, à Paris Web 2012. Présente diverses nouveautés: CSS Variables, CSS Flexbox, CSS Regions, CSS Exclusions and Shapes, CSS Grids, Blending & Compositing, Web Fonts, CSS Filter Effects.
 - [Learn CSS Layout](http://fr.learnlayout.com/) - un tutoriel très complet pour apprendre la mise en page CSS. Ecrit par Greg Smith, traduction par Joël Matelli.

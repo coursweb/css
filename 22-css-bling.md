@@ -5,7 +5,7 @@ permalink: /css/css3-bling
 ---
 
 
-CSS3 Bling - quelques nouveautés apportées par le CSS3
+Effets visuels apportés par le CSS3
 ---------
 
 Selon l'article "[CSS3 Bling in the Real World](http://alistapart.com/article/css3-bling-in-the-real-world)", par Chris Mills, 2011:
