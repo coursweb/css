@@ -53,10 +53,52 @@ Articles de référence:
 Un article très détaillé:
 *[Cascade CSS et priorité des sélecteurs](http://openweb.eu.org/articles/cascade_css)*, par Laurent Denis, 2005
 
+Tous les sélecteurs CSS ne sont pas égaux. Certains sélecteurs sont plus "puissants" que d'autres, et parviennent à surcharger des règles CSS plus faibles. Un sélecteur par identifiant – `#titre` – est plus "spécifique", donc plus puissant, qu'un sélecteur par classe – `.titre` – qui est plus puissant qu'un sélecteur par élément – `h1`.
+
+Voici comment la documentation du W3C explique le principe:
+
+![Régles de spécificité dans la documentation CSS du W3C](/cours-web/cours-css/img/selector-specificity-W3C.png)
+
+Quelques exemples:
+
+```css
+* {
+    color: red;
+}
+```
+
+Une règle utilisant comme sélecteur l'astérisque s'appliquera à tous les éléments d'une page, et aura la spécificité la plus basse, càd de zéro.
+
+```css
+li {
+    color: red;
+}
+```
+
+La même règle utilisant un sélecteur par élément. On aura une spécificité de (a=0 b=0 c=1), donc de 1.
+
+```css
+ul li {
+    color: red;
+}
+```
+
+Si on utilise deux sélecteurs de même type, leur puissance s'additionne. Ici, on aura une valeur de (a=0 b=0 c=2), donc 2.
+
+```css
+.red {
+    color: red;
+}
+```
+
+On utilise maintenant sélecteur de type "classe". Un monte d'un niveau de puissance (a=0 b=1 c=0), ce qui se traduit par une spécificité de 10.
+
+
+
 Specificity:
 [https://designshack.net/articles/css/what-the-heck-is-css-specificity/](https://designshack.net/articles/css/what-the-heck-is-css-specificity/)
 
-Calculateur: [http://specificity.keegan.st/](http://specificity.keegan.st/)
+Calculateur de spécificté: [http://specificity.keegan.st/](http://specificity.keegan.st/)
 
 
 ### Le modèle de boîte
