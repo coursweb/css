@@ -126,6 +126,8 @@ Dans la pratique, le module Flexbox est déjà bien supporté par les navigateur
 ![Flexbox support](/cours-web/cours-css/img/flexbox-caniuse.png)
 *Support des navigateurs pour Flexbox (source: [Can I Use](http://caniuse.com/#feat=flexbox), mars 2016)*
 
+#### Ressources Flexbox
+
 Quelques bonnes ressources pour maîtriser ce module CSS:
 
 - Une démonstration: [https://demos.scotch.io/visual-guide-to-css3-flexbox-flexbox-playground/demos/](https://demos.scotch.io/visual-guide-to-css3-flexbox-flexbox-playground/demos/)
@@ -144,16 +146,15 @@ Le *CSS Grid Layout* est une nouvelle spécification CSS, en cours d'implémenta
 
 Cette fonctionalité CSS a été proposée en 2011 par Microsoft, et implémentée à fins de test dans Internet Explorer 10 et 11. Le projet a été repris par le W3C, et est en cours de développement.
 
-Les navigateurs actuels offrent la possiblité aux développeurs de tester ce module CSS, mais il est nécessaire d'activer la fonctionalité. Voici des informations sur la manière de l'actiever: [http://igalia.github.io/css-grid-layout/enable.html](http://igalia.github.io/css-grid-layout/enable.html)
+Les navigateurs actuels offrent la possiblité aux développeurs de tester ce module CSS, mais il est nécessaire d'activer la fonctionalité. Voici des informations sur la manière de l'activer: [http://igalia.github.io/css-grid-layout/enable.html](http://igalia.github.io/css-grid-layout/enable.html)
 
-Support actuel des navigateurs: [http://caniuse.com/#feat=css-grid](http://caniuse.com/#feat=css-grid)
+#### Ressources CSS Grid Module
 
-Un tutoriel (le site de référence de Rachel Andrew): [http://gridbyexample.com/what/](http://gridbyexample.com/what/)
-
-Un autre tutoriel (par Alsa Créations):
+* Support actuel des navigateurs: [http://caniuse.com/#feat=css-grid](http://caniuse.com/#feat=css-grid)
+* Un tutoriel (le site de référence de Rachel Andrew): [http://gridbyexample.com/what/](http://gridbyexample.com/what/)
+* Un autre tutoriel (par Alsa Créations):
 [http://www.alsacreations.com/article/lire/1388-css3-grid-layout.html](http://www.alsacreations.com/article/lire/1388-css3-grid-layout.html)
-
-Un livre publié en début 2016 par Rachel Andrew: *Get Ready For CSS Grid Layout*, A Book Apart, 2016
+* Un livre publié en début 2016 par Rachel Andrew: *Get Ready For CSS Grid Layout*, A Book Apart, 2016
 
 Références - mise en page CSS:
 ===

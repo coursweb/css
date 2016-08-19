@@ -9,13 +9,13 @@ permalink: /css/
 Introduction au CSS.
 -------
 
-Le langage **CSS** (*Cascading Style Sheets*) est apparu en 1997, afin de proposer une meilleure manière de créer des sites internet, en séparant le contenu (HTML) de la présentation.
+Le langage **CSS** (*Cascading Style Sheets*) est apparu en 1996, afin de proposer une meilleure manière de créer des sites internet, en séparant le contenu (HTML) de la présentation. CSS1 se définit comme un « mécanisme de feuille de style simple, permettant aux auteurs et aux lecteurs d'attacher des styles (…) au document HTML ». Cette simplicité se traduit par le choix d'un langage qui peut être aisément lu et écrit directement par ses utilisateurs humains, et d'une terminologie conforme aux usages courants dans la publication informatique.
 
-Le standard CSS évolue et s'enrichit de nouvelles capactiés, afin de répondre aux besoins des designers web. La spécification **CSS 2** a été publiée en 1998. Une version révisée, CSS 2.1, a été en travail pendant des années, avant d'atteindre le statut de [Recommandation W3C](https://www.w3.org/TR/CSS2/) en 2011. 
+Le standard CSS s'enrichit progressivement de nouvelles capactiés, afin de répondre aux besoins des créateurs et utilisateurs du web. Alors que CSS1 définit essentiellement les propriétés de rendu typographique du texte, la spécification **CSS 2**, publiée en 1998, étend considérablement les possibilités théoriques des CSS, avec environ 70 propriétés supplémentaires. suivie par une version révisée, **CSS 2.1**, qui est restée en chantier pendant des années, avant d'atteindre le statut de [Recommandation W3C](https://www.w3.org/TR/CSS2/) en 2011. 
 
-La spécification **CSS 3**, qui l'a suivie, a été développée sous la forme de modules indépendants, dont certains sont déjà bien implémentés dans les navigateurs, et utilisés au quotidien (p.ex. Media Queries, Flexbox, Backgrounds and Borders...).
+La spécification **CSS 3**, qui l'a suivie, a été développée sous la forme de modules indépendants, dans le but que des modules "prêts" puissent être implémentés rapidement par les navigateurs. Cet objectif a été atteint, et de nombreux modules sont actuellement bien supportés par les navigateurs et utilisés au quotidien (p.ex. *WebFonts*, *Media Queries*, *Flexbox*, *Backgrounds & Borders*), alors que d'autres sont encore en développement.
 
-L'année 2010, qui marque une large adoption du standard HTML5, marque une percée importante du CSS3. C'est en 2010 que sort le livre "[CSS3 for Web Designers](https://abookapart.com/products/css3-for-web-designers)", par Dan Cederholm, et que le terme "Responsive Web Design" fait son apparition sous la plume d'Ethan Marcotte.
+L'année 2010, qui marque une large adoption du standard HTML5, représente une avancée importante pour le CSS 3. C'est en 2010 que sort le livre "[CSS3 for Web Designers](https://abookapart.com/products/css3-for-web-designers)", par Dan Cederholm, et que le terme "Responsive Web Design" fait son apparition, sous la plume d'Ethan Marcotte.
 
 ![CSS Working Group](/cours-web/cours-css/img/CSSWG2010.jpg)    
 *Le CSS Working Group du W3C, lors d'une réunion en 2010*
@@ -23,24 +23,135 @@ L'année 2010, qui marque une large adoption du standard HTML5, marque une perc�
 Principes de base
 ----------
 
-"Fundamental concepts of CSS like cascading, specificity rules, selectors, inheritance, box model and stacking context must be well understood."
+> "Fundamental concepts of CSS like cascading, specificity rules, selectors, inheritance, box model and stacking context must be well understood."
 
-Exemple de règle CSS...
+La langage CSS permet de définir des règles, qui sont exprimées sous forme de couples `propriété: valeur`.
 
-- selectors
-- inheritance
+Les **propriétés** sont libellées à l'aide de mots-outils anglais tels que `width` (largeur), `font-size` (taille de la police de caractères) ou `background-color` (couleur de fond). Ces propriétés sont spécifiées dans le standard CSS.
+
+Les **valeurs** sont exprimées à l'aide d'unités (pixels, pourcents...), ou de mots-clés propres au CSS. Par exemple, une couleur peut être exprimée à l'aide des mots clés ("black", "blue", etc), de valeurs hexadécimales (p.ex. #FF0000) ou du modèle RGB.
+
+Les couples propriété-valeur constituent le "bloc de déclaration" d'une règle CSS. S'il y en a plusieurs, on les sépare avec des points-virgule. Ces déclarations seront appliquées à des parties du document identifiées par un **sélecteur**.
+
+Chaque règle CSS comporte un **sélecteur**, et un **bloc de déclaration**.
+
+Exemple de règle CSS:
+
+```css
+h1 {
+    color: red;
+    text-transform: uppercase;
+}
+```
+
+Dans cet exemple, nous avons: 
+
+* le **sélecteur**: `h1`
+* le **bloc de déclaration**, qui contient deux déclarations: `color: red;` et `text-transform: uppercase;`
+* la première déclaration définit une **propriété**: `color`
+* avec la **valeur**: `red`
+* la seconde déclaration définit la **propriété** `text-transform;`
+* avec la **valeur**: `uppercase`
+
+Résultat: dans cette régle, on applique un style à tous les éléments `h1` du document: la couleur du texte sera rouge (`red`), et tous les caractères seront affichés en majuscules (`uppercase`).
+
+Les sélecteurs CSS
+===
+
+#### Sélecteurs du CSS niveau 1
+
+-----|-----:
+`E` | tout élément de type E
+`E:link` | tout élément E qui est l'ancre d'un hyperlien dont la cible n'a pas encore été visitée (:link) ou a déjà été visitée (:visited)
+`E:active` | un élément E soumis à des actions utilisateur
+`E::first-line` | la première ligne d'un élément E
+`E::first-letter` | la première lettre d'un élément E
+`.c` | tout élément ayant la classe "c"
+`#myid` | tout élément avec un ID égal à "myid"
+`E.warning` | tout élément E ayant la classe "warning"
+`E#myid` | tout élément E avec un ID égal à "myid"
+`E F` | un élément F qui est contenu dans un élément E
+
+#### Sélecteurs du CSS niveau 2
+
+-----|-----:
+`*` | tous les éléments du document
+`E[foo]` | an E element with a "foo" attribute
+`E[foo="bar"]` | an E element whose "foo" attribute value is exactly equal to "bar"
+`E[foo~="bar"]` | an E element whose "foo" attribute value is a list of whitespace-separated values, one of which is exactly equal to "bar"
+`E[foo|="en"]` | an E element whose "foo" attribute has a hyphen-separated list of values beginning (from the left) with "en"
+`E:first-child` | an E element, first child of its parent
+`E:lang(fr)` | an element of type E in language "fr"
+`E::before` | generated content before an E element's content
+`E::after` | generated content after an E element's content
+`E > F` | an F element child of an E element
+`E + F` | an F element immediately preceded by an E element
+
+Un exemple réel:
+
+```css
+input[type="checkbox"],
+input[type="radio"] {
+	padding: 0;
+}
+```
+
+Cette règle annule le "padding" pour les éléments interactifs de type "case à cocher" <input type="checkbox"> ou "bouton radio" <input type="radio">.
+
+Voici un autre exemple réel, plutôt subtil:
+
+```css
+a[href]:after {
+	content: " (" attr(href) ")";
+}
+```
+
+Cette règle est contenue dans les feuilles de style "print" (dédiées à l'impression) du framework HTML5Boilerplate. Son effet est de détecter tous les liens (élément `a` ayant un attribut `href`), et va afficher à la suite du lien son URL. Ainsi, si on imprime une page du site, chaque lien sera suivi de l'URL.
+
+#### Sélecteurs du CSS niveau 3
+
+`E[foo^="bar"]` | an E element whose "foo" attribute value begins exactly with the string "bar"
+`E[foo$="bar"]` | an E element whose "foo" attribute value ends exactly with the string "bar"
+`E[foo*="bar"]` | an E element whose "foo" attribute value contains the substring "bar"
+`E:root` | an E element, root of the document
+`E:nth-child(n)` | an E element, the n-th child of its parent
+`E:nth-last-child(n)` | an E element, the n-th child of its parent, counting from the last one
+`E:nth-of-type(n)` | an E element, the n-th sibling of its type
+`E:nth-last-of-type(n)` | an E element, the n-th sibling of its type, counting from the last one
+`E:last-child` | an E element, last child of its parent
+`E:first-of-type` | an E element, first sibling of its type
+`E:last-of-type` | an E element, last sibling of its type
+`E:only-child` | an E element, only child of its parent
+`E:only-of-type` | an E element, only sibling of its type
+`E:empty` | an E element that has no children (including text nodes)
+`E:target` | an E element being the target of the referring URI
+`E:enabled` | a user interface element E that is enabled
+`E:disabled` | a user interface element E that is disabled
+`E:checked` | a user interface element E that is checked (for instance a radio-button or checkbox)
+`E:not(s)` | an E element that does not match simple selector s
+`E ~ F` | an F element preceded by an E element
+
+Un exemple réel:
+
+```css
+a[href*="tumblr.com"]:before {
+	content: "\f214";
+}
+```
+
+Cette règle CSS a pour effet d'ajouter une icône (l'élément `\f214` qui correspond à un glyphe dans la fonte d'icônes [Genericons](https://genericons.com/)) devant chaque lien pointant vers Tumblr.
 
 ### Unités CSS
 
-- Les pixels (px)
-- Les pourcentages (%)
-- em et ex
-- Les points et les picas
-- rem
-- Unités relatives à la surface d’affichage (vh et vw)
-- Les pouces (in) et les centimètres (cm)
+- **Les pixels** (px): ils ont été pendant longtemps l'unité la plus utilisée en webdesign, autant pour définir des mises en page que pour les tailles de fontes. On préfère actuellement utiliser des em ou des pourcentages.
+- **Les pourcentages** (%): utiles pour créer des mises en page flexibles, et pour définir des tailles de fonte.
+- **em** et ex
+- **rem**: fonctionne comme le em, mais la taille est relative non pas à l'élément parent, mais à la taille de la racine du document (l'élément `html`).
+- **Unités relatives à la surface d’affichage** (vh et vw): ces unités sont relatives à la taille de la fenêtre de navigateur.
+- **Les points et les picas** : à éviter, sauf pour les feuilles de style d'impression.
+- **Les pouces (in) et les centimètres (cm)** : à éviter, sauf pour les styles d’impression (marges des pages).
 - Les caractères (ch)
-- Grille de texte (gd)
+- Grille de texte (gd): 
 - Nombres bruts
 
 Articles de référence:
