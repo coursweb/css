@@ -14,10 +14,31 @@ Mais aussi:
 * text-transform : permet de forcer les majuscules ou minuscules.
 * text-decoration : permet d'appliquer un soulignement.
 
+Réglages typographiques avancés
+---------
+
 Hyphenation, césure
-----------
+====
 
 Documentation sur la césure (en anglais, hyphenation).
+
+widows & orphans
+====
+
+Le CSS propose des réglages typographiques concernant les [veuves et orphelines](https://fr.wikipedia.org/wiki/Veuves_et_orphelines).
+
+Ces propriétés CSS permettent d'éviter des lignes isolées (avant ou après un saut de colonne) en indiquant un nombre de lignes minimum:
+
+```css
+.colonne p {
+   orphans: 3; /* min 3 lignes en bas de colonne */
+   widows: 2; /* min 3 lignes en haut de colonne */
+}
+```
+
+Ces règles peuvent aussi être utilisées pour les sauts des pages dans les styles destinés à l'impression.
+
+Acutellement, ces propriétés ne sont pas prises en compte dans Firefox: [http://caniuse.com/#feat=css-widows-orphans](http://caniuse.com/#feat=css-widows-orphans)
 
 Macrotypographie du web
 ------

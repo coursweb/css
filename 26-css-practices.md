@@ -31,6 +31,8 @@ Frameworks CSS
 * [Röcssti](https://rocssti.net/) 
 * [pure.css](http://purecss.io/) - par Yahoo
 
+Anciens frameworks:
+
 
 Préprocesseurs (Less, Sass...)
 
@@ -57,3 +59,4 @@ Des blogs traitant de CSS:
 **En anglais:**
 
 - [bitsofcode](https://bitsofco.de/), le blog de Ire Aderinokun, UI Designer et Front-End Developer à Lagos (Nigéria).
+- [The New Code](http://thenewcode.com/), le blog de Dudley Storey, auteur du livre *Pro CSS Animation*.
