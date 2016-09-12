@@ -143,16 +143,27 @@ Cette règle CSS a pour effet d'ajouter une icône (l'élément `\f214` qui corr
 
 ### Unités CSS
 
+Il existe diverses unités de mesure disponibles en CSS. Elles peuvent être classées en trois catégories:
+
+- **Unités absolues:** mm (millimètres), cm (centimètres), in (pouces), pt (point), pc (pica)
+- **Unités relatives:** %, em, ex, rem, ch, vh, vw
+- **Unités dépendantes de l'interface:** px
+
+Les unités *absolues* correspondent à ce que l'on connaît de la mise en page "papier". Elles sont généralement à éviter, sauf pour les styles d’impression (p.ex. pour spécifier les marges des pages). 
+
+#### Unités relatives:
+
+- **Les pourcentages** (%): Définit une mesure en % par rapport à la taille de l'élément parent. Utile pour créer des mises en page flexibles, et pour définir des tailles de fonte.
+- **em**: Unité typographique ancienne, correspondant historiquement à la largeur de la lettre "m". Par défaut, 1em est équivalent à 16px. Voici les équivalences par défaut du em: `1em == 16px == 0.17in == 12pt == 1pc == 4.2mm == 0.42cm`.
+- **rem**: Unité relative, qui fonctionne comme le **em**, mais la taille est relative à la taille de fonte de la racine du document (attribuée à l'élément `html`).
+- **ex**: Unité verticale, correspondant à la *x-height*, càd. la hauteur de la lettre x. Contrairement au **em**, cette unité varie en fonction de la fonte. 
+- **ch**: Unité correspondant à la largeur du charactère "0". 
+- **vh** et **vw**: Unités relatives à la surface d’affichage. Ces unités sont relatives à la taille de la fenêtre de navigateur. Cela permet p.ex. de spécifier une taille de fonte qui s'adapte à la taille du navigateur. Un **vh** ou **vw** est équivalent à 1% de la taille de fenêtre. Donc un élément avec `heigth: 100vh` occupera toute la hauteur de la fenêtre.
+- **vmin**: correspond à la plus petite valeur de vh ou vw.
+
+#### Les pixels
+
 - **Les pixels** (px): ils ont été pendant longtemps l'unité la plus utilisée en webdesign, autant pour définir des mises en page que pour les tailles de fontes. On préfère actuellement utiliser des em ou des pourcentages.
-- **Les pourcentages** (%): utiles pour créer des mises en page flexibles, et pour définir des tailles de fonte.
-- **em** et ex
-- **rem**: fonctionne comme le em, mais la taille est relative non pas à l'élément parent, mais à la taille de la racine du document (l'élément `html`).
-- **Unités relatives à la surface d’affichage** (vh et vw): ces unités sont relatives à la taille de la fenêtre de navigateur.
-- **Les points et les picas** : à éviter, sauf pour les feuilles de style d'impression.
-- **Les pouces (in) et les centimètres (cm)** : à éviter, sauf pour les styles d’impression (marges des pages).
-- Les caractères (ch)
-- Grille de texte (gd): 
-- Nombres bruts
 
 Articles de référence:
 

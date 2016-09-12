@@ -17,6 +17,13 @@ Mais aussi:
 Réglages typographiques avancés
 ---------
 
+- text-align (left | right | center | justify)
+- text-indent
+- line-height
+- word-spacing
+- letter-spacing
+- vertical-align
+
 Hyphenation, césure
 ====
 
