@@ -17,11 +17,11 @@ Mais aussi:
 Réglages typographiques avancés
 ---------
 
-- text-align (left | right | center | justify)
-- text-indent
-- line-height
-- word-spacing
-- letter-spacing
+- text-align (left, right, center, justify): alignement
+- text-indent: retrait de la première ligne d'un paragraphe
+- line-height: hauteur de ligne
+- word-spacing: espacement entre les mots
+- letter-spacing: espacement des caractères
 - vertical-align
 
 Hyphenation, césure
