@@ -138,6 +138,7 @@ Quelques bonnes ressources pour maîtriser ce module CSS:
 [https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - Des exemples d'usages typiques:
 [http://philipwalton.github.io/solved-by-flexbox/](http://philipwalton.github.io/solved-by-flexbox/)
+- [Un exemple de Holy Grail layout](https://jsfiddle.net/n7nk0hac/79/), par Belén Albeza
 
 Musique d'avenir: CSS Grid Layout
 ===
