@@ -13,7 +13,12 @@ Il existe diverses unités de mesure disponibles en CSS. Elles peuvent être cla
 - **Unités relatives:** %, em, ex, rem, ch, vh, vw
 - **Unités dépendantes de l'interface:** px
 
-Les unités *absolues* correspondent à ce que l'on connaît de la mise en page "papier". Elles sont généralement à éviter, sauf pour les styles d’impression (p.ex. pour spécifier les marges des pages). 
+Les unités *absolues* correspondent à ce que l'on connaît de la mise en page "papier". Elles à éviter sur le web, sauf pour les styles d’impression (p.ex. pour spécifier les marges des pages). Comme l'indiquent les inventeurs du CSS, Håkon Wium Lie et Bert Bos (dans *Cascading Style Sheets: Designing for the Web*): 
+
+- Use *ems* to make scalable style sheets.
+- Always use *ems* to set font sizes.
+- Use relative units for lengths.
+- Only use absolute length units when the physical characteristics of the output medium are known.
 
 #### Unités relatives:
 

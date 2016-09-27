@@ -6,28 +6,91 @@ permalink: /css/typographie
 
 Propriétés CSS spécifiques à la typographie:
 
-* font-family : permet de spécifier la police.
-* font-weight : permet de spécifier la graisse (normal, bold, semi-bold, thin...).
+* **font-family** : permet de spécifier la police.
+* **font-size** : permet de spécifier la taille de la police.
+* **font-style** : permet de spécifier un style (*italic* ou *oblique*).
+* **font-weight** : permet de spécifier la graisse, avec un mot-clé (*normal*, *bold*) ou avec une valeur numérique allant de 100 à 900 (voir ci-dessous).
+* **font-variant** : permet de spécifier des petites majuscules, avec la valeur "small-caps".
 
-Mais aussi:
+Liste des équivalences des valeurs numériques du `font-weight`:
 
-* text-transform : permet de forcer les majuscules ou minuscules.
-* text-decoration : permet d'appliquer un soulignement.
+* 100 - équivalent à *Ultra-light* ou *Thin*
+* 200 - équivalent à *Light* ou *Extra-Light*
+* 300 - équivalent à *Book* ou *Light*
+* **400** - équivalent à *Normal* (ou *Roman*, *Regular*), c'est la valeur par défaut
+* 500 - équivalent à *Medium*
+* 600 - équivalent à *Semi-Bold* 
+* **700** - équivalent à *Bold* (gras)
+* 800 - équivalent à *Extra-Bold* ou *Black*
+* 900 - équivalent à *Ultra-Bold* ou *Extra-Black*
+
+Pour que ces variantes soient visibles, il faut que la fonte les supporte. De nombreuses fontes ne proposent que les versions *normal* et *bold*. D'autres offrent plus d'options: *Univers* propose 5 versions (*45 Light, 55 Roman, 65 Bold, 75 Black, 85 Extra Black*), *Helvetica Neue* en comporte 8 (*Ultra-Light, Thin, Light, Normal, Medium, Bold, Heavy, Black*). 
+
+Voici quelques fontes qui proposent toutes les 9 variantes supportées par le CSS: [Exo](https://fonts.google.com/specimen/Exo), [Libre Franklin](https://github.com/impallari/Libre-Franklin), ou [Raleway](https://github.com/impallari/Raleway).
+
+![Tailles CSS dans Exo, Libre Franklin, Raleway](/cours-web/cours-css/img/CSS-font-weight.png)
+
+Autres propriétés:
+
+* **line-height** : la hauteur de ligne 
+* **text-transform** : permet de forcer les majuscules ou minuscules.
+* **text-decoration** : permet d'appliquer un soulignement.
+* **font-stretch** : permet de spécifier l'utilisation d'une fonte *condensed*, *semi-condensed*, *ultra-condensed* etc.
 
 Réglages typographiques avancés
 ---------
 
 - text-align (left, right, center, justify): alignement
 - text-indent: retrait de la première ligne d'un paragraphe
-- line-height: hauteur de ligne
 - word-spacing: espacement entre les mots
 - letter-spacing: espacement des caractères
 - vertical-align
 
+Retrait
+====
+
+Pour un retrait de la première ligne, utiliser le code suivant:
+
+```css
+p { text-indent: 1.8em }
+```
+
+Pour ajouter une lettrine ("drop cap" en anglais) au début d'un paragraphe:
+
+```css
+p::first-letter {
+  font-size: 200%;
+  float: left;
+}
+```
+
 Hyphenation, césure
 ====
 
-Documentation sur la césure (en anglais, hyphenation).
+#### La propriété "hyphens"
+
+Les navigateurs Firefox, Safari et IE10 supportent la césure (en anglais, *hyphenation*) depuis 2012. Actuellement (fin 2016) Chrome est en voie de l'implémenter.
+
+Exemple de code fonctionnel en 2016:
+
+```css
+article p {
+  word-break: break-word; /* solution de contournement pour Chrome */
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+```
+
+Les valeurs possibles sont: 
+
+- `none` : pas de césure.
+- `auto` : le navigateur applique la césure, en utilisant un dictionnaire de césure (fourni par le système d'exploitation). Pour que cela fonctionne, l'attribut `lang` doit être renseigné (normalement sur la balise html). 
+- `manual` : la césure est uniquement appliqué si des caractères de césure sont présents, càd des tirets visibles, ou des tirets invisibles (*soft hyphen*, rendu par le code html `&shy;`).
+
+Lire:  
+[La gestion de la césure en CSS](http://openweb.eu.org/articles/la-gestion-de-la-cesure-en-css), par Nicolas Hoffmann, 2013.
 
 widows & orphans
 ====
