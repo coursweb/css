@@ -6,11 +6,11 @@ permalink: /css/typographie
 
 Propriétés CSS spécifiques à la typographie:
 
-* **font-family** : permet de spécifier la police.
-* **font-size** : permet de spécifier la taille de la police.
-* **font-style** : permet de spécifier un style (*italic* ou *oblique*).
-* **font-weight** : permet de spécifier la graisse, avec un mot-clé (*normal*, *bold*) ou avec une valeur numérique allant de 100 à 900 (voir ci-dessous).
-* **font-variant** : permet de spécifier des petites majuscules, avec la valeur "small-caps".
+* **font-family** : Permet de spécifier la police.
+* **font-size** : Permet de spécifier la taille de la police. On peut utiliser des unités absolues ou relatives.
+* **font-style** : Permet de spécifier un style (*italic* ou *oblique*).
+* **font-weight** : Permet de spécifier la graisse, avec un mot-clé (*normal*, *bold*) ou avec une valeur numérique allant de 100 à 900 (voir ci-dessous).
+* **font-variant** : Permet de spécifier des petites majuscules, avec la valeur "small-caps".
 
 Liste des équivalences des valeurs numériques du `font-weight`:
 
@@ -40,11 +40,11 @@ Autres propriétés:
 Réglages typographiques avancés
 ---------
 
-- text-align (left, right, center, justify): alignement
-- text-indent: retrait de la première ligne d'un paragraphe
-- word-spacing: espacement entre les mots
-- letter-spacing: espacement des caractères
-- vertical-align
+- **text-align** (left, right, center, justify) : alignement
+- **text-indent** : retrait de la première ligne d'un paragraphe
+- **word-spacing** : espacement entre les mots
+- **letter-spacing** : espacement des caractères
+- **vertical-align** : alignement sur la ligne de base. Cf. [The vertical-align Property](https://bitsofco.de/the-vertical-align-property/), par Ire Aderinokun.
 
 Retrait
 ====
@@ -228,7 +228,7 @@ Articles :
 - *[Web Fonts at the Crossing](http://alistapart.com/article/fonts-at-the-crossing)*, par Richard Fink, 2010
 - *[Pour une typographie qui a du sens](http://www.pompage.net/traduction/pour-une-typographie-qui-a-du-sens)*, par Tim Brown, 2011 (en anglais: *More Meaningful Typography*). - Sur le rythme typographique dans le design.
 - *[The Value of Multi-Typeface Design](https://blog.prototypr.io/the-value-of-multi-typeface-design-ccd67227b0ee#.a6neeidbw)*, par Bethany Heck, 2016. - Sur l'art de combiner plusieurs fontes. 
-
+- *[CSS Font Sizing](https://bitsofco.de/css-font-sizing/)*, par Ire Aderinokun, 2015.
 
 
 

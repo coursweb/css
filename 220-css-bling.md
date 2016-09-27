@@ -17,6 +17,13 @@ Selon l'article "[CSS3 Bling in the Real World](http://alistapart.com/article/cs
 - Les fontes web ([Web fonts](http://caniuse.com/#feat=fontface)) 
 
 
+Références:
+
+- [The box-shadow Property](https://bitsofco.de/the-box-shadow-property/), par Ire Aderinokun.
+- [The Background Properties](https://bitsofco.de/the-background-properties/), par Ire Aderinokun.
+
+
+
 Mais aussi: de nouveaux sélecteurs.
 
 Futur du CSS (état 2016):

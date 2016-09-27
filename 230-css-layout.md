@@ -28,9 +28,9 @@ Le modèle de mise en page du HTML / CSS repose sur un principe de "boîtes" (en
 La propriété box-sizing: border-box
 -----------------------------------
 
-La propriété **box-sizing**, ajoutée en CSS3, permet de définir la manière dont la largeur d'un élément est calculée.
+La propriété **box-sizing**, ajoutée en CSS3, permet de définir la manière dont la largeur d'un élément est calculée. Les valeurs possibles sont `content-box` et `border-box`.
 
-La valeur par défaut est "content-box", elle signifie que la **largeur** est celle du **contenu** uniquement. Le padding (marge intérieure), la bordure et la marge extérieure vont s'ajouter.
+La valeur par défaut est `content-box`, elle signifie que la **largeur** est celle du **contenu** uniquement. La *marge intérieure* (*padding*), la *bordure* (*border*) et la *marge extérieure* (*margin*) vont s'ajouter.
 
 Imaginons un élément auquel on donne ces règles:
 
@@ -79,7 +79,7 @@ En 2014, le site CSS Tricks déclare le 1er février comme étant la Journée In
 [https://css-tricks.com/international-box-sizing-awareness-day/](https://css-tricks.com/international-box-sizing-awareness-day/)
 
 Un article (en français) qui résume tout cela:    
-[https://la-cascade.io/controler-le-modele-de-boite/](https://la-cascade.io/controler-le-modele-de-boite/)
+[Contrôler le modèle de boîte](https://la-cascade.io/controler-le-modele-de-boite/), par [Ire Aderinokun](https://bitsofco.de/controlling-the-box-model/), trad. Pierre Choffé.
 
 Mise en page CSS
 ----------

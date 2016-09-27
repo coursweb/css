@@ -112,11 +112,13 @@ Disposition verticale des éléments d'une page web. On contrôle l'ordre vertic
 
 ![](/cours-web/cours-css/img/z-index-stack.png)
 
+Lire: *[How z-index Works](https://bitsofco.de/how-z-index-works/)*, par Ire Aderinokun.
+
 ### Les préfixes (vendor prefixes)
 
 Afin de permettre aux développeurs web de tester les futures fonctionalités du CSS, les navigateurs utilisent des préfixes pour rendre utilisables des fonctionalités "en cours d'implémentation".
 
-Les préfixes les plus utilisés sont:  -moz- pour Firefox, -ms- pour IE, -o- pour Opera, et -webkit- pour Safari et Chrome.
+Les préfixes les plus utilisés sont:  `-moz-` pour Firefox, `-ms-` pour IE, `-o-` pour Opera, et `-webkit-` pour Safari et Chrome.
 
 Selon l'analyse de Lea Verou (dans son livre *CSS Secrets*), l'utilisation massive des "vendor prefixes" a été un échec ("an epic failure").
 
