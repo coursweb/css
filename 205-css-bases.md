@@ -27,7 +27,7 @@ Les unités *absolues* correspondent à ce que l'on connaît de la mise en page 
 - **rem**: Unité relative, qui fonctionne comme le **em**, mais la taille est relative à la taille de fonte de la racine du document (attribuée à l'élément `html`).
 - **ex**: Unité verticale, correspondant à la *x-height*, càd. la hauteur de la lettre x. Contrairement au **em**, cette unité varie en fonction de la fonte. 
 - **ch**: Unité correspondant à la largeur du charactère "0". 
-- **vh** et **vw**: Unités relatives à la surface d’affichage. Ces unités sont relatives à la taille de la fenêtre de navigateur. Cela permet p.ex. de spécifier une taille de fonte qui s'adapte à la taille du navigateur. Un **vh** ou **vw** est équivalent à 1% de la taille de fenêtre. Donc un élément avec `heigth: 100vh` occupera toute la hauteur de la fenêtre.
+- **vh** et **vw**: Unités relatives à la surface d’affichage. Ces unités sont relatives à la taille de la fenêtre de navigateur. Cela permet p.ex. de spécifier une taille de fonte qui s'adapte à la taille du navigateur. Un **vh** ou **vw** est équivalent à 1% de la taille de fenêtre. Donc un élément avec `height: 100vh` occupera toute la hauteur de la fenêtre.
 - **vmin**: correspond à la plus petite valeur de vh ou vw.
 
 #### Les pixels
