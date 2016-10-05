@@ -48,7 +48,7 @@ Tous les sélecteurs CSS ne sont pas égaux. Certains sélecteurs sont plus "pui
 
 Voici comment la documentation du W3C explique le principe:
 
-![Régles de spécificité dans la documentation CSS du W3C](/cours-web/cours-css/img/selector-specificity-W3C.png)
+![Régles de spécificité dans la documentation CSS du W3C](/cours-css/img/selector-specificity-W3C.png)
 
 Quelques exemples:
 
@@ -91,7 +91,7 @@ Specificity:
 
 Calculateur de spécificté: [http://specificity.keegan.st/](http://specificity.keegan.st/)
 
-![](/cours-web/cours-css/img/Strip-CSS-respect-650-final.jpg)
+![](/cours-css/img/Strip-CSS-respect-650-final.jpg)
 
 ### Le modèle de boîte
 
@@ -110,7 +110,7 @@ Exemple: une suite de paragraphes ayant chacun une marge verticale (haut / bas) 
 
 Disposition verticale des éléments d'une page web. On contrôle l'ordre vertical des éléments avec la propriété z-index. Plus cette valeur est grande, plus un élément se trouve propulsé vers le "devant" de la scène.
 
-![](/cours-web/cours-css/img/z-index-stack.png)
+![](/cours-css/img/z-index-stack.png)
 
 Lire: *[How z-index Works](https://bitsofco.de/how-z-index-works/)*, par Ire Aderinokun.
 

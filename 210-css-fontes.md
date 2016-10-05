@@ -28,7 +28,7 @@ Pour que ces variantes soient visibles, il faut que la fonte les supporte. De no
 
 Voici quelques fontes qui proposent toutes les 9 variantes supportées par le CSS: [Exo](https://fonts.google.com/specimen/Exo), [Libre Franklin](https://github.com/impallari/Libre-Franklin), ou [Raleway](https://github.com/impallari/Raleway).
 
-![Tailles CSS dans Exo, Libre Franklin, Raleway](/cours-web/cours-css/img/CSS-font-weight.png)
+![Tailles CSS dans Exo, Libre Franklin, Raleway](/cours-css/img/CSS-font-weight.png)
 
 Autres propriétés:
 
@@ -113,7 +113,7 @@ Acutellement, ces propriétés ne sont pas prises en compte dans Firefox: [http:
 Macrotypographie du web
 ------
 
-![](/cours-web/cours-css/img/macrotypographie-titres.png)
+![](/cours-css/img/macrotypographie-titres.png)
 
 Exemples de styles appliqués aux titres, tirés de la conférence *[La macrotypographie de la page Web ](http://www.dailymotion.com/video/xfpf08_la-macrotypographie-de-la-page-web-anne-sophie-fradier_tech)*, par Anne-Sophie Fradier (Paris Web, 2010).
 
