@@ -7,7 +7,7 @@ permalink: /css/layout
 Méthodes de positionnement et mise en page
 ----------
 
-![](/cours-web/cours-css/img/stores-css.gif)
+![](/cours-css/img/stores-css.gif)
 
 Deux bonnes introductions à la mise en page et au positionnement CSS:
 
@@ -21,7 +21,7 @@ Depuis le lancement du CSS en 1996, diverses techniques ont été développées 
 
 Pendant longtemps, des mises en page ont été créées avec le positionnement **"Float"**. Depuis l'introduction du CSS3, on peut utiliser le module **CSS Flexbox**. Pour l'avenir, le module **CSS Grid Layout** propose des solutions intéressantes.
 
-![](/cours-web/cours-css/img/Strips-Vieux-coder-VS-jeune-codeur.jpg)
+![](/cours-css/img/Strips-Vieux-coder-VS-jeune-codeur.jpg)
 
 Positionnement avec Float
 ===
@@ -42,11 +42,11 @@ Pour maîtriser la méthode de mise en page CSS préconisée, il est essentiel d
 - **float** (valeurs possibles: left, right)
 - **clear** (valeurs possibles: left, right, both)
 
-![Un exemple d'utilisation de {float: left}](/cours-web/cours-css/img/layout-float2p.png)
+![Un exemple d'utilisation de {float: left}](/cours-css/img/layout-float2p.png)
 
 Cette méthode présente toutefois des difficultés, quand il s'agit de créer une mise en page flexible (avec des largeurs de colonnes exprimées en pourcentage). Dans le jargon, on parle du "Holy Grail Layout" (le *Saint Graal* de la mise en page), qui comprend deux colonnes à largeur fixe (les barres latérales), et un contenu central à largeur flexible (qui augmentera avec la taille de l'écran).
 
-![Holy Grail Layout](/cours-web/cours-css/img/holy-grail-div-structure.png)    
+![Holy Grail Layout](/cours-css/img/holy-grail-div-structure.png)    
 *Une structure HTML complexe pour obtenir le Holy Grail Layout*
 
 Une nouvelle approche: Flexbox
@@ -56,7 +56,7 @@ Flexbox est un module CSS récent, qui propose une manière novatrice de défini
 
 Dans la pratique, le module Flexbox est déjà bien supporté par les navigateurs. On peut donc envisager son utilisation pour des projets réels. Le framework *Bootstrap* a récemment modifié son système de grille de mise en page pour utiliser Flexbox.
 
-![Flexbox support](/cours-web/cours-css/img/flexbox-caniuse.png)
+![Flexbox support](/cours-css/img/flexbox-caniuse.png)
 *Support des navigateurs pour Flexbox (source: [Can I Use](http://caniuse.com/#feat=flexbox), mars 2016)*
 
 #### Ressources Flexbox
