@@ -43,19 +43,29 @@ La liste complète peut être consultée:
 
 Le code hexadécimal (ou *triplet hexadécimal*) est une manière d'exprimer les couleurs du modèle RVB (en anglais: RGB). En RVB, la valeur du rouge (R), vert (V) et bleu (B) sont définis sur un intervalle allant de zéro à 255, ou de 00 à FF en notation hexadécimale. 
 
-Le nombre total de combinaisons possibles est de 256 * 256 * 256, càd quelques 16'777'216 teintes. C'est beaucoup plus que le nuancier pantone, qui n'en comporte que 992!
+Voici trois chats dont les couleurs sont exprimés en notation hexadécimale (de manière très approximative, car 000000 devrait correspondre au noir absolu):
+
+![Chats avec codes hex](/cours-css/img/funny-pictures-hexcode-colors.jpg)
+
+Le nombre total de couleurs possibles est de 256 * 256 * 256, càd quelques 16'777'216 teintes. C'est beaucoup plus que le nuancier pantone, qui n'en comporte que 992!
 
 Dans son œuvre *[#BADA55 in a Can](http://www.evan-roth.com/work/bada55-in-a-can/)* (2008), l'artiste Evan Roth propose de créer des peintures murales "badass" en utilisant le vert correspondant au code hexadécimal #BADA55:
 
 ![#BADA55 in a Can](/cours-css/img/bada55-paint-can.JPG)
 
-Si les caractères sont dédoublés, la triplette peut être racourcie à trois chiffres: `#0099cc` est équivalent à `#09c`, et `#00ff00` équivaut à `#0f0`.
+Si les caractères sont dédoublés, la triplette peut être racourcie à trois chiffres: 
+
+- `#0099cc` est équivalent à `#09c`
+- `#00ff00` équivaut à `#0f0`
+- `#666666` équivaut à `#666`, etc.
 
 Un bon site de référence: [http://htmlcolorcodes.com/](http://htmlcolorcodes.com/)
 
-#### RGB
+#### Rouge, Vert, Bleu
 
-On peut utiliser un nombre entier allant de 0 à 255, ou un pourcentage allant de 0% à 100%.
+Le CSS autorise également la définition d'une couleur en notation RVB (en anglais: RGB). 
+
+Pour chacune des trois valeurs, on peut utiliser un nombre entier allant de 0 à 255, ou un pourcentage allant de 0% à 100%.
 
 Exemple de deux couleurs identiques:
 
@@ -64,15 +74,19 @@ p { color: rgb(255,0,0) }
 p { color: rgb(100%,0%,0%) }
 ```
 
+La première valeur étant au maximum, cette couleur correspond au <span style="padding: 0 0.3em; background:rgb(255,0,0);color:#fff">rouge le plus intense</span>.
+
 #### RGBA
 
-RVB avec transparence (alpha).
+RVB avec transparence (alpha), définie sur un intervalle allant de 0.0 à 1.0.
 
 Exemple:
 
 ```css
-p { color: rgba(0,0,255,0.5) } 
+p { color: rgba(255,0,0,0.5) } 
 ```
+
+La dernière valeur (l'opacité) étant de 0.5, il en résulte <span style="padding: 0 0.3em; background:rgba(255,0,0,0.5);color:#fff">un rouge semi-transparent</span>.
 
 #### Teinte, saturation, luminosité (HSL)
 
