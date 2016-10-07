@@ -43,7 +43,7 @@ La liste complète peut être consultée:
 
 Le code hexadécimal (ou *triplet hexadécimal*) est une manière d'exprimer les couleurs du modèle RVB (en anglais: RGB). En RVB, la valeur du rouge (R), vert (V) et bleu (B) sont définis sur un intervalle allant de zéro à 255, ou de 00 à FF en notation hexadécimale. 
 
-Voici trois chats dont les couleurs sont exprimés en notation hexadécimale (de manière très approximative, car 000000 devrait correspondre au noir absolu):
+Voici trois chats dont les couleurs sont traduites en notation hexadécimale (de manière très approximative, car 000000 devrait correspondre au noir absolu):
 
 ![Chats avec codes hex](/cours-css/img/funny-pictures-hexcode-colors.jpg)
 
