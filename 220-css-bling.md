@@ -16,22 +16,29 @@ Selon l'article "[CSS3 Bling in the Real World](http://alistapart.com/article/cs
 - Les bords arrondis (Rounded corners) - [border-radius](http://caniuse.com/#feat=border-radius)
 - Les fontes web ([Web fonts](http://caniuse.com/#feat=fontface)) 
 
+Gradients
+===
+
+Drop shadows
+===
+
+Opacity
+===
+
+Rounded corners
+===
 
 Références:
 
 - [The box-shadow Property](https://bitsofco.de/the-box-shadow-property/), par Ire Aderinokun.
 - [The Background Properties](https://bitsofco.de/the-background-properties/), par Ire Aderinokun.
 
-
-
-Mais aussi: de nouveaux sélecteurs.
-
-Futur du CSS (état 2016):
+CSS blend modes (modes de fondu)
 ===
 
-Les variables en css arrivent...
+Nous connaissons les "modes de fondu" disponibles dans des applications comme Photoshop, permettant de jouer avec les superpositions des images. Ces modes de fondu sont disponibles également en CSS.
 
-CSS Variables (Custom Properties)    
-[http://caniuse.com/#search=variables](http://caniuse.com/#search=variables)    
-Encore non-supporté dans IE et Edge...
+Support dans les navigateurs: encore non supporté dans Internet Explorer et Edge ([caniuse](http://caniuse.com/#feat=css-backgroundblendmode)).
+
+Références: [A List Apart](http://alistapart.com/article/blending-modes-demystified).
 

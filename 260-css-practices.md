@@ -48,6 +48,8 @@ Préprocesseurs (Less, Sass...)
 Autoprefixer:    
 [https://github.com/postcss/autoprefixer](https://github.com/postcss/autoprefixer)
 
+[SMACSS](https://smacss.com/) - "Scalable and Modular Architecture for CSS", par Jonathan Snook, est une méthodologie pour la construction des feuilles de style.
+
 [http://cssguidelin.es/](http://cssguidelin.es/) - High-level advice and guidelines for writing sane, manageable, scalable CSS - par Harry Roberts.
 
 [http://tympanus.net/codrops/2013/07/17/troubleshooting-css/](http://tympanus.net/codrops/2013/07/17/troubleshooting-css/)
