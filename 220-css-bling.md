@@ -187,12 +187,14 @@ Opacity
 Rounded corners
 ===
 
-Références:
+Animation
+===
 
-- [The box-shadow Property](https://bitsofco.de/the-box-shadow-property/), par Ire Aderinokun.
-- [The Background Properties](https://bitsofco.de/the-background-properties/), par Ire Aderinokun.
+Un exemple: http://www.leemunroe.com//css-transitions/
 
-CSS blend modes (modes de fondu)
+
+
+Modes de fondu (CSS blend modes)
 ===
 
 Nous connaissons les "modes de fondu" disponibles dans des applications comme Photoshop, permettant de jouer avec les superpositions des images. Ces modes de fondu sont disponibles également en CSS.
@@ -200,4 +202,10 @@ Nous connaissons les "modes de fondu" disponibles dans des applications comme Ph
 Support dans les navigateurs: encore non supporté dans Internet Explorer et Edge ([caniuse](http://caniuse.com/#feat=css-backgroundblendmode)).
 
 Références: [A List Apart](http://alistapart.com/article/blending-modes-demystified).
+
+Références:
+===
+
+- [The box-shadow Property](https://bitsofco.de/the-box-shadow-property/), par Ire Aderinokun.
+- [The Background Properties](https://bitsofco.de/the-background-properties/), par Ire Aderinokun.
 

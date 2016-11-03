@@ -69,5 +69,5 @@ Des blogs traitant de CSS:
 
 **En anglais:**
 
-- [bitsofcode](https://bitsofco.de/), le blog de Ire Aderinokun, UI Designer et Front-End Developer à Lagos (Nigéria).
+- [bitsofcode](https://bitsofco.de/), le blog de Ire Aderinokun, UI Designer et Front-End Developer.
 - [The New Code](http://thenewcode.com/), le blog de Dudley Storey, auteur du livre *Pro CSS Animation*.
