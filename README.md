@@ -2,7 +2,7 @@
 
 Support de cours programmation web
 
-En ligne sous: [http://collectifwp.github.io/cours-web/](http://collectifwp.github.io/cours-web/)
+En ligne sous: [http://cours-web.ch/](http://cours-web.ch/)
 
 ## À propos
 
