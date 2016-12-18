@@ -91,6 +91,10 @@ Specificity:
 
 Calculateur de spécificté: [http://specificity.keegan.st/](http://specificity.keegan.st/)
 
+Visualisation basée sur The Shining: http://cdn.w3cplus.com/sites/default/files/blogs/2013/1312/CSS_Specificity.jpg
+
+Visualisation basée sur Star Wars: http://blog4coders.com/wp-content/uploads/2014/07/rsz_specificitywars-05v2-800x637.jpg
+
 ![](/cours-css/img/Strip-CSS-respect-650-final.jpg)
 
 ### Le modèle de boîte
