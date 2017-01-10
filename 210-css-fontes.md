@@ -92,12 +92,12 @@ Les valeurs possibles sont:
 Lire:  
 [La gestion de la césure en CSS](http://openweb.eu.org/articles/la-gestion-de-la-cesure-en-css), par Nicolas Hoffmann, 2013.
 
-widows & orphans
+Veuves & orphelines
 ====
 
-Le CSS propose des réglages typographiques concernant les [veuves et orphelines](https://fr.wikipedia.org/wiki/Veuves_et_orphelines).
+Le CSS propose des réglages typographiques concernant les lignes [veuves et orphelines](https://fr.wikipedia.org/wiki/Veuves_et_orphelines).
 
-Ces propriétés CSS permettent d'éviter des lignes isolées (avant ou après un saut de colonne) en indiquant un nombre de lignes minimum:
+Ces propriétés CSS permettent d'éviter des lignes isolées (avant ou après un saut de colonne) en indiquant un nombre de lignes consécutives minimum:
 
 ```css
 .colonne p {
@@ -106,9 +106,31 @@ Ces propriétés CSS permettent d'éviter des lignes isolées (avant ou après u
 }
 ```
 
-Ces règles peuvent aussi être utilisées pour les sauts des pages dans les styles destinés à l'impression.
+Ces règles peuvent aussi être utilisées pour les sauts des pages, dans les styles destinés à l'impression.
 
-Acutellement, ces propriétés ne sont pas prises en compte dans Firefox: [http://caniuse.com/#feat=css-widows-orphans](http://caniuse.com/#feat=css-widows-orphans)
+Actuellement (janvier 2017), ces propriétés ne sont pas prises en compte dans Firefox: [http://caniuse.com/#feat=css-widows-orphans](http://caniuse.com/#feat=css-widows-orphans)
+
+<h3>Veuves & orphelines à l'échelle d'un mot</h3>
+
+On peut vouloir éviter les veuves et orphelins au niveau du mot, pas de la ligne. Dans ces cas-là, nous n'avons pas de propriété CSS à disposition, mais il est assez facile au moyen du JavaScript de séparer les derniers mots d'un paragraphe par des espaces insécables (`&nbsp;`).
+
+Voici quelques solutions en JavaScript utilisant cette méthode:
+
+[A jQuery “widon’t” snippet](http://justinhileman.info/article/a-jquery-widont-snippet/), par Justin Hileman, 2008
+
+Le code:
+
+```js
+jQuery(function($) {
+    $('h1,h2,h3,li,p').each(function() {
+        $(this).html($(this).html().replace(/\s([^\s<]{0,10})\s*$/,'&nbsp;$1'));
+    });
+});
+```
+
+Une autre variante: [jQWidon’t](http://davecardwell.co.uk/javascript/jquery/plugins/jquery-widont/), par Dave Cardwell, 2006 
+
+Il existe aussi un plugin WordPress, [Widon't Part Deux](https://wordpress.org/plugins-wp/widont-part-deux/), basé sur une solution en PHP proposée par le designer de jeux [Shaun Inman](http://www.shauninman.com/archive/2008/08/25/widont_2_1_1).
 
 Macrotypographie du web
 ------
