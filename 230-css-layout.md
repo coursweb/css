@@ -7,7 +7,7 @@ permalink: /css/layout
 Méthodes de positionnement et mise en page
 ----------
 
-![](/cours-css/img/stores-css.gif)
+> Now, finally, we have real tools for layout. CSS properties that were created to do layout. CSS Grid, Flexbox, Alignment, Writing Modes, Multicolumn, along with, yes, Floats, Positioning, Inline Block, Display Table — just to name a few. – [Jen Simmons](http://jensimmons.com/post/feb-28-2017/benefits-learning-how-code-layouts-css)
 
 Deux bonnes introductions à la mise en page et au positionnement CSS:
 
@@ -18,6 +18,8 @@ Mise en page CSS
 ----------
 
 Depuis le lancement du CSS en 1996, diverses techniques ont été développées pour créer des mises en page avec ce langage.
+
+![Historique de la mise en page CSS, selon Jenn Simmons](/cours-css/img/css-layout-history.png)
 
 Pendant longtemps, des mises en page ont été créées avec le positionnement **"Float"**. Depuis l'introduction du CSS3, on peut utiliser le module **CSS Flexbox**. Pour l'avenir, le module **CSS Grid Layout** propose des solutions intéressantes.
 
@@ -54,7 +56,7 @@ Une nouvelle approche: Flexbox
 
 Flexbox est un module CSS récent, qui propose une manière novatrice de définir des mises en page extrêmement "flexibles". Ce module est récemment passé du statut de "Working Draft" (depuis 2009) à "Candidate Recommendation". 
 
-Dans la pratique, le module Flexbox est déjà bien supporté par les navigateurs. On peut donc envisager son utilisation pour des projets réels. Le framework *Bootstrap* a récemment modifié son système de grille de mise en page pour utiliser Flexbox.
+Dans la pratique, le module Flexbox est déjà [bien supporté](http://caniuse.com/#search=flexbox) par les navigateurs. On peut donc recommander son utilisation pour des projets réels. Le framework *Bootstrap* a récemment modifié son [système de grille](http://getbootstrap.com/css/#grid), qui était basé sur les *floats*, pour utiliser Flexbox (en option depuis 2015 [dans Boostrap 4 alpha](http://blog.getbootstrap.com/2015/08/19/bootstrap-4-alpha/), par défaut [depuis 2017](http://blog.getbootstrap.com/2017/01/06/bootstrap-4-alpha-6/)).
 
 ![Flexbox support](/cours-css/img/flexbox-caniuse.png)
 *Support des navigateurs pour Flexbox (source: [Can I Use](http://caniuse.com/#feat=flexbox), mars 2016)*
