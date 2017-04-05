@@ -51,6 +51,8 @@ Cette méthode présente toutefois des difficultés, quand il s'agit de créer u
 ![Holy Grail Layout](/cours-css/img/holy-grail-div-structure.png)    
 *Une structure HTML complexe pour obtenir le Holy Grail Layout*
 
+> Cela fait des années que l’on torture la propriété float pour gérer la mise en page. On fait avec, mais un véritable moteur de mise en page est une nécessité absolue. - *Dan Cederholm, 2010*
+
 Une nouvelle approche: Flexbox
 ===
 
@@ -75,14 +77,22 @@ Quelques bonnes ressources pour maîtriser ce module CSS:
 [http://philipwalton.github.io/solved-by-flexbox/](http://philipwalton.github.io/solved-by-flexbox/)
 - [Un exemple de Holy Grail layout](https://jsfiddle.net/n7nk0hac/79/), par Belén Albeza
 
-Musique d'avenir: CSS Grid Layout
+CSS Grid Layout
 ===
 
 Le *CSS Grid Layout* est une nouvelle spécification CSS, en cours d'implémentation, qui a le potentiel de révolutionner la mise en page CSS. Comme son nom l'indique, il s'agit d'un modèle de mise en page basé sur une *grille* à deux dimensions, sur laquelle viennent se placer des blocs de contenu.
 
-Cette fonctionalité CSS a été proposée en 2011 par Microsoft, et implémentée à fins de test dans Internet Explorer 10 et 11. Le projet a été repris par le W3C, et est en cours de développement.
+Cette fonctionalité CSS a été proposée en 2011 par Microsoft, et implémentée à fins de test dans Internet Explorer 10 et 11. Le projet a été repris par le W3C, où son développement se poursuit.
 
-Les navigateurs actuels offrent la possiblité aux développeurs de tester ce module CSS, mais il est nécessaire d'activer la fonctionalité. Voici des informations sur la manière de l'activer: [http://igalia.github.io/css-grid-layout/enable.html](http://igalia.github.io/css-grid-layout/enable.html)
+> En début 2017, le module CSS Grid Layout fait son entrée dans les navigateurs. Il est actif dans Firefox 52 (sorti le 7 mars 2017) et Chrome 57 (sorti le 9 mars 2017).
+
+Il est donc désormais possible de l'utiliser, avec la méthode de chargement CSS optionnel @feature:
+
+```css
+@supports ( display: flex ) {
+  .foo { display: flex; }
+}
+```
 
 #### Ressources CSS Grid Module
 
