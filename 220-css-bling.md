@@ -21,6 +21,13 @@ Couleurs CSS
 
 Les couleurs peuvent être exprimés en différents formats:
 
+Background-Color: Yellow;
+Background-Color: #FFFF00;
+Background-Color: RGB(255,255,0);
+
+La couleur jaune peut être définie indifféremment par les trois lignes ci-dessus.
+
+
 #### Par leur nom: 
 
 Il existe quelques 140 couleurs qui sont définies par des mots-clés: on y trouve des couleurs fondamentales comme 
