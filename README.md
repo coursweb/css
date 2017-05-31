@@ -27,5 +27,6 @@ Les contenus sont rédigés en syntaxe Markdown.
 Les auteurs et contributeurs sont:
 
 * Manuel Schmalstieg – artiste, développeur et enseignant.
-* ...
+* Iris Gerbex - étudiante à l'Eracom
+* Trecy Henrioud - étudiante à l'Eracom
 
