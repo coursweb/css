@@ -27,8 +27,22 @@ De plus, le drop shadow conserve la transparence de l'image et suit le contour d
 
 Par contre, cette fonctionnalité ne peut pas étendre son ombre, elle la génère automatiquement.
 
-Pour un bon exemple: https://iamvdo.me/blog/les-filtres-css-opacity-et-drop-shadow
+Pour un bon exemple: [Les filtres CSS opacity et drop-shadow](https://iamvdo.me/blog/les-filtres-css-opacity-et-drop-shadow), par Vincent De Oliveira, 2013
 
+Les filtres CSS sont supportés par les navigateurs depuis plusieurs années (2011 pour Safari, 2015 pour Firefox). Les filtres CSS incluent également:
+
+* blur()
+* brightness()
+* contrast()
+* drop-shadow()
+* grayscale()
+* hue-rotate()
+* invert()
+* opacity()
+* saturate()
+* sepia()
+
+Voir [la documentation Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/filter) pour des exemples détailés.
 
 
 Opacité
@@ -42,9 +56,9 @@ Animation
 
 Transitions et Keyframes
 
-Technique des transitions : utile pour des animations avec un état de début et de fin.
+**Technique des transitions** : utile pour des animations avec un état de début et de fin.
 
-Technique des keyframes : utile pour des animations en boucle, ou avec différentes étapes.
+**Technique des keyframes** : utile pour des animations en boucle, ou avec différentes étapes.
 
 Un exemple: http://www.leemunroe.com//css-transitions/
 
