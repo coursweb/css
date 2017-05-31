@@ -19,6 +19,17 @@ Selon l'article "[CSS3 Bling in the Real World](http://alistapart.com/article/cs
 Drop shadows
 ===
 
+Tout d'abord, qu'est-ce que le drop shadows?
+
+Il s'agit d'une ombre autour d'un élément (à ne pas confondre avec box-shadow, qui ajoute un cadre transparent à l'image et en suite met l'ombre autour!).
+
+De plus, le drop shadow conserve la transparence de l'image et suit le contour de celle-ci.
+
+Par contre, cette fonctionnalité ne peut pas étendre son ombre, elle la génère automatiquement.
+
+
+
+
 Opacité
 ===
 
