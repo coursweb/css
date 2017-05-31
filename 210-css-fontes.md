@@ -185,7 +185,7 @@ On notera que les fontes sont proposées dans quatre formats: eot, woff2, woff, 
 - **woff** : format compressé
 - **woff2** : format compressé
 
-Le support des navigateurs pour les formats woff et woff2 ayant fait des progrès, le site css-tricks propose en 2016 d'utiliser la syntaxe suivante:
+Le support des navigateurs pour les formats woff et woff2 ayant fait des progrès, [le site css-tricks](https://css-tricks.com/snippets/css/using-font-face/) propose en 2016 d'utiliser la syntaxe suivante:
 
 ```css
 @font-face {
