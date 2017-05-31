@@ -27,6 +27,7 @@ De plus, le drop shadow conserve la transparence de l'image et suit le contour d
 
 Par contre, cette fonctionnalité ne peut pas étendre son ombre, elle la génère automatiquement.
 
+Pour un bon exemple: https://iamvdo.me/blog/les-filtres-css-opacity-et-drop-shadow
 
 
 
