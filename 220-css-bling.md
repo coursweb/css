@@ -202,6 +202,23 @@ Support dans les navigateurs: encore non supporté dans Internet Explorer et Edg
 Références: [A List Apart](http://alistapart.com/article/blending-modes-demystified).
 
 Références:
+
+
+
+
+Pour faire un fondu
+On applique un effet de dégradé sur chacun de nos élémentsde liste <li>
+
+exemple:
+ul li {
+      background: linear-gradient (#900, #860083);
+      
+      Ensuite on applique sur chaque lien un fond de couleurs gris 
+      Quand on arrive à notre :hover, on doit faire disparaitre ce fond avec les transitions
+      
+      D'abord 0 seconde et cela nous fait apparaitre un dégradé violet et il disparait en 0,5 
+      Cela donne l'impression que le dégradé disparait.
+      
 ===
 
 - [The box-shadow Property](https://bitsofco.de/the-box-shadow-property/), par Ire Aderinokun.
