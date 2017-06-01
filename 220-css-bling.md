@@ -51,6 +51,43 @@ Opacité
 Rounded corners
 ===
 
+Arrondir les coins est sûrement l'un des effets graphiques les plus recherchés par les webdesigners. Pour cela, on a longtemps utilisé des images avec plus ou moins de bonheur et de facilité pour obtenir l'effet recherché.
+
+Tous les navigateurs récents permettent à présent d'arrondir les coins de cadres, d'images, de tableaux etc. avec une facilité déconcertante.
+
+Arrondir les bords d'un cadre:
+
+Code (X)HTML
+
+<div id="coin">
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Mauris vulputate laoreet urna. Integer magna. 
+  Donec facilisis lectus sed quam. 
+  Curabitur sit amet lacus id lacus facilisis venenatis.
+  </p>
+</div>
+
+Code CSS
+
+Il n'y a normalement plus besoin d'utiliser des préfixes propriétaires tels -moz ou -webkit pour avoir la bonne restitution de l'arrondissement des coins. Néanmoins, pour assurer la compatibilité avec des versions de Firefox antérieures à la 4, ou pour le webkit de vieux smartphones, il vaut mieux encore les laisser.
+
+La propriété border-radius peut accepter 4 valeurs pour l'arrondissement de chaque coins. La 1ère valeur correspond au coin haut gauche, puis on tourne dans le sens des aiguilles d'une montre.
+On peut n'en indiquer que 2, qui correspondront aux coins opposés (voir l'exemple ci-dessous), ou une seule pour un même arrondis sur les 4 coins.
+
+.coin {
+background-color:#E4EFFF;
+border:1px solid #9FC6FF;
+padding:5px;
+/*arrondir les coins en haut à gauche et en bas à droite*/
+-moz-border-radius:10px 0;
+-webkit-border-radius:10px 0;
+border-radius:10px 0;
+}
+
+Lien avec une explication plus détailée "https://www.alsacreations.com/tuto/lire/891-coins-arrondis-css-sans-images.html"
+
+
 Animation
 ===
 
