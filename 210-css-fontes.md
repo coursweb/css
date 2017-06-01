@@ -223,6 +223,9 @@ les fontes du collectif OSP:
 [http://osp.kitchen/foundry/](http://osp.kitchen/foundry/)   
 Limousine, Le Patin Helvète, Crickx...
 
+Google Fonts:
+https://fonts.google.com
+
 les fontes du studio Uplaod:  
 [http://uplaod.fr/allfonts](http://uplaod.fr/allfonts)  
 [https://github.com/uplaod](https://github.com/uplaod)
