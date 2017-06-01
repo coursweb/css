@@ -165,6 +165,8 @@ Exemple avec un angle modifié:
 
 <p style="background: linear-gradient(135deg, red, blue);padding:3em 2em;color:#fff">Le résultat.</p>
 
+![explication de l'angle du dégradé](/cours-css/img/gradients-direction.jpg)
+
 Exemple où on ajoute du noir à mi-chemin (le 50% indique la position sur la longueur du dégradé):
 
 ```css
