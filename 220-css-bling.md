@@ -59,6 +59,7 @@ Arrondir les bords d'un cadre:
 
 Code (X)HTML
 
+```html
 <div id="coin">
   <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -67,6 +68,7 @@ Code (X)HTML
   Curabitur sit amet lacus id lacus facilisis venenatis.
   </p>
 </div>
+```
 
 Code CSS
 
@@ -75,6 +77,7 @@ Il n'y a normalement plus besoin d'utiliser des préfixes propriétaires tels -m
 La propriété border-radius peut accepter 4 valeurs pour l'arrondissement de chaque coins. La 1ère valeur correspond au coin haut gauche, puis on tourne dans le sens des aiguilles d'une montre.
 On peut n'en indiquer que 2, qui correspondront aux coins opposés (voir l'exemple ci-dessous), ou une seule pour un même arrondis sur les 4 coins.
 
+```css
 .coin {
 background-color:#E4EFFF;
 border:1px solid #9FC6FF;
@@ -84,6 +87,7 @@ padding:5px;
 -webkit-border-radius:10px 0;
 border-radius:10px 0;
 }
+```
 
 Lien avec des explications plus détailées "https://www.alsacreations.com/tuto/lire/891-coins-arrondis-css-sans-images.html"
 
