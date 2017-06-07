@@ -49,6 +49,7 @@ img {
 
 ```
 
+![Image de l'exememple](/Eracom/Multimedia_Logique/Cours_web_ch/capture_ecran.png)
 
 
 
