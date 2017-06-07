@@ -42,14 +42,12 @@ img {
 
 	-webkit-filter: drop-shadow(5px 5px 5px white);
 	filter: drop-shadow(5px 5px 5px white);
-
-	//l'ombre portée peut changer de couleur et de largeur//
 	
 }
 
 ```
 
-![Image de l'exememple](/Eracom/Multimedia_Logique/Cours_web_ch/capture_ecran.png)
+![Image de l'exemple](/Users/trecyhenrioud/Desktop/Eracom/Multimedia_Logique/Cours_web_ch/capture_ecran.png)
 
 
 
