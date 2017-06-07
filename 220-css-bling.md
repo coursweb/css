@@ -42,8 +42,6 @@ img {
 
 	-webkit-filter: drop-shadow(5px 5px 5px white);
 	filter: drop-shadow(5px 5px 5px white);
-
-	//l'ombre portée peut changer de couleur et de largeur//
 	
 }
 
