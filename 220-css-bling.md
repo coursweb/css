@@ -27,7 +27,31 @@ De plus, le drop shadow conserve la transparence de l'image et suit le contour d
 
 Par contre, cette fonctionnalité ne peut pas étendre son ombre, elle la génère automatiquement.
 
-Pour un bon exemple: [Les filtres CSS opacity et drop-shadow](https://iamvdo.me/blog/les-filtres-css-opacity-et-drop-shadow), par Vincent De Oliveira, 2013
+Pour un bon exemple: [Les filtres CSS opacity et drop-shadow](https://iamvdo.me/blog/les-filtres-css-opacity-et-drop-shadow), par Vincent De Oliveira, 2013.
+
+Et voici l'exemple de code CSS (il n'y a rien à faire dans le html):
+
+```css
+
+body{
+
+	background-color: blue; 
+}
+
+img {
+
+	-webkit-filter: drop-shadow(5px 5px 5px white);
+	filter: drop-shadow(5px 5px 5px white);
+
+	//l'ombre portée peut changer de couleur et de largeur//
+	
+}
+
+```
+
+
+
+
 
 Les filtres CSS sont supportés par les navigateurs depuis plusieurs années (2011 pour Safari, 2015 pour Firefox). Les filtres CSS incluent également:
 
@@ -45,7 +69,7 @@ Les filtres CSS sont supportés par les navigateurs depuis plusieurs années (20
 Voir [la documentation Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/filter) pour des exemples détailés.
 
 
-Opacité
+
 
 Opacité
 ===
