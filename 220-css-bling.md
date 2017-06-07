@@ -49,7 +49,7 @@ img {
 
 ```
 
-![][Image de l'exemple](/Bureau/Eracom/Multimedia_Logique/Cours_web_ch/capture_ecran.png)
+![Image de l'exemple](/Users/trecyhenrioud/Desktop/Eracom/Multimedia_Logique/Cours_web_ch/capture_ecran.png)
 
 
 
