@@ -223,8 +223,8 @@ les fontes du collectif OSP:
 [http://osp.kitchen/foundry/](http://osp.kitchen/foundry/)   
 Limousine, Le Patin Helvète, Crickx...
 
-Google Fonts:
-https://fonts.google.com
+Google Fonts:   
+[https://fonts.google.com/](https://fonts.google.com)
 
 les fontes du studio Uplaod:  
 [http://uplaod.fr/allfonts](http://uplaod.fr/allfonts)  
@@ -234,7 +234,7 @@ les fontes d'Alfredo Marco Pradil (certaines sous licence libre):
 [https://fontlibrary.org/en/member/hanken](https://fontlibrary.org/en/member/hanken)  
 [https://sellfy.com/hankendesignco](https://sellfy.com/hankendesignco)
 
-Use & Modify, sélection de fontes curatée par Raphael Bastide:  
+Use & Modify, sélection de fontes maintenue par Raphaël Bastide:  
 [http://usemodify.com/](http://usemodify.com/)
 
 Gidole, open-source modern DIN:  
@@ -256,10 +256,10 @@ Grilli Type:
 
 Deux belles fontes mono-espacées:
 
-**Fira mono**   
+**Fira mono**, par Erik Spiekermann   
 [https://github.com/mozilla/Fira](https://github.com/mozilla/Fira)
 
-**Source code pro**   
+**Source code pro**, par Adobe   
 [https://github.com/adobe-fonts/source-code-pro](https://github.com/adobe-fonts/source-code-pro)
 
 Références
