@@ -245,8 +245,8 @@ Work Sans:
 
 Fontes non-libres, mais intéressantes:
 
-Swiss Typefaces
-https://www.swisstypefaces.com
+Swiss Typefaces   
+[https://www.swisstypefaces.com](https://www.swisstypefaces.com)
 
 ECAL Typefaces  
 [https://ecal-typefaces.ch/ ](https://ecal-typefaces.ch/ )
