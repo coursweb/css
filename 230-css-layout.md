@@ -94,6 +94,134 @@ Il est donc désormais possible de l'utiliser, avec la méthode de chargement CS
 }
 ```
 
+Z-index
+===
+Habituellement, les pages HTML sont dites «en 2D» car les éléments (texte, images etc.) s’arrangent sur la page pour ne pas se chevaucher. Par contre, en CSS 2.1, chaque élément est en 3D. En effet, en plus de leur axe vertical (axe Y) et horizontal (axe X), s’ajoute un axe de profondeur perpendiculaire aux autres, l’axe-Z. Cet axe se contrôle avec la propriété CSS Z-index.
+
+![Représentation 3D d'une page HTML](/cours-css/img/z-axis.gif)
+
+
+Le Z-index contrôle l’axe Z et donc l’ordre d’empilement des éléments qui se chevauchent sur une page. Elle permet de décider quel élément va au-dessus ou au-dessous des autres, selon la valeur Z-index attribuée à l’élément. 
+
+#### Les 4 règles du Z-index
+
+1. Les valeurs Z-index les plus élevées sont au premier plan, et les valeurs Z-index plus faibles sont en arrière-plan. 
+
+Exemple:
+
+```
+Un z-index de 2 sera placé au dessus d’un z-index de 1, et un z-index de -1 sera placé au dessus d’un z-index de -2.
+
+```
+
+2. Le Z-index ne concerne que les éléments dont la position n’est pas «static» (= valeur de position par défaut). Il marche donc pour les éléments dont la position est soit relative, absolute ou fixed. 
+
+Exemple:
+
+```css
+div#test1 {z-index: 10;} 
+div#test2 {position: absolute; z-index: 2;}
+```
+- L’élément qui sera au dessus sera div#test2, car il est positionné.
+
+- L’élément qui sera au dessous sera div#test1 (qui ne se place pas au-dessus malgré un Z-index de 10, car il n’est pas positionné).
+
+
+3. En l’absence de valeur Z-index, les éléments s’arrangent selon l’ordre d’apparition dans le code HTML (l’élément apparaissant en dernier apparaît au-dessus des autres).
+
+
+#### Ordre naturel de chevauchement
+
+Sur une page HTML, l’ordre naturel (sans z-index) des éléments sur l’axe Z s’organise comme ceci (de l’élément le plus derrière à l'élément le plus devant):
+
+	Couche 1)	Background + borders d’un élément source
+	
+	Couche 2)	Eléments blocs (sans position, ni float), par ordre d’apparition dans le code HTML
+	
+	Couche 3)	Eléments positionnés, par ordre d’apparition dans le code HTML
+	
+NOTES
+
+- Si plusieurs éléments de même nature (ex: 2 div) se situent sur la même couche, l’ordre d’apparition dans le code HTML fait foi.
+
+- Un élément non-positionné se situera toujours sous un élément positionné, même s’il apparaît plus tard dans l’ordre HTML.
+
+- Si un élément B est au-dessus d’un élément A, un enfant de l’élément A ne pourra jamais être au-dessus de l’élément B (peut importe la hauteur de son z-index).
+
+#### Les 7 niveaux de chevauchement
+
+Sur une page HTML, l’ordre naturel (avec z-index) des éléments sur l’axe Z s’organise comme ceci (de l’élément le plus derrière à l'élément le plus devant):
+
+	Couche 1) Background + borders d’un élément source
+	
+	Couche 2) Z-Index négatifs 
+	
+	Couche 3) Eléments blocs (sans position, ni float)
+	
+	Couche	4) Eléments floats (sans position)
+	
+	Couche 5) Eléments «inline» (sans position)
+	
+	Couche 6) Z-index: 0 + éléments positionnés
+	
+	Couche 7) Z-index positifs + éléments positionnés
+	
+#### Comment ajouter un Z-index?
+
+Initialement, le Z-index par défaut est à valeur «auto».
+Si on veut un ordre spécifique, il faut positionner l’élément et y appliquer la propriété Z-index. 
+
+Voici les valeurs qu’on peut lui appliquer:
+
+1) La valeur auto (valeur de base)
+
+Aucun changement d’ordre n’est appliqué, l’ordre initial HTML prime.
+
+```css 
+z-index: auto;
+```
+
+2) La valeur <INTEGER>
+
+Positive ou négative, cette valeur indique la position de l’élément sur l’axe Z.
+
+```css
+z-index: 0;
+z-index: 3;
+z-index: 289;
+z-index: -1; /* valeur négative afin de descendre la priorité au minimum */
+```
+
+3) Les valeurs globales
+
+```css
+z-index: inherit; /*hérite sa propriété de l’élément qui lui est parent */
+z-index: initial; /*ramène à la valeur par défaut */
+z-index: unset; /*ramène à la valeur par défaut */
+```
+
+#### Bien utiliser le Z-index
+
+Certaines personnes adorent utiliser des valeurs Z-index ridiculement hautes pour être certain que l’élément apparaîtra bien en premier. Mais la meilleure manière de faire est d’incrémenter la valeur de 100 en 100. 
+
+Exemple: 
+
+```
+1) z-index: 0, 
+2) z-index: 100
+2 bis) z-index: 110
+3) z-index: 200
+```
+Avec cette technique, on possède un espace libre au cas où on aurait besoin d’intercaler un élément entre 2 couches 
+(2 bis). Ce champs d’action aurait été restreint si on avait mis les valeurs 1,2 et 3.
+
+#### Navigateurs
+
+Le Z-index est supporté par tous les navigateurs. Cependant, seuls les navigateurs les plus à jour supportent une valeur Z-index négative.
+
+* Site utile: [http://www.cssmojo.com/extras/everything_you_always_wanted_to_know_about_z-index_but_were_afraid_to_ask/)
+
+
 #### Ressources CSS Grid Module
 
 * Support actuel des navigateurs: [http://caniuse.com/#feat=css-grid](http://caniuse.com/#feat=css-grid)
