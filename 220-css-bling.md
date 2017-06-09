@@ -19,55 +19,41 @@ Selon l'article "[CSS3 Bling in the Real World](http://alistapart.com/article/cs
 Drop shadows
 ===
 
-Tout d'abord, qu'est-ce que le drop shadows?
+Tout d'abord, qu'est-ce que les *drop shadows*?
 
-Il s'agit d'une ombre autour d'un élément (à ne pas confondre avec box-shadow, qui ajoute un cadre transparent à l'image et en suite met l'ombre autour!).
+Il s'agit d'une ombre autour d'un élément (à ne pas confondre avec *box-shadow*, qui ajoute un cadre transparent à l'image et ensuite met l'ombre autour!).
 
-De plus, le drop shadow conserve la transparence de l'image et suit le contour de celle-ci.
+De plus, le *drop shadow* conserve la transparence de l'image et suit le contour de celle-ci.
 
 Par contre, cette fonctionnalité ne peut pas étendre son ombre, elle la génère automatiquement.
 
 Pour un bon exemple: [Les filtres CSS opacity et drop-shadow](https://iamvdo.me/blog/les-filtres-css-opacity-et-drop-shadow), par Vincent De Oliveira, 2013.
 
-Et voici l'exemple de code CSS (il n'y a rien à faire dans le html):
+Et voici un exemple de code CSS, qui ajoute une ombre portée blanche à une image:
 
 ```css
-
-body{
-
-	background-color: blue; 
-}
-
 img {
-
 	-webkit-filter: drop-shadow(5px 5px 5px white);
 	filter: drop-shadow(5px 5px 5px white);
-	
 }
-
 ```
 
 ![Illustration de l'exemple](/cours-css/img/filter-drop-shadow.png)
 
+Les **filtres CSS** sont supportés par les navigateurs depuis plusieurs années (2011 pour Safari, 2015 pour Firefox). Les filtres CSS - similiares aux effets visuels de Photoshop - incluent également:
 
-
-
-Les filtres CSS sont supportés par les navigateurs depuis plusieurs années (2011 pour Safari, 2015 pour Firefox). Les filtres CSS incluent également:
-
-* blur()
-* brightness()
-* contrast()
-* drop-shadow()
-* grayscale()
-* hue-rotate()
+* blur() - permet d'ajouter du flou
+* brightness() - modifie la luminosité
+* contrast() - modifie le contraste des couleurs
+* drop-shadow() - ombre-portée (on vient de le voir)
+* grayscale() - niveaux de gris
+* hue-rotate() - modifie la teinte
 * invert()
-* opacity()
-* saturate()
-* sepia()
+* opacity() - modifie l'opacité
+* saturate() - modifie la saturation des couleurs
+* sepia() - donne une teinte monochrome
 
 Voir [la documentation Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/filter) pour des exemples détailés.
-
-
 
 
 Opacité
