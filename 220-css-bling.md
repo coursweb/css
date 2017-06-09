@@ -79,31 +79,19 @@ La fonction a une valeur allant de "0.0" à "1.0". "0.0" est le plus transparent
 	</figure>
 </div>
 
-À noter qu'Internet Explorer 8 et ultérieur n'utilise pas le même code. Il faut utiliser `filter:alpha(opacity=x)`. Le x a une valeur allant de 0 jusqu'à 100, 100 étant le plus opaque. 
+**"Transparent Hover Effect":**
 
-Exemple : 
-
-```css
-img {
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* Pour IE8 et ultérieur */
-}
-```
-
-"Transparent Hover Effect":
-l'effet d'opacité peut être utilisé avec le sélecteur :hover, pour qu'une image transparente devienne opaque quand la souris passe dessus. 
+l'effet d'opacité peut être utilisé avec le sélecteur `:hover`, pour qu'une image transparente devienne opaque quand la souris passe dessus. 
 
 Exemple :
 
 ```css
 img {
     opacity: 0.5;
-    filter: alpha(opacity=50); /* Pour IE8 et ultérieur */
 }
 
 img:hover {
     opacity: 1.0;
-    filter: alpha(opacity=100); /* Pour IE8 et ultérieur */
 }
 ```
 
@@ -114,7 +102,6 @@ Exemple:
 ```css
 img:hover {
     opacity: 0.5;
-    filter: alpha(opacity=50); /* Pour IE8 et ultérieur */
 }
 ```
 
@@ -127,7 +114,6 @@ Exemple:
 ```css
 div {
     opacity: 0.3;
-    filter: alpha(opacity=30); /* Pour IE8 et ultérieur */
 }
 ```
 
@@ -135,7 +121,8 @@ Il est également possible d'utiliser les valeurs colorimétriques RGBA pour l'e
 
 ```css
 div {
-    background: rgba(76, 175, 80, 0.3) /* arrière-plan vert avec 30% d'opacité */
+    background: rgba(76, 175, 80, 0.3)
+    /* arrière-plan vert avec 30% d'opacité */
 }
 ```
 
@@ -155,7 +142,6 @@ div.transbox {
     background-color: #ffffff;
     border: 1px solid black;
     opacity: 0.6;
-    filter: alpha(opacity=60); /* Pour IE8 et ultérieur */
 }
 
 div.transbox p {
@@ -186,7 +172,7 @@ Arrondir les coins est sûrement l'un des effets graphiques les plus recherchés
 
 Tous les navigateurs récents permettent à présent d'arrondir les coins de cadres, d'images, de tableaux etc. avec une facilité déconcertante.
 
-Arrondir les bords d'un cadre:
+**Arrondir les bords d'un cadre:**
 
 Code (X)HTML
 
@@ -201,7 +187,7 @@ Code (X)HTML
 </div>
 ```
 
-Code CSS
+**Code CSS**
 
 Il n'y a normalement plus besoin d'utiliser des préfixes propriétaires tels -moz ou -webkit pour avoir la bonne restitution de l'arrondissement des coins. Néanmoins, pour assurer la compatibilité avec des versions de Firefox antérieures à la 4, ou pour le webkit de vieux smartphones, il vaut mieux encore les laisser.
 
