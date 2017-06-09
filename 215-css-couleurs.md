@@ -12,7 +12,7 @@ Couleurs et dégradés
 Les couleurs CSS
 === 
 
-Les couleurs peuvent être exprimés en différents formats:
+Dans le langage CSS, les couleurs peuvent être exprimées en différentes notations:
 
 ```css
 color: yellow;
@@ -35,7 +35,7 @@ mais aussi des teintes plus originales comme
 <span style="padding: 0 0.3em; background:aquamarine;">aquamarine</span>, 
 <span style="padding: 0 0.3em; background:hotpink;color:white">hotpink</span>, 
 <span style="padding: 0 0.3em; background:tomato;color:white">tomato</span>, 
-<span style="padding: 0 0.3em; background:olive;color:white">olive</span> ...
+<span style="padding: 0 0.3em; background:olive;color:white">olive</span>...
 
 La liste complète peut être consultée: 
 
