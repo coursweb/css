@@ -47,7 +47,7 @@ img {
 
 ```
 
-![Image de l'exemple](/Users/trecyhenrioud/Desktop/Eracom/Multimedia_Logique/Cours_web_ch/capture_ecran.png)
+![Illustration de l'exemple](/cours-css/img/filter-drop-shadow.png)
 
 
 
