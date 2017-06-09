@@ -170,22 +170,19 @@ Code CSS
 
 Il n'y a normalement plus besoin d'utiliser des préfixes propriétaires tels -moz ou -webkit pour avoir la bonne restitution de l'arrondissement des coins. Néanmoins, pour assurer la compatibilité avec des versions de Firefox antérieures à la 4, ou pour le webkit de vieux smartphones, il vaut mieux encore les laisser.
 
-La propriété border-radius peut accepter 4 valeurs pour l'arrondissement de chaque coins. La 1ère valeur correspond au coin haut gauche, puis on tourne dans le sens des aiguilles d'une montre.
+La propriété `border-radius` peut accepter 4 valeurs pour l'arrondissement de chaque coin. La 1ère valeur correspond au coin haut gauche, puis on tourne dans le sens des aiguilles d'une montre.
 On peut n'en indiquer que 2, qui correspondront aux coins opposés (voir l'exemple ci-dessous), ou une seule pour un même arrondis sur les 4 coins.
 
 ```css
 .coin {
-background-color:#E4EFFF;
-border:1px solid #9FC6FF;
-padding:5px;
-/*arrondir les coins en haut à gauche et en bas à droite*/
--moz-border-radius:10px 0;
--webkit-border-radius:10px 0;
-border-radius:10px 0;
+  /*arrondir les coins en haut à gauche et en bas à droite*/
+  border-radius: 10% 0;
 }
 ```
 
-Lien avec des explications plus détailées "https://www.alsacreations.com/tuto/lire/891-coins-arrondis-css-sans-images.html"
+<p style="background: #b701b7; color: #fff; border-radius: 30px 0;padding:3em 2em;">exemple</p>
+
+Lien avec des explications plus détailées: [https://www.alsacreations.com/tuto/lire/891-coins-arrondis-css-sans-images.html](https://www.alsacreations.com/tuto/lire/891-coins-arrondis-css-sans-images.html)
 
 
 Animation
