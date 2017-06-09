@@ -60,22 +60,42 @@ Opacité
 ===
 La fonction opacité permet de gérer la transparence d'un élément.
 
-Opacité d'une image:
-La fonction a une valeur allant de "0.0" à "1.0". "0.0" est le plus transparent et "1.0" le plus opaque.
-(/cours-css/img/opacite02.jpg)(/cours-css/img/opacite05.jpg) (/cours-css/img/opacite1.jpg)
+**Opacité d'une image:**
 
-Veuillez noter qu'Internet Explorer 8 et ultérieur n'utilise pas le même code! Il faut utiliser filter:alpha(opacity=x) le x a une valeur allant de 0 jusqu'à 100, 100 étant le plus opaque. 
+La fonction a une valeur allant de "0.0" à "1.0". "0.0" est le plus transparent et "1.0" le plus opaque.
+
+<div class="flexgallery">
+	<figure>
+		<img src="/cours-css/img/opacite.jpg" style="opacity:1.0">
+		<figcaption>opacité de 1.0</figcaption>
+	</figure>
+	<figure>
+		<img src="/cours-css/img/opacite.jpg" style="opacity:0.5">
+		<figcaption>opacité de 0.5</figcaption>
+	</figure>
+	<figure>
+		<img src="/cours-css/img/opacite.jpg" style="opacity:0.25">
+		<figcaption>opacité de 0.25</figcaption>
+	</figure>
+</div>
+
+À noter qu'Internet Explorer 8 et ultérieur n'utilise pas le même code. Il faut utiliser `filter:alpha(opacity=x)`. Le x a une valeur allant de 0 jusqu'à 100, 100 étant le plus opaque. 
 
 Exemple : 
+
+```css
 img {
     opacity: 0.5;
     filter: alpha(opacity=50); /* Pour IE8 et ultérieur */
 }
+```
 
 "Transparent Hover Effect":
 l'effet d'opacité peut être utilisé avec le sélecteur :hover, pour qu'une image transparente devienne opaque quand la souris passe dessus. 
 
 Exemple :
+
+```css
 img {
     opacity: 0.5;
     filter: alpha(opacity=50); /* Pour IE8 et ultérieur */
@@ -85,27 +105,43 @@ img:hover {
     opacity: 1.0;
     filter: alpha(opacity=100); /* Pour IE8 et ultérieur */
 }
+```
 
 Pour l'effet inverse, il suffit de mettre une valeur inférieur à 1
+
 Exemple:
+
+```css
 img:hover {
     opacity: 0.5;
     filter: alpha(opacity=50); /* Pour IE8 et ultérieur */
 }
+```
 
-Box transparentes 
-Il est possible d'utiliser l'effet d'opacité pour l'arrière-plan, des "box" qui composent la page.L'effet se répetera également sur les éléments se situant dans la box. 
+**Box transparentes**
+
+Il est possible d'utiliser l'effet d'opacité pour l'arrière-plan, des "box" qui composent la page. L'effet se répetera également sur les éléments se situant dans la box. 
+
 Exemple: 
+
+```css
 div {
     opacity: 0.3;
     filter: alpha(opacity=30); /* Pour IE8 et ultérieur */
 }
+```
 
-Il est également possible d'utiliser les valeurs colorimétriques RGBA pour l'effet d'opacité. A utiliser comme dans cet exemple: div {
+Il est également possible d'utiliser les valeurs colorimétriques RGBA pour l'effet d'opacité. A utiliser comme dans cet exemple: 
+
+```css
+div {
     background: rgba(76, 175, 80, 0.3) /* arrière-plan vert avec 30% d'opacité */
 }
+```
 
 Pour que l'arrière-plan d'un texte soit en transparence, suivez l'exemple du code complet d'une page: 
+
+```html
 <html>
 <head>
 <style>
