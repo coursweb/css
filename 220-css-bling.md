@@ -170,7 +170,7 @@ Rounded corners
 
 Arrondir les coins est sûrement l'un des effets graphiques les plus recherchés par les webdesigners. Pour cela, on a longtemps utilisé des images avec plus ou moins de bonheur et de facilité pour obtenir l'effet recherché.
 
-Tous les navigateurs récents permettent à présent d'arrondir les coins de cadres, d'images, de tableaux etc. avec une facilité déconcertante.
+Tous les navigateurs récents permettent à présent (depuis 2008-2011), d'arrondir les coins de cadres, d'images, de tableaux etc. avec une facilité déconcertante.
 
 **Arrondir les bords d'un cadre:**
 
@@ -188,8 +188,6 @@ Code (X)HTML
 ```
 
 **Code CSS**
-
-Il n'y a normalement plus besoin d'utiliser des préfixes propriétaires tels -moz ou -webkit pour avoir la bonne restitution de l'arrondissement des coins. Néanmoins, pour assurer la compatibilité avec des versions de Firefox antérieures à la 4, ou pour le webkit de vieux smartphones, il vaut mieux encore les laisser.
 
 La propriété `border-radius` peut accepter 4 valeurs pour l'arrondissement de chaque coin. La 1ère valeur correspond au coin haut gauche, puis on tourne dans le sens des aiguilles d'une montre.
 On peut n'en indiquer que 2, qui correspondront aux coins opposés (voir l'exemple ci-dessous), ou une seule pour un même arrondis sur les 4 coins.
