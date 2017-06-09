@@ -38,20 +38,20 @@ img {
 }
 ```
 
-![Illustration de l'exemple](/cours-css/img/filter-drop-shadow.png)
+![Exemple d'ombre portée](/cours-css/img/filter-drop-shadow.png)
 
-Les **filtres CSS** sont supportés par les navigateurs depuis plusieurs années (2011 pour Safari, 2015 pour Firefox). Les filtres CSS - similiares aux effets visuels de Photoshop - incluent également:
+Les **filtres CSS** sont supportés par les navigateurs depuis plusieurs années (2011 pour Safari, 2015 pour Firefox). Les filtres CSS - comparables aux effets visuels de Photoshop - incluent également:
 
-* blur() - permet d'ajouter du flou
-* brightness() - modifie la luminosité
-* contrast() - modifie le contraste des couleurs
-* drop-shadow() - ombre-portée (on vient de le voir)
-* grayscale() - niveaux de gris
-* hue-rotate() - modifie la teinte
-* invert()
-* opacity() - modifie l'opacité
-* saturate() - modifie la saturation des couleurs
-* sepia() - donne une teinte monochrome
+* `blur()` - permet d'ajouter du flou
+* `brightness()` - modifie la luminosité
+* `contrast()` - modifie le contraste des couleurs
+* `drop-shadow()` - ombre-portée (on vient de le voir)
+* `grayscale()` - niveaux de gris
+* `hue-rotate()` - modifie la teinte (par rotation du cercle des couleurs)
+* `invert()`
+* `opacity()` - modifie l'opacité
+* `saturate()` - modifie la saturation des couleurs
+* `sepia()` - donne une teinte monochrome
 
 Voir [la documentation Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/filter) pour des exemples détailés.
 
@@ -175,10 +175,9 @@ div.transbox p {
 
 </body>
 </html>
+```
 
-Référence : https://www.w3schools.com/css/css_image_transparency.asp
-
-===
+Référence : [https://www.w3schools.com/css/css_image_transparency.asp](https://www.w3schools.com/css/css_image_transparency.asp)
 
 Rounded corners
 ===
