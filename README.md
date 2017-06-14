@@ -1,4 +1,4 @@
-# cours-css
+# Cours CSS
 
 Support de cours programmation web
 
@@ -18,9 +18,9 @@ Vous pouvez donc l'utiliser librement, y compris dans un contexte professionnel 
 
 ## Contribuer
 
-Les corrections et améliorations sont les bienvenues, et se font par l'intermédiaire du système GIT. Les chapitres (HTML, CSS, WordPress...) sont des "repositories", que vous pouvez clôner, forker, compléter et proposer à la publication.
+Les corrections et améliorations sont les bienvenues, et se font par l'intermédiaire du système [Git](http://cours-web.ch/git/). Les chapitres (HTML, CSS, WordPress...) sont des "repositories", que vous pouvez clôner, forker, compléter et proposer à la publication.
 
-Les contenus sont rédigés en syntaxe Markdown.
+Les contenus sont rédigés en syntaxe [Markdown](http://cours-web.ch/divers/markdown/).
 
 ## Les auteurs
 
@@ -29,11 +29,12 @@ Les auteurs et contributeurs de ce chapitre sont:
 * Manuel Schmalstieg – artiste, développeur et enseignant
 * Iris Gerbex - étudiante à l'Eracom
 * Trecy Henrioud - étudiante à l'Eracom
-* anahe16 - étudiante à l'Eracom
-* lucarchn - étudiant à l'Eracom
-* mbaudois - étudiante à l'Eracom
-* gdevittori - étudiante à l'Eracom
-* ademierre - étudiante à l'Eracom
+* Anahé Marchand - étudiante à l'Eracom
+* Luca Reichenbach - étudiant à l'Eracom
+* Morgane Baudois - étudiante à l'Eracom
+* Giada De Vittori - étudiante à l'Eracom
+* Alison Demierre - étudiante à l'Eracom
+* ...
 
 Voir la liste actualisée sous [https://github.com/coursweb/cours-css/graphs/contributors
 ](https://github.com/coursweb/cours-css/graphs/contributors)
