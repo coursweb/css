@@ -234,6 +234,9 @@ les fontes d'Alfredo Marco Pradil (certaines sous licence libre):
 [https://fontlibrary.org/en/member/hanken](https://fontlibrary.org/en/member/hanken)  
 [https://sellfy.com/hankendesignco](https://sellfy.com/hankendesignco)
 
+les "Hot 30", une sélection de 30 fontes libres, projet de Stefan Endress et Alastair O’Shea:  
+[http://www.open-foundry.com/hot30](http://www.open-foundry.com/hot30)
+
 Use & Modify, sélection de fontes maintenue par Raphaël Bastide:  
 [http://usemodify.com/](http://usemodify.com/)
 
@@ -243,10 +246,16 @@ Gidole, open-source modern DIN:
 Work Sans:  
 [https://github.com/weiweihuanghuang/Work-Sans](https://github.com/weiweihuanghuang/Work-Sans)
 
-Fontes non-libres, mais intéressantes:
+Quelques fonderies Suisses intéressantes:
 
 Swiss Typefaces   
 [https://www.swisstypefaces.com](https://www.swisstypefaces.com)
+
+Fatype
+[https://fatype.com/](https://fatype.com/)
+
+Dinamo Typefaces    
+[http://www.abcdinamo.com/](http://www.abcdinamo.com/)
 
 ECAL Typefaces  
 [https://ecal-typefaces.ch/ ](https://ecal-typefaces.ch/ )
