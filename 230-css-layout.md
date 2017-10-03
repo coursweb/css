@@ -7,7 +7,7 @@ permalink: /css/layout
 Méthodes de positionnement et mise en page
 ----------
 
-> Now, finally, we have real tools for layout. CSS properties that were created to do layout. CSS Grid, Flexbox, Alignment, Writing Modes, Multicolumn, along with, yes, Floats, Positioning, Inline Block, Display Table — just to name a few. – [Jen Simmons](http://jensimmons.com/post/feb-28-2017/benefits-learning-how-code-layouts-css)
+> Now, finally, we have real tools for layout. CSS properties that were created to do layout. **CSS Grid**, **Flexbox**, **Alignment**, **Writing Modes**, **Multicolumn**, along with, yes, Floats, Positioning, Inline Block, Display Table — just to name a few. – [Jen Simmons](http://jensimmons.com/post/feb-28-2017/benefits-learning-how-code-layouts-css)
 
 Deux bonnes introductions à la mise en page et au positionnement CSS:
 
