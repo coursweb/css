@@ -280,7 +280,7 @@ Références majeures sur la typographie web :
 - *[Professional Web Typography](https://prowebtype.com/)*, par Donny Truong, 2015
 - *[Typography Handbook](http://typographyhandbook.com/)*, par Kenneth Wang, 2016 
 
-Articles :
+Articles:
 
 - *[On Web Typography](http://alistapart.com/article/on-web-typography)*, par Jason Santa Maria, 2009
 - *[De la vraie typographie pour le Web](http://www.pompage.net/traduction/de-la-vraie-typographie-pour-le-web)*, par Tim Brown, 2009
