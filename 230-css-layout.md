@@ -221,14 +221,37 @@ Le Z-index est supporté par tous les navigateurs. Cependant, seuls les navigate
 
 * Site utile: [http://www.cssmojo.com/extras/everything_you_always_wanted_to_know_about_z-index_but_were_afraid_to_ask/)
 
+### Masonry
 
-#### Ressources CSS Grid Module
+Un utilitaire Javascript pour produire des mises en page imbriquées (métaphore de la maçonnerie), qui ne sont pas réalisables en pur CSS.
 
-* Support actuel des navigateurs: [http://caniuse.com/#feat=css-grid](http://caniuse.com/#feat=css-grid)
-* Un tutoriel (le site de référence de Rachel Andrew): [http://gridbyexample.com/what/](http://gridbyexample.com/what/)
-* Un autre tutoriel (par Alsa Créations):
-[http://www.alsacreations.com/article/lire/1388-css3-grid-layout.html](http://www.alsacreations.com/article/lire/1388-css3-grid-layout.html)
-* Un livre publié en début 2016 par Rachel Andrew: *Get Ready For CSS Grid Layout*, A Book Apart, 2016
+Il existe différentes librairies produisant cet effet:
+
+**Masonry**  
+Poids: 25 kb
+
+**Salvattore**  
+Poids: 8kb  
+"A jQuery Masonry alternative with CSS-driven configuration."  
+[https://github.com/rnmp/salvattore](https://github.com/rnmp/salvattore)
+
+### Masonry sans JavaScript
+
+Il est possible d'obtenir ce type d'effet en utilisant uniqument du CSS (avec Flexbox) ... mais la limitiation est que ce sont purement des colonnes verticales: les éléments ne sont pas dans un ordre allant du haut vers le bas.
+
+**Driveway**  
+Poids: 4kb (3161 bytes)  
+"pure CSS masonry layout aid"  
+
+* [https://github.com/jh3y/driveway](https://github.com/jh3y/driveway)
+* [http://jh3y.github.io/driveway](http://jh3y.github.io/driveway)
+* [https://medium.com/@_jh3y/how-to-pure-css-masonry-layouts-a8ede07ba31a#.dc110izd7](https://medium.com/@_jh3y/how-to-pure-css-masonry-layouts-a8ede07ba31a#.dc110izd7)
+
+* http://thenewcode.com/844/Easy-Masonry-Layout-With-Flexbox
+* https://codepen.io/dudleystorey/pen/eAqzk - Simple Masonry Layout With Flexbox, A PEN BY Dudley Storey
+* http://w3bits.com/css-masonry/
+* https://codepen.io/AdamBlum/pen/fwrnE
+* https://jsfiddle.net/gabrieleromanato/tQANc/
 
 Références - mise en page CSS:
 ===
