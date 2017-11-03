@@ -37,8 +37,7 @@ Autres propriétés:
 * **text-decoration** : permet d'appliquer un soulignement.
 * **font-stretch** : permet de spécifier l'utilisation d'une fonte *condensed*, *semi-condensed*, *ultra-condensed* etc.
 
-Réglages typographiques avancés
----------
+## Réglages typographiques avancés
 
 - **text-align** (left, right, center, justify) : alignement
 - **text-indent** : retrait de la première ligne d'un paragraphe
@@ -46,8 +45,7 @@ Réglages typographiques avancés
 - **letter-spacing** : espacement des caractères
 - **vertical-align** : alignement sur la ligne de base. Cf. [The vertical-align Property](https://bitsofco.de/the-vertical-align-property/), par Ire Aderinokun.
 
-Retrait
-====
+### Retrait
 
 Pour un retrait de la première ligne, utiliser le code suivant:
 
@@ -64,8 +62,7 @@ p::first-letter {
 }
 ```
 
-Hyphenation, césure
-====
+### Hyphenation, césure
 
 #### La propriété "hyphens"
 
@@ -87,13 +84,12 @@ Les valeurs possibles sont:
 
 - `none` : pas de césure.
 - `auto` : le navigateur applique la césure, en utilisant un dictionnaire de césure (fourni par le système d'exploitation). Pour que cela fonctionne, l'attribut `lang` doit être renseigné (normalement sur la balise html). 
-- `manual` : la césure est uniquement appliqué si des caractères de césure sont présents, càd des tirets visibles, ou des tirets invisibles (*soft hyphen*, rendu par le code html `&shy;`).
+- `manual` : la césure est uniquement appliquée si des caractères de césure sont présents, càd des tirets visibles, ou des tirets invisibles (*soft hyphen*, rendu par le code html `&shy;`).
 
 Lire:  
 [La gestion de la césure en CSS](http://openweb.eu.org/articles/la-gestion-de-la-cesure-en-css), par Nicolas Hoffmann, 2013.
 
-Veuves & orphelines
-====
+## Veuves & orphelines
 
 Le CSS propose des réglages typographiques concernant les lignes [veuves et orphelines](https://fr.wikipedia.org/wiki/Veuves_et_orphelines).
 
@@ -110,7 +106,7 @@ Ces règles peuvent aussi être utilisées pour les sauts des pages, dans les st
 
 Actuellement (janvier 2017), ces propriétés ne sont pas prises en compte dans Firefox: [http://caniuse.com/#feat=css-widows-orphans](http://caniuse.com/#feat=css-widows-orphans)
 
-<h3>Veuves & orphelines à l'échelle d'un mot</h3>
+### Veuves & orphelines à l'échelle d'un mot
 
 On peut vouloir éviter les veuves et orphelins au niveau du mot, pas de la ligne. Dans ces cas-là, nous n'avons pas de propriété CSS à disposition, mais il est assez facile au moyen du JavaScript de séparer les derniers mots d'un paragraphe par des espaces insécables (`&nbsp;`).
 
@@ -132,18 +128,15 @@ Une autre variante: [jQWidon’t](http://davecardwell.co.uk/javascript/jquery/pl
 
 Il existe aussi un plugin WordPress, [Widon't Part Deux](https://wordpress.org/plugins-wp/widont-part-deux/), basé sur une solution en PHP proposée par le designer de jeux [Shaun Inman](http://www.shauninman.com/archive/2008/08/25/widont_2_1_1).
 
-Macrotypographie du web
-------
+## Macrotypographie du web
 
 ![](/cours-css/img/macrotypographie-titres.png)
 
 Exemples de styles appliqués aux titres, tirés de la conférence *[La macrotypographie de la page Web ](http://www.dailymotion.com/video/xfpf08_la-macrotypographie-de-la-page-web-anne-sophie-fradier_tech)*, par Anne-Sophie Fradier (Paris Web, 2010).
 
-CSS3 et Webfonts
-----
+## CSS3 et Webfonts
 
 Depuis les débuts du web, la palette typographique à disposition des designers était limitée à une poignée de fontes (Arial, Verdana, Georgia, Times, Courier...), disponibles sur la grande majorité des systèmes d'exploitation.
-
 
 Méthode classique: le "fontstack". 
 
@@ -160,8 +153,7 @@ body {
 Entre 2008 et 2010, tous les navigateurs ont implémenté le **CSS3 Fonts Module**, permettant de charger des fontes spécifiées par les styles CSS avec la propriété *@font-face*.
 
 
-@Fontface
-===
+### @Fontface
 
 La syntaxe @font-face, optimisée (c'est la version proposée par FontSquirrel):
 
@@ -196,9 +188,7 @@ Le support des navigateurs pour les formats woff et woff2 ayant fait des progrè
 }
 ```
 
-
-Google Fonts
-===
+### Google Fonts
 
 Depuis 2010, Google Fonts est un service d'hébergement gratuit de fontes pour le Web. Ces polices sont sous licences libres. Ceci nous permet d'inclure très rapidement une police dans le code. De plus, les fontes sont rangées par classifications. Elles sont affichées avec un lien de téléchargement, ce qui permet de les obtenir dans plusieurs formats tels que TrueType ou OpenType.
 
@@ -207,8 +197,7 @@ Inclure une fonte Google dans son code:
 Le fonctionnement est simple. Il suffit de choisir une police parmi la liste. Ensuite, en cliquant sur Use this font, on nous demande de suivre les instructions plus bas dans le menu. Ceci générera un lien à copier-coller dans le head de notre HTML et d'utiliser le nom de la typographie dans le CSS.
 
 
-Sources de fontes
-===
+### Sources de fontes
 
 Trouver de bonnes fontes sous licence libre:
 
@@ -271,23 +260,26 @@ Deux belles fontes mono-espacées:
 **Source code pro**, par Adobe   
 [https://github.com/adobe-fonts/source-code-pro](https://github.com/adobe-fonts/source-code-pro)
 
-Références
-----------
+## Références
 
-Références majeures sur la typographie web :
+### Références majeures sur la typographie web :
 
-- *[Using @font-face](https://css-tricks.com/snippets/css/using-font-face/)*, Chris Coyier, 2009
-- *[Professional Web Typography](https://prowebtype.com/)*, par Donny Truong, 2015
-- *[Typography Handbook](http://typographyhandbook.com/)*, par Kenneth Wang, 2016 
+<div class="cards"></div>
 
-Articles:
+- [Using @font-face](https://css-tricks.com/snippets/css/using-font-face/) Chris Coyier, 2009
+- [Professional Web Typography](https://prowebtype.com/) par Donny Truong, 2015
+- [Typography Handbook](http://typographyhandbook.com/) par Kenneth Wang, 2016 
 
-- *[On Web Typography](http://alistapart.com/article/on-web-typography)*, par Jason Santa Maria, 2009
-- *[De la vraie typographie pour le Web](http://www.pompage.net/traduction/de-la-vraie-typographie-pour-le-web)*, par Tim Brown, 2009
-- *[Web Fonts at the Crossing](http://alistapart.com/article/fonts-at-the-crossing)*, par Richard Fink, 2010
-- *[Pour une typographie qui a du sens](http://www.pompage.net/traduction/pour-une-typographie-qui-a-du-sens)*, par Tim Brown, 2011 (en anglais: *More Meaningful Typography*). - Sur le rythme typographique dans le design.
-- *[The Value of Multi-Typeface Design](https://blog.prototypr.io/the-value-of-multi-typeface-design-ccd67227b0ee#.a6neeidbw)*, par Bethany Heck, 2016. - Sur l'art de combiner plusieurs fontes. 
-- *[CSS Font Sizing](https://bitsofco.de/css-font-sizing/)*, par Ire Aderinokun, 2015.
+### Articles:
+
+<div class="cards"></div>
+
+- [On Web Typography](http://alistapart.com/article/on-web-typography) par Jason Santa Maria, 2009
+- [De la vraie typographie pour le Web](http://www.pompage.net/traduction/de-la-vraie-typographie-pour-le-web) par Tim Brown, 2009
+- [Web Fonts at the Crossing](http://alistapart.com/article/fonts-at-the-crossing) par Richard Fink, 2010
+- [Pour une typographie qui a du sens](http://www.pompage.net/traduction/pour-une-typographie-qui-a-du-sens) par Tim Brown, 2011 (en anglais: *More Meaningful Typography*). - Sur le rythme typographique dans le design.
+- [The Value of Multi-Typeface Design](https://blog.prototypr.io/the-value-of-multi-typeface-design-ccd67227b0ee#.a6neeidbw) par Bethany Heck, 2016. - Sur l'art de combiner plusieurs fontes. 
+- [CSS Font Sizing](https://bitsofco.de/css-font-sizing/) par Ire Aderinokun, 2015.
 
 
 
