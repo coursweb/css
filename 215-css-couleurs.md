@@ -43,7 +43,7 @@ La liste complète peut être consultée:
 * sur [HTMLColorCodes.com](http://htmlcolorcodes.com/)
 * dans la [spécification W3C](https://www.w3.org/TR/css3-color/#svg-color)
 
-<h4>Code héxadécimal</h4>
+#### Code héxadécimal
 
 Le code hexadécimal (ou *triplet hexadécimal*) est une manière d'exprimer les couleurs du modèle RVB (en anglais: RGB). En RVB, la valeur du rouge (R), vert (V) et bleu (B) sont définis sur un intervalle allant de zéro à 255, ou de 00 à FF en notation hexadécimale. 
 
