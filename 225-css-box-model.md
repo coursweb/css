@@ -15,8 +15,19 @@ Le modèle de mise en page du HTML / CSS repose sur un principe de "boîtes" (en
 - **Marge intérieure** (padding)
 - **Marge extérieure** (margin)
 
+### Le border-collapsing
+
+Le comportement "border-collapsing" peut être surprenant: en cas de juxtaposition verticale, les marges verticales de deux éléments qui se suivent ne sont pas additionnées – elles "fusionnent". C'est uniquement la plus grande des deux marges qui est appliquée.
+
+Exemple: une suite de paragraphes ayant chacun une marge verticale (haut / bas) de 10px. Les marges de deux paragraphes ne s'aditionnent pas, l'espace entre deux paragraphes reste 10px (pas 20px).
+
+
 La propriété box-sizing: border-box
 -----------------------------------
+
+Le *modèle de boîte* (box-model) utilisé par les navigateurs est de type "content-box". Si on donne une largeur à un élément, cela ne concerne pas les marges intérieures et extérieures. Un élément auquel on donnerait une largeur de 500px, et des marges intérieures (padding) de 25px, aurait une largeur effective de 550px.
+
+![Comparaison de deux logiques Box-Model](/cours-css/img/box-model-comparison.png)
 
 La propriété **box-sizing**, ajoutée en CSS3, permet de définir la manière dont la largeur d'un élément est calculée. Les valeurs possibles sont `content-box` et `border-box`.
 

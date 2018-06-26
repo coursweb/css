@@ -14,7 +14,10 @@ Quelques articles:
 
 Comment organiser ses feuilles de style? Un exemple: [la méthode Daisy](http://daisy.tetue.net/), proposée par Romy Duhem-Verdière.
 
-Les recommandations de Nicole Sullivan.
+Deux expertes qui ont donné d'excellentes conférences sur les bonnes pratiques en CSS:
+
+* Nicole Sullivan.
+* Nathalie Downe, l'une des premières à parler de systèmes de design : voir les slides de ses présentations *[CSS Systems](http://fr.slideshare.net/nataliedowne/css-systems-presentation/2-WRITING_MAINTAINABLE_CSSNatalie_Downe_Barcamp)* (2008) et *Practical, maintainable CSS* (2009).
 
 Outils et méthodes
 -------------
@@ -23,6 +26,8 @@ Des principes pour nommer les classes CSS. Par exemple, la méthode BEM: “Bloc
 
 Frameworks CSS
 ===
+
+Quelques frameworks CSS en utilisation:
 
 * [ZURB Foundation](http://foundation.zurb.com/) - lancé en 2011 par ZURB, une agence de design californienne.
 * [Bootstrap](http://getbootstrap.com/) - lancé en 2011 par Mark Otto et Jacob Thornton, développeurs chez Twitter.
@@ -40,15 +45,15 @@ Anciens frameworks (aperçu historique):
 
 Une [liste de frameworks CSS](https://en.wikipedia.org/wiki/CSS_frameworks) sur Wikipédia.
 
-L'utilisation d'un Framework n'est pas forcément une bonne pratique: lire l'article de Belén Albeza, [You might not need a CSS framework](https://hacks.mozilla.org/2016/04/you-might-not-need-a-css-framework/).
+L'utilisation d'un Framework n'est pas forcément une bonne pratique: lire l'article de Belén Albeza, *[You might not need a CSS framework](https://hacks.mozilla.org/2016/04/you-might-not-need-a-css-framework/)*.
 
 En 2012, Jacob Thornton, co-auteur de Bootstrap, [écrivait](http://byfat.xxx/deep-emo-shit):
 
-> For me, Bootstrap is very fun, not serious – nearly every line is a joke. It’s trying to provoke you. Taking shortcuts. Demanding that you reread it. Reread it again. It’s very pop. Very optimistic, yung. Forward. Playful.
+> For me, Bootstrap is very fun, not serious – nearly every line is a joke. It’s trying to provoke you. Taking shortcuts. Demanding that you reread it. Reread it again. It’s very pop. Very optimistic. Forward. Playful.
 
-En 2017, avec l'arrivée de module CSS Grids dans les navigateurs, il n'est plus très pertinent d'utiliser une grille préconçue par un framework - il est tout aussi facile de la créer en CSS.
+En 2017, avec l'arrivée du module **CSS Grids** dans les navigateurs, il n'est plus très pertinent d'utiliser une grille préconçue par un framework - il est tout aussi facile de la créer directement en CSS.
 
-Afin d'illustrer cela, Jen Simmons crée un framework parodique, [960 Grid Grid Grid](https://github.com/jensimmons/960gridgridgridme/blob/gh-pages/css/960gridgridgrid.css) : "a silly project from someone who is starting to hate 12-column symmetrical grid frameworks"
+Afin d'illustrer cela, Jen Simmons a créé un framework parodique, [960 Grid Grid Grid](https://github.com/jensimmons/960gridgridgridme/blob/gh-pages/css/960gridgridgrid.css) : "a silly project from someone who is starting to hate 12-column symmetrical grid frameworks"
 
 Préprocesseurs (Less, Sass...)
 

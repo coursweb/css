@@ -104,6 +104,12 @@ Il est donc désormais possible de l'utiliser, avec la méthode de chargement CS
 
 ### Z-index
 
+Disposition verticale des éléments d'une page web. On contrôle l'ordre vertical des éléments avec la propriété z-index. Plus cette valeur est grande, plus un élément se trouve propulsé vers le "devant" de la scène.
+
+![](/cours-css/img/z-index-stack.png)
+
+
+
 Habituellement, les pages HTML sont dites «en 2D» car les éléments (texte, images etc.) s’arrangent sur la page pour ne pas se chevaucher. Par contre, en CSS 2.1, chaque élément est en 3D. En effet, en plus de leur axe vertical (axe Y) et horizontal (axe X), s’ajoute un axe de profondeur perpendiculaire aux autres, l’axe-Z. Cet axe se contrôle avec la propriété CSS Z-index.
 
 ![Représentation 3D d'une page HTML](/cours-css/img/z-axis.gif)
@@ -210,6 +216,8 @@ Avec cette technique, on possède un espace libre au cas où on aurait besoin d�
 Le Z-index est supporté par tous les navigateurs. Cependant, seuls les navigateurs les plus à jour supportent une valeur Z-index négative.
 
 * Site utile: [http://www.cssmojo.com/](http://www.cssmojo.com/extras/everything_you_always_wanted_to_know_about_z-index_but_were_afraid_to_ask/)
+
+Lire: *[How z-index Works](https://bitsofco.de/how-z-index-works/)*, par Ire Aderinokun.
 
 ### Masonry
 

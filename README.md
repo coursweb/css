@@ -2,13 +2,13 @@
 
 Support de cours programmation web
 
-En ligne sous: [http://cours-web.ch/](http://cours-web.ch/)
+En ligne sous: [https://cours-web.ch/](https://cours-web.ch/)
 
 ## À propos
 
 Ceci est un support de cours, visant à accompagner l'apprentissage de la programmation web. Les matières traitées sont: le langage HTML, les styles CSS, la conception de sites avec WordPress.
 
-Ce support de cours accompagne entre autres les cours donnés à l'Eracom (Lausanne), à l'Ecole d'Art Appliqués de La Chaux-de-Fonds, ainsi que les modules de formation du [Collectif WP](http://collectifwp.ch) (Genève).
+Ce support de cours accompagne entre autres les cours donnés à l'Eracom (Lausanne) et à l'Ecole d'Art Appliqués de La Chaux-de-Fonds.
 
 ## Licence
 

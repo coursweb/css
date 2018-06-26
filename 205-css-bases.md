@@ -48,7 +48,7 @@ Tous les sélecteurs CSS ne sont pas égaux. Certains sélecteurs sont plus "pui
 
 Voici comment la documentation du W3C explique le principe:
 
-![Régles de spécificité dans la documentation CSS du W3C](/cours-css/img/selector-specificity-W3C.png)
+![Régles de spécificité dans la documentation CSS du W3C](/cours-css/img/specificity/selector-specificity-W3C.png)
 
 Quelques exemples:
 
@@ -74,7 +74,7 @@ ul li {
 }
 ```
 
-Si on utilise deux sélecteurs de même type, leur puissance s'additionne. Ici, on aura une valeur de (a=0 b=0 c=2), donc 2.
+Si on utilise deux sélecteurs de même type, leur puissance s'additionne. Avec le code qui précède, on aura une valeur de (a=0 b=0 c=2), donc 2.
 
 ```css
 .red {
@@ -84,39 +84,52 @@ Si on utilise deux sélecteurs de même type, leur puissance s'additionne. Ici, 
 
 On utilise maintenant sélecteur de type "classe". Un monte d'un niveau de puissance (a=0 b=1 c=0), ce qui se traduit par une spécificité de 10.
 
+```css
+header .red {
+    color: red;
+}
+```
 
+Ici le résultat sera (a=0 b=1 c=1), autrement dit: 11.
+
+```css
+#sidebar {
+    color: red;
+}
+```
+
+Avec l'utilisation d'un sélecteur ID (#), on monte au troisième niveau de puissance. La valeur de ce sélecteur sera (a=1 b=0 c=0), autrement dit: 100.
+
+Les différences de puissance entre les sélecteurs font que l'ordre de la "cascade CSS" ne s'applique pas forcéement.
+
+Par exemple dans ce code:
+
+```css
+#sidebar a { color: blue; }
+.header nav > a { color: red }
+```
+
+De manière non intuitive, c'est la ligne du haut (couleur bleue) qui s'applique, car sa spécificité est plus puissante que celle du bas (100 vs. 12)
+
+Pour mieux comprendre ce principe, des designers ont créés des explicatifs visuels:
+
+Visualisation basée sur The Shining: http://cdn.w3cplus.com/sites/default/files/blogs/2013/1312/CSS_Specificity.jpg
+
+Visualisation basée sur Star Wars, [Specificity Wars](http://blog4coders.com/wp-content/uploads/2014/07/rsz_specificitywars-05v2-800x637.jpg), par Andy Clarke (créé en 2005, mis à jour en 2018).
+
+![Specificity Wars](/cours-css/img/specificity/css-specificity-wars.png)
+
+Visualisation aquatique, [CSS SpeciFISHity](http://www.standardista.com/css3/css-specificity/), par Estelle Weyl.
 
 Specificity:
 [https://designshack.net/articles/css/what-the-heck-is-css-specificity/](https://designshack.net/articles/css/what-the-heck-is-css-specificity/)
 
-Calculateur de spécificté: [http://specificity.keegan.st/](http://specificity.keegan.st/)
+Calculateur de spécificité: [http://specificity.keegan.st/](http://specificity.keegan.st/)
 
-Visualisation basée sur The Shining: http://cdn.w3cplus.com/sites/default/files/blogs/2013/1312/CSS_Specificity.jpg
 
-Visualisation basée sur Star Wars: http://blog4coders.com/wp-content/uploads/2014/07/rsz_specificitywars-05v2-800x637.jpg
 
 ![](/cours-css/img/Strip-CSS-respect-650-final.jpg)
 
-### Le modèle de boîte
-
-Le *modèle de boîte* (box-model) utilisé par les navigateurs est de type "content-box". Si on donne une largeur à un élément, cela ne concerne pas les marges intérieures et extérieures. Un élément auquel on donnerait une largeur de 500px, et des marges intérieures (padding) de 25px, aurait une largeur effective de 550px.
-
-Il est possible de modifier ce comportement avec la propriété `box-sizing`. Voir le chapitre **[CSS Layout](layout)** pour plus de détails.
-
-
-### Le border-collapsing
-
-Le comportement "border-collapsing" peut être surprenant: en cas de juxtaposition verticale, les marges verticales de deux éléments qui se suivent ne sont pas additionnées – elles "fusionnent". C'est uniquement la plus grande des deux marges qui est appliquée.
-
-Exemple: une suite de paragraphes ayant chacun une marge verticale (haut / bas) de 10px. Les marges de deux paragraphes ne s'aditionnent pas, l'espace entre deux paragraphes reste 10px (pas 20px).
-
-### Stacking context
-
-Disposition verticale des éléments d'une page web. On contrôle l'ordre vertical des éléments avec la propriété z-index. Plus cette valeur est grande, plus un élément se trouve propulsé vers le "devant" de la scène.
-
-![](/cours-css/img/z-index-stack.png)
-
-Lire: *[How z-index Works](https://bitsofco.de/how-z-index-works/)*, par Ire Aderinokun.
 
 Ressources et références
 ---
