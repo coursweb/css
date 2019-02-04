@@ -219,33 +219,42 @@ Le Z-index est supporté par tous les navigateurs. Cependant, seuls les navigate
 
 Lire: *[How z-index Works](https://bitsofco.de/how-z-index-works/)*, par Ire Aderinokun.
 
-### Masonry
+### L'effet Masonry
 
-Un utilitaire Javascript pour produire des mises en page imbriquées (métaphore de la maçonnerie), qui ne sont pas réalisables en pur CSS.
+Masonry est un utilitaire Javascript pour produire des mises en page imbriquées (métaphore de la maçonnerie), qui ne sont pas réalisables en pur CSS.
 
-Il existe différentes librairies produisant cet effet:
+Il existe différentes librairies JavaScript produisant cet effet:
 
 **Masonry**  
-Poids: 25 kb
+Poids: 25 kb  
+[L'original](https://masonry.desandro.com/), créé par David DeSandro [en 2008](https://metafizzy.co/blog/beginning/). La v2 est sortie en 2011, la v3 (sans jQuery) en 2013.
 
 **Salvattore**  
 Poids: 8kb  
 "A jQuery Masonry alternative with CSS-driven configuration."  
-[https://github.com/rnmp/salvattore](https://github.com/rnmp/salvattore)
+[https://github.com/rnmp/salvattore](https://github.com/rnmp/salvattore)  
+N'est plus maintenu depuis 2018.
+
+**Macy.js**  
+Poids:  10kb  
+"A lightweight, dependency-free masonry layout library."  
+[http://macyjs.com/](http://macyjs.com/)
 
 ### Masonry sans JavaScript
 
-Il est possible d'obtenir ce type d'effet en utilisant uniqument du CSS (avec Flexbox) ... mais la limitiation est que ce sont purement des colonnes verticales: les éléments ne sont pas dans un ordre allant du haut vers le bas.
+Il est possible d'obtenir ce type d'effet en utilisant uniqument du CSS (avec Flexbox ou les colonnes CSS) ... mais il y a une limitiation: vous aurez des colonnes verticales. Les éléments ne seront pas dans un ordre de lecture horizontal.
 
 **Driveway**  
 Poids: 4kb (3161 bytes)  
 "pure CSS masonry layout aid"  
+Code: [https://github.com/jh3y/driveway](https://github.com/jh3y/driveway)  
+Demo: [http://jh3y.github.io/driveway](http://jh3y.github.io/driveway)
 
-* [https://github.com/jh3y/driveway](https://github.com/jh3y/driveway)
-* [http://jh3y.github.io/driveway](http://jh3y.github.io/driveway)
-* [https://medium.com/@_jh3y/how-to-pure-css-masonry-layouts-a8ede07ba31a#.dc110izd7](https://medium.com/@_jh3y/how-to-pure-css-masonry-layouts-a8ede07ba31a#.dc110izd7)
+Divers tutoriaux:
 
-* http://thenewcode.com/844/Easy-Masonry-Layout-With-Flexbox
+* *[HOW TO: Pure CSS masonry layouts](https://medium.com/@_jh3y/how-to-pure-css-masonry-layouts-a8ede07ba31a#.dc110izd7)*, par Jhey Tompkins, 2016.
+* *[Masonry style layout with CSS Grid](https://medium.com/@andybarefoot/a-masonry-style-layout-using-css-grid-8c663d355ebb)*, par Andy Barefoot, 2017.
+* [Easy Masonry Layout With Flexbox](http://thenewcode.com/844/Easy-Masonry-Layout-With-Flexbox), par Dudley Storey, 2014.
 * https://codepen.io/dudleystorey/pen/eAqzk - Simple Masonry Layout With Flexbox, A PEN BY Dudley Storey
 * http://w3bits.com/css-masonry/
 * https://codepen.io/AdamBlum/pen/fwrnE
