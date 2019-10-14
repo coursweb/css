@@ -4,8 +4,7 @@ title: CSS - bonnes pratiques
 permalink: /css/bonnes-pratiques
 ---
 
-Bonnes pratiques - écrire du bon CSS
--------------
+# Bonnes pratiques - écrire du bon CSS
 
 Quelques articles:
 
@@ -19,13 +18,11 @@ Deux expertes qui ont donné d'excellentes conférences sur les bonnes pratiques
 * Nicole Sullivan.
 * Nathalie Downe, l'une des premières à parler de systèmes de design : voir les slides de ses présentations *[CSS Systems](http://fr.slideshare.net/nataliedowne/css-systems-presentation/2-WRITING_MAINTAINABLE_CSSNatalie_Downe_Barcamp)* (2008) et *Practical, maintainable CSS* (2009).
 
-Outils et méthodes
--------------
+## Outils et méthodes
 
 Des principes pour nommer les classes CSS. Par exemple, la méthode BEM: “Block, Element, Modifier” - [https://en.bem.info/methodology/](https://en.bem.info/methodology/)
 
-Frameworks CSS
-===
+### Frameworks CSS
 
 Quelques frameworks CSS en utilisation:
 
@@ -55,7 +52,7 @@ En 2017, avec l'arrivée du module **CSS Grids** dans les navigateurs, il n'est 
 
 Afin d'illustrer cela, Jen Simmons a créé un framework parodique, [960 Grid Grid Grid](https://github.com/jensimmons/960gridgridgridme/blob/gh-pages/css/960gridgridgrid.css) : "a silly project from someone who is starting to hate 12-column symmetrical grid frameworks"
 
-Préprocesseurs (Less, Sass...)
+### Préprocesseurs (Less, Sass...)
 
 Autoprefixer:    
 [https://github.com/postcss/autoprefixer](https://github.com/postcss/autoprefixer)
@@ -67,21 +64,3 @@ Autoprefixer:
 [Enduring CSS](http://ecss.io/) - A guide to writing style sheets for large scale, rapidly changing, long-lived web projects - par Ben Frain. 
 
 [http://tympanus.net/codrops/2013/07/17/troubleshooting-css/](http://tympanus.net/codrops/2013/07/17/troubleshooting-css/)
-
-Aller plus loin - ressources
-------------
-
-Des blogs traitant de CSS:
-
-**En français:** 
-
-- [Gobanclub.net](http://Gobanclub.net)   
-- [letrainde13h37.fr](http://letrainde13h37.fr)
-- [OpenWeb](http://openweb.eu.org/) - site du collectif OpenWebGroup
-- [La Cascade](https://la-cascade.io) - un blog consacré à la traduction en français de textes du web anglophone sur HTML, CSS, JavaScript, mais aussi sur le design, les métadonnées, les outils de construction.
-- [Pompage](http://www.pompage.net/) - créé en 2001 par Stephanie Booth pour répondre à un besoin évident parmi la communauté francophone du web design, en proposant des traductions d'articles.
-
-**En anglais:**
-
-- [bitsofcode](https://bitsofco.de/), le blog de Ire Aderinokun, UI Designer et Front-End Developer.
-- [The New Code](http://thenewcode.com/), le blog de Dudley Storey, auteur du livre *Pro CSS Animation*.
