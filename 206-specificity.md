@@ -90,6 +90,8 @@ Calculateur de spécificité: [http://specificity.keegan.st/](http://specificity
 
 ![](/cours-css/img/Strip-CSS-respect-650-final.jpg)
 
+Un autre calculateur sous forme de graphique: https://jonassebastianohlsson.com/specificity-graph/
+
 ## Ressources
 
 Un article très détaillé:

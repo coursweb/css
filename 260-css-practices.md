@@ -20,7 +20,11 @@ Deux expertes qui ont donné d'excellentes conférences sur les bonnes pratiques
 
 ## Outils et méthodes
 
-Des principes pour nommer les classes CSS. Par exemple, la méthode BEM: “Block, Element, Modifier” - [https://en.bem.info/methodology/](https://en.bem.info/methodology/)
+Des principes pour nommer les classes CSS, et structurer les feuilles de styles. Voici des méthodes parmi les plus connues:
+
+- la méthode BEM: “Block, Element, Modifier” - [https://en.bem.info/methodology/](https://en.bem.info/methodology/)
+- ITCSS - "[Inverted Triangle CSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)", par Harry Roberts de CSSwizardry.com
+- [SMACSS](http://smacss.com/) - "Scalable and Modular Architecture for CSS", par Jonathan Snook
 
 ### Frameworks CSS
 
