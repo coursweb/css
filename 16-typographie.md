@@ -10,12 +10,12 @@ Les propriétés typographiques du CSS.
 
 ## Six propriétés basiques pour les fontes
 
-1. color - la couleur du texte
-2. font-family - la police typographique
-3. font-size - la taille
-4. font-weight - la graisse
-5. font-style - normal ou italique
-6. text-decoration - p.ex. texte souligné
+1. `color` - la couleur du texte
+2. `font-family` - la police typographique
+3. `font-size` - la taille
+4. `font-weight` - la graisse
+5. `font-style` - normal ou italique
+6. `text-decoration` - p.ex. texte souligné
 
 Exemple
 
@@ -35,10 +35,10 @@ h1 {
 Les propriétés suivantes vous aideront à mettre un texte en page:
 
 
-- text-align : alignement (gauche, droite, centré, justifié)
-- line-height : s
-- Letter and Word spacing
-- text-indent
+- `text-align` : alignement (gauche, droite, centré, justifié)
+- `line-height` : hauteur des lignes, interlignage
+- `letter-spacing` : espacement des lettres
+- `text-indent` : indentation de la première ligne
 
 Exemple de ces propriétés en action
 
