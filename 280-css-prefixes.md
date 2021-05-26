@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Préfixes
-permalink: /css/prefixes/
+permalink: prefixes.html
 ---
 
 

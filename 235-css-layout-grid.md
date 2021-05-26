@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CSS Layout - Grid
-permalink: /css/grid-layout
+permalink: grid-layout.html
 ---
 
 Le *CSS Grid Layout* est une nouvelle spécification CSS, en cours d'implémentation, qui a le potentiel de révolutionner la mise en page CSS. Comme son nom l'indique, il s'agit d'un modèle de mise en page basé sur une *grille* à deux dimensions, sur laquelle viennent se placer des blocs de contenu.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Couleurs
-permalink: /css/color
+permalink: color.html
 ---
 
 
@@ -49,13 +49,13 @@ Le code hexadécimal (ou *triplet hexadécimal*) est une manière d'exprimer les
 
 Voici trois chats dont les couleurs sont traduites en notation hexadécimale (de manière approximative, 000000 devrait correspondre au noir absolu):
 
-![Chats avec codes hex](/cours-css/img/funny-pictures-hexcode-colors.jpg)
+![Chats avec codes hex](img/funny-pictures-hexcode-colors.jpg)
 
 Le nombre total de couleurs possibles est de 256 * 256 * 256, càd quelques 16'777'216 teintes. C'est beaucoup plus que le nuancier pantone, qui n'en comporte que 992!
 
 Dans son œuvre *[#BADA55 in a Can](http://www.evan-roth.com/work/bada55-in-a-can/)* (2008), l'artiste Evan Roth propose de créer des peintures murales "badass" en utilisant le vert correspondant au code hexadécimal #BADA55:
 
-![#BADA55 in a Can](/cours-css/img/bada55-paint-can.JPG)
+![#BADA55 in a Can](img/bada55-paint-can.JPG)
 
 Si les caractères sont dédoublés, la triplette peut être racourcie à trois chiffres: 
 
@@ -98,7 +98,7 @@ Une nouvelle manière de représenter les couleurs a été introduite avec le CS
 
 * **H - Hue**: la teinte (en anglais: *Hue*) correspond à une position (un angle) sur le cercle chromatique. Cet angle est mesuré en degrés, mais il est indiqué sans unité en CSS. Le point de départ du cercle (0 ou 360°) correspond au <span style="color:hsl(0, 100%, 50%)">rouge</span>. Les couleurs sont réparties sur ce cercle, le <span style="color:hsl(120, 100%, 50%);background:#fff">vert</span> se trouvant au premier tiers (120°), le <span style="color:hsl(180, 100%, 50%);background:#fff">cyan</span> à mi-parcours (180°) et le <span style="color:hsl(240, 100%, 50%)">bleu</span> aux deux tiers (240°). 
 
-![Modèle HSL](/cours-css/img/HSL-model.png)
+![Modèle HSL](img/HSL-model.png)
 
 La saturation et la luminosité sont exprimés en pourcentage. 
 
@@ -165,7 +165,7 @@ Exemple avec un angle modifié:
 
 <p style="background: linear-gradient(135deg, red, blue);padding:3em 2em;color:#fff">Le résultat.</p>
 
-![explication de l'angle du dégradé](/cours-css/img/gradients-direction.jpg)
+![explication de l'angle du dégradé](img/gradients-direction.jpg)
 
 Exemple où on ajoute du noir à mi-chemin (le 50% indique la position sur la longueur du dégradé):
 

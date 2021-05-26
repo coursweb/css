@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CSS - références
-permalink: /css/references
+permalink: references.html
 ---
 
 ## Apprendre les bases du CSS

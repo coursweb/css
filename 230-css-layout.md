@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CSS Layout
-permalink: /css/layout
+permalink: layout.html
 ---
 
 Méthodes de positionnement et mise en page
@@ -19,11 +19,11 @@ Mise en page CSS
 
 Depuis le lancement du CSS en 1996, diverses techniques ont été développées pour créer des mises en page avec ce langage.
 
-![Historique de la mise en page CSS, selon Jenn Simmons](/cours-css/img/css-layout-history.png)
+![Historique de la mise en page CSS, selon Jenn Simmons](img/css-layout-history.png)
 
 Pendant longtemps, des mises en page ont été créées avec le positionnement **"Float"**. Depuis l'introduction du CSS3, on peut utiliser le module **CSS Flexbox**. Pour l'avenir, le module **CSS Grid Layout** propose des solutions intéressantes.
 
-![](/cours-css/img/Strips-Vieux-coder-VS-jeune-codeur.jpg)
+![](img/Strips-Vieux-coder-VS-jeune-codeur.jpg)
 
 Positionnement avec Float
 ===
@@ -44,11 +44,11 @@ Pour maîtriser la méthode de mise en page CSS préconisée, il est essentiel d
 - **float** (valeurs possibles: left, right)
 - **clear** (valeurs possibles: left, right, both)
 
-![Un exemple d'utilisation de {float: left}](/cours-css/img/layout-float2p.png)
+![Un exemple d'utilisation de {float: left}](img/layout-float2p.png)
 
 Cette méthode présente toutefois des difficultés, quand il s'agit de créer une mise en page flexible (avec des largeurs de colonnes exprimées en pourcentage). Dans le jargon, on parle du "Holy Grail Layout" (le *Saint Graal* de la mise en page), qui comprend deux colonnes à largeur fixe (les barres latérales), et un contenu central à largeur flexible (qui augmentera avec la taille de l'écran).
 
-![Holy Grail Layout](/cours-css/img/holy-grail-div-structure.png)    
+![Holy Grail Layout](img/holy-grail-div-structure.png)    
 *Une structure HTML complexe pour obtenir le Holy Grail Layout*
 
 > Cela fait des années que l’on torture la propriété float pour gérer la mise en page. On fait avec, mais un véritable moteur de mise en page est une nécessité absolue. - *Dan Cederholm, 2010*
@@ -60,7 +60,7 @@ Flexbox est un module CSS récent, qui propose une manière novatrice de défini
 
 Dans la pratique, le module Flexbox est déjà [bien supporté](http://caniuse.com/#search=flexbox) par les navigateurs. On peut donc recommander son utilisation pour des projets réels. Le framework *Bootstrap* a récemment modifié son [système de grille](http://getbootstrap.com/css/#grid), qui était basé sur les *floats*, pour utiliser Flexbox (en option depuis 2015 [dans Boostrap 4 alpha](http://blog.getbootstrap.com/2015/08/19/bootstrap-4-alpha/), par défaut [depuis 2017](http://blog.getbootstrap.com/2017/01/06/bootstrap-4-alpha-6/)).
 
-![Flexbox support](/cours-css/img/flexbox-caniuse.png)
+![Flexbox support](img/flexbox-caniuse.png)
 *Support des navigateurs pour Flexbox (source: [Can I Use](http://caniuse.com/#feat=flexbox), mars 2016)*
 
 #### Ressources Flexbox
@@ -106,11 +106,11 @@ Il est donc désormais possible de l'utiliser, avec la méthode de chargement CS
 
 Disposition verticale des éléments d'une page web. On contrôle l'ordre vertical des éléments avec la propriété z-index. Plus cette valeur est grande, plus un élément se trouve propulsé vers le "devant" de la scène.
 
-![](/cours-css/img/z-index-stack.png)
+![](img/z-index-stack.png)
 
 Habituellement, les pages HTML sont dites «en 2D» car les éléments (texte, images etc.) s’arrangent sur la page pour ne pas se chevaucher. Par contre, en CSS 2.1, chaque élément est en 3D. En effet, en plus de leur axe vertical (axe Y) et horizontal (axe X), s’ajoute un axe de profondeur perpendiculaire aux autres, l’axe-Z. Cet axe se contrôle avec la propriété CSS Z-index.
 
-![Représentation 3D d'une page HTML](/cours-css/img/z-axis.gif)
+![Représentation 3D d'une page HTML](img/z-axis.gif)
 
 
 Le Z-index contrôle l’axe Z et donc l’ordre d’empilement des éléments qui se chevauchent sur une page. Elle permet de décider quel élément va au-dessus ou au-dessous des autres, selon la valeur Z-index attribuée à l’élément. 

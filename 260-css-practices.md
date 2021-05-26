@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CSS - bonnes pratiques
-permalink: /css/bonnes-pratiques
+permalink: bonnes-pratiques.html
 ---
 
 # Bonnes pratiques - écrire du bon CSS

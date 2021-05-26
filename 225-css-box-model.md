@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Box Model
-permalink: /css/box-model
+permalink: box-model.html
 ---
 
 Le modèle de boîte
@@ -27,7 +27,7 @@ La propriété box-sizing: border-box
 
 Le *modèle de boîte* (box-model) utilisé par les navigateurs est de type "content-box". Si on donne une largeur à un élément, cela ne concerne pas les marges intérieures et extérieures. Un élément auquel on donnerait une largeur de 500px, et des marges intérieures (padding) de 25px, aurait une largeur effective de 550px.
 
-![Comparaison de deux logiques Box-Model](/cours-css/img/box-model-comparison.png)
+![Comparaison de deux logiques Box-Model](img/box-model-comparison.png)
 
 La propriété **box-sizing**, ajoutée en CSS3, permet de définir la manière dont la largeur d'un élément est calculée. Les valeurs possibles sont `content-box` et `border-box`.
 

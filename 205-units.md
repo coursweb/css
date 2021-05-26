@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Unités CSS
-permalink: /css/units/
+permalink: units.html
 ---
 
 Il existe diverses unités de mesure disponibles en CSS. Elles peuvent être classées en trois catégories:

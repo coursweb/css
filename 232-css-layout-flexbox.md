@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CSS Layout - Flexbox
-permalink: /css/flexbox
+permalink: flexbox.html
 ---
 
 

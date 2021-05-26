@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Les sélecteurs CSS
-permalink: /css/selectors/
+permalink: selectors.html
 ---
 
 

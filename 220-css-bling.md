@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CSS bling
-permalink: /css/css3-bling
+permalink: css3-bling.html
 ---
 
 
@@ -38,7 +38,7 @@ img {
 }
 ```
 
-![Exemple d'ombre portée](/cours-css/img/filter-drop-shadow.png)
+![Exemple d'ombre portée](img/filter-drop-shadow.png)
 
 Les **filtres CSS** sont supportés par les navigateurs depuis plusieurs années (2011 pour Safari, 2015 pour Firefox). Les filtres CSS - comparables aux effets visuels de Photoshop - incluent également:
 

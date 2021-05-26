@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Spécificité
-permalink: /css/specificite/
+permalink: specificite.html
 ---
 
 # Cascade CSS et spécificité
@@ -10,7 +10,7 @@ Tous les sélecteurs CSS ne sont pas égaux. Certains sélecteurs sont plus "pui
 
 Voici comment la documentation du W3C explique le principe:
 
-![Régles de spécificité dans la documentation CSS du W3C](/cours-css/img/specificity/selector-specificity-W3C.png)
+![Régles de spécificité dans la documentation CSS du W3C](img/specificity/selector-specificity-W3C.png)
 
 Quelques exemples:
 
@@ -79,7 +79,7 @@ Visualisation basée sur The Shining: http://cdn.w3cplus.com/sites/default/files
 
 Visualisation basée sur Star Wars, [Specificity Wars](http://blog4coders.com/wp-content/uploads/2014/07/rsz_specificitywars-05v2-800x637.jpg), par Andy Clarke (créé en 2005, mis à jour en 2018).
 
-![Specificity Wars](/cours-css/img/specificity/css-specificity-wars.png)
+![Specificity Wars](img/specificity/css-specificity-wars.png)
 
 Visualisation aquatique, [CSS SpeciFISHity](http://www.standardista.com/css3/css-specificity/), par Estelle Weyl.
 
@@ -88,7 +88,7 @@ Specificity:
 
 Calculateur de spécificité: [http://specificity.keegan.st/](http://specificity.keegan.st/)
 
-![](/cours-css/img/Strip-CSS-respect-650-final.jpg)
+![](img/Strip-CSS-respect-650-final.jpg)
 
 Un autre calculateur sous forme de graphique: https://jonassebastianohlsson.com/specificity-graph/
 

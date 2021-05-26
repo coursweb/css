@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Animations
-permalink: /css/animations
+permalink: animations.html
 ---
 
 Produire des animations en CSS
