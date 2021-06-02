@@ -66,15 +66,15 @@ La fonction a une valeur allant de "0.0" à "1.0". "0.0" est le plus transparent
 
 <div class="flexgallery">
 	<figure>
-		<img src="/cours-css/img/opacite.jpg" style="opacity:1.0">
+		<img src="img/opacite.jpg" style="opacity:1.0">
 		<figcaption>opacité de 1.0</figcaption>
 	</figure>
 	<figure>
-		<img src="/cours-css/img/opacite.jpg" style="opacity:0.5">
+		<img src="img/opacite.jpg" style="opacity:0.5">
 		<figcaption>opacité de 0.5</figcaption>
 	</figure>
 	<figure>
-		<img src="/cours-css/img/opacite.jpg" style="opacity:0.25">
+		<img src="img/opacite.jpg" style="opacity:0.25">
 		<figcaption>opacité de 0.25</figcaption>
 	</figure>
 </div>
