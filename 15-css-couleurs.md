@@ -228,4 +228,4 @@ Références:
 
 - [The box-shadow Property](https://bitsofco.de/the-box-shadow-property/), par Ire Aderinokun.
 - [The Background Properties](https://bitsofco.de/the-background-properties/), par Ire Aderinokun.
-
+- [Colour Theory](https://www.youtube.com/watch?v=8xjR7QXQKJ0), une passionnante présentation vidéo par Lea Verou.
