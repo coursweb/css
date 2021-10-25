@@ -30,8 +30,12 @@ Les unités *absolues* correspondent à ce que l'on connaît de la mise en page 
 
 ### Unités relatives au viewport - vw, vh, vmin, vmax 
 
-- **vh** et **vw**: Unités relatives à la surface d’affichage. Ces unités sont relatives à la taille de la fenêtre de navigateur. Cela permet p.ex. de spécifier une taille de fonte qui s'adapte à la taille du navigateur. Un **vh** ou **vw** est équivalent à 1% de la taille de fenêtre. Donc un élément avec `height: 100vh` occupera toute la hauteur de la fenêtre.
-- **vmin**: correspond à la plus petite valeur de vh ou vw.
+Unités relatives à la surface d’affichage. Ces unités sont relatives à la taille de la fenêtre de navigateur. Cela permet p.ex. de spécifier une taille de fonte qui s'adapte à la taille du navigateur. Un **vh** ou **vw** est équivalent à 1% de la taille de fenêtre. Donc un élément avec `height: 100vh` occupera toute la hauteur de la fenêtre.
+
+- `vw` :	1% de la **largeur** du *viewport*
+- `vh` :	1% de la **hauteur** du *viewport*
+- `vmin` :	1% de la plus petite dimension (la plus petite valeur de vh ou vw)
+- `vmax` :	1% de la plus grande dimension (la plus grande valeur de vh ou vw)
 
 #### Les pixels (px)
 
@@ -41,12 +45,12 @@ Le postulat était que tous les écrans avaient la même résolution (72 dpi) et
 
 ## Ressources et références
 
-Articles:
+### Articles:
 
 - *[Dimensionner ses fontes avec rem](http://www.pompage.net/traduction/dimensionner-ses-fontes-avec-rem)*, par Jonathan Snook, 2011
 - *[Quelles mesures CSS, pour quel usage ?](http://www.pompage.net/traduction/css-unites-et-usages)*, par Dudley Storey, 2013
 
-Ressources d'apprentissage:
+### Ressources d'apprentissage:
 
 Quelques bonnes ressources pour assimiler les bases du CSS, en trois chapitres:
 
@@ -54,4 +58,6 @@ Quelques bonnes ressources pour assimiler les bases du CSS, en trois chapitres:
 - *[Opening the Box Model](http://learn.shayhowe.com/html-css/opening-the-box-model/)*
 - *[Positioning Content](http://learn.shayhowe.com/html-css/positioning-content/)*
 
+### Spécification
 
+- La spécification du W3C: [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
