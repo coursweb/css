@@ -17,13 +17,19 @@ Les unités *absolues* correspondent à ce que l'on connaît de la mise en page 
 - Utilisez des unités relatives pour définir la longueur des éléments de mise en page.
 - N'utilisez les longueurs absolues uniquement si les caractéristiques physiques du medium de sortie sont connues.
 
-#### Unités relatives:
+## Unités relatives:
 
 - **Les pourcentages** (%): Définit une mesure en % par rapport à la taille de l'élément parent. Utile pour créer des mises en page flexibles, et pour définir des tailles de fonte.
+
+### Unités relatives à la fonte - em, ex, ch, rem
+
 - **em**: Unité typographique ancienne, correspondant historiquement à la largeur de la lettre "m". Par défaut, 1em est équivalent à 16px. Voici les équivalences par défaut du em: `1em = 16px = 0.17in = 12pt = 1pc = 4.2mm = 0.42cm`.
 - **rem**: Unité relative, qui fonctionne comme le **em**, mais la taille est relative à la taille de fonte à la racine du document (attribuée à l'élément `html`).
 - **ex**: Unité verticale, correspondant à la *x-height*, càd. la hauteur de la lettre x. Contrairement au **em**, cette unité varie en fonction de la fonte. 
 - **ch**: Unité correspondant à la largeur du charactère "0". 
+
+### Unités relatives au viewport - vw, vh, vmin, vmax 
+
 - **vh** et **vw**: Unités relatives à la surface d’affichage. Ces unités sont relatives à la taille de la fenêtre de navigateur. Cela permet p.ex. de spécifier une taille de fonte qui s'adapte à la taille du navigateur. Un **vh** ou **vw** est équivalent à 1% de la taille de fenêtre. Donc un élément avec `height: 100vh` occupera toute la hauteur de la fenêtre.
 - **vmin**: correspond à la plus petite valeur de vh ou vw.
 
