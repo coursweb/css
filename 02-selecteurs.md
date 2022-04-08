@@ -94,7 +94,7 @@ Cette règle annule le "padding" pour les éléments interactifs de type "case �
 Voici un autre exemple réel, plutôt subtil:
 
 ```css
-a[href]:after {
+a[href]::after {
 	content: " (" attr(href) ")";
 }
 ```
