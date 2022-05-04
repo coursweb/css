@@ -77,7 +77,6 @@ Un codepen de démonstration:
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="oNEXLLY" data-user="eracom" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
 
-
 ## Explications visuelles
 
 Pour mieux comprendre ce principe, des designers ont créés des explicatifs visuels:
@@ -102,6 +101,9 @@ Visualisation aquatique, [CSS SpeciFISHity](http://www.standardista.com/css3/css
 
 - [http://specificity.keegan.st/](http://specificity.keegan.st/)
 - Calculateur sous forme de graphique: [https://jonassebastianohlsson.com/specificity-graph/](https://jonassebastianohlsson.com/specificity-graph/)
+
+## Ressources
+
 
 
 ![](img/Strip-CSS-respect-650-final.jpg)
