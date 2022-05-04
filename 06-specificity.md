@@ -90,18 +90,18 @@ Visualisation basée sur Star Wars, [Specificity Wars](https://stuffandnonsense.
 
 Visualisation aquatique, [CSS SpeciFISHity](http://www.standardista.com/css3/css-specificity/), par Estelle Weyl.
 
-Specificity:
-[https://designshack.net/articles/css/what-the-heck-is-css-specificity/](https://designshack.net/articles/css/what-the-heck-is-css-specificity/)
+## Articles et tutoriels
 
-Calculateurs de spécificité: 
+*[Cascade CSS et priorité des sélecteurs](http://openweb.eu.org/articles/cascade_css)*, par Laurent Denis, 2005
+
+*La spécificité des sélecteurs*, [Grafikart](https://grafikart.fr/tutoriels/specificite-selecteur-css-1045), 2018
+
+
+## Calculateurs de spécificité: 
 
 
 - [http://specificity.keegan.st/](http://specificity.keegan.st/)
 - Calculateur sous forme de graphique: [https://jonassebastianohlsson.com/specificity-graph/](https://jonassebastianohlsson.com/specificity-graph/)
 
-## Ressources
-
-Un article très détaillé:
-*[Cascade CSS et priorité des sélecteurs](http://openweb.eu.org/articles/cascade_css)*, par Laurent Denis, 2005
 
 ![](img/Strip-CSS-respect-650-final.jpg)
