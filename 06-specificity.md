@@ -8,7 +8,7 @@ permalink: specificite.html
 
 Tous les sélecteurs CSS ne sont pas égaux. Certains sélecteurs sont plus "puissants" que d'autres, et parviennent à surcharger des règles CSS plus faibles. Un sélecteur par identifiant – `#titre` – est plus "spécifique", donc plus puissant, qu'un sélecteur par classe – `.titre` – qui est plus puissant qu'un sélecteur par élément – `h1`.
 
-Voici comment la documentation du W3C explique le principe:
+Voici comment [la documentation du W3C](https://www.w3.org/TR/selectors-3/#specificity) explique le principe:
 
 ![Régles de spécificité dans la documentation CSS du W3C](img/specificity/selector-specificity-W3C.png)
 
@@ -36,7 +36,7 @@ ul li {
 }
 ```
 
-Si on utilise deux sélecteurs de même type, leur puissance s'additionne. Avec le code qui précède, on aura une valeur de (a=0 b=0 c=2), donc 2.
+Si on utilise deux sélecteurs de même type, leur puissance s'additionne. Avec le code qui précède, on aura une valeur de (a=0 b=0 c=2), donc 0-0-2.
 
 ```css
 .red {
@@ -44,7 +44,7 @@ Si on utilise deux sélecteurs de même type, leur puissance s'additionne. Avec 
 }
 ```
 
-On utilise maintenant sélecteur de type "classe". Un monte d'un niveau de puissance (a=0 b=1 c=0), ce qui se traduit par une spécificité de 10.
+On utilise maintenant sélecteur de type "classe". Un monte d'un niveau de puissance (a=0 b=1 c=0), ce qui se traduit par une spécificité de 0-1-0.
 
 ```css
 header .red {
@@ -52,7 +52,7 @@ header .red {
 }
 ```
 
-Ici le résultat sera (a=0 b=1 c=1), autrement dit: 11.
+Ici le résultat sera (a=0 b=1 c=1), autrement dit: 0-1-1.
 
 ```css
 #sidebar {
@@ -60,24 +60,31 @@ Ici le résultat sera (a=0 b=1 c=1), autrement dit: 11.
 }
 ```
 
-Avec l'utilisation d'un sélecteur ID (#), on monte au troisième niveau de puissance. La valeur de ce sélecteur sera (a=1 b=0 c=0), autrement dit: 100.
+Avec l'utilisation d'un sélecteur ID (#), on monte au troisième niveau de puissance. La valeur de ce sélecteur sera (a=1 b=0 c=0), autrement dit: 1-0-0.
 
 Les différences de puissance entre les sélecteurs font que l'ordre de la "cascade CSS" ne s'applique pas forcéement.
 
 Par exemple dans ce code:
 
 ```css
-#sidebar a { color: blue; }
-.header nav > a { color: red }
+#header a { color: blue; }     /* a=1 b=0 c=1 -> specificity = 1-0-1 */
+.header nav > a { color: red } /* a=0 b=1 c=2 -> specificity = 0-1-2 */
 ```
 
-De manière non intuitive, c'est la ligne du haut (couleur bleue) qui s'applique, car sa spécificité est plus puissante que celle du bas (100 vs. 12)
+De manière non intuitive, c'est la ligne du haut (couleur bleue) qui "gagne", car sa spécificité est plus puissante que celle du bas (1-0-1 vs. 0-1-2).
+
+Un codepen de démonstration:
+
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="oNEXLLY" data-user="eracom" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+
+
+## Explications visuelles
 
 Pour mieux comprendre ce principe, des designers ont créés des explicatifs visuels:
 
 Visualisation basée sur The Shining: http://cdn.w3cplus.com/sites/default/files/blogs/2013/1312/CSS_Specificity.jpg
 
-Visualisation basée sur Star Wars, [Specificity Wars](http://blog4coders.com/wp-content/uploads/2014/07/rsz_specificitywars-05v2-800x637.jpg), par Andy Clarke (créé en 2005, mis à jour en 2018).
+Visualisation basée sur Star Wars, [Specificity Wars](https://stuffandnonsense.co.uk/archives/css_specificity_wars.html), par Andy Clarke (créé en 2005, mis à jour en 2018).
 
 ![Specificity Wars](img/specificity/css-specificity-wars.png)
 
@@ -86,13 +93,15 @@ Visualisation aquatique, [CSS SpeciFISHity](http://www.standardista.com/css3/css
 Specificity:
 [https://designshack.net/articles/css/what-the-heck-is-css-specificity/](https://designshack.net/articles/css/what-the-heck-is-css-specificity/)
 
-Calculateur de spécificité: [http://specificity.keegan.st/](http://specificity.keegan.st/)
+Calculateurs de spécificité: 
 
-![](img/Strip-CSS-respect-650-final.jpg)
 
-Un autre calculateur sous forme de graphique: https://jonassebastianohlsson.com/specificity-graph/
+- [http://specificity.keegan.st/](http://specificity.keegan.st/)
+- Calculateur sous forme de graphique: [https://jonassebastianohlsson.com/specificity-graph/](https://jonassebastianohlsson.com/specificity-graph/)
 
 ## Ressources
 
 Un article très détaillé:
 *[Cascade CSS et priorité des sélecteurs](http://openweb.eu.org/articles/cascade_css)*, par Laurent Denis, 2005
+
+![](img/Strip-CSS-respect-650-final.jpg)
