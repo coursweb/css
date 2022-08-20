@@ -221,5 +221,5 @@ Les sélecteurs de niveau 4 sont en élaboration depuis 2011. En mai 2022, ils s
 La documentation se trouve sous [https://www.w3.org/TR/selectors-4/](https://www.w3.org/TR/selectors-4/). 
 Quelques nouveautés:
 
-- La pseudo-classe `:is()`
-- La pseudo-classe `:has()`
+- La pseudo-classe `:is()` - voir [le support actuel](https://caniuse.com/css-matches-pseudo)
+- La pseudo-classe `:has()` - voir [le support actuel](https://caniuse.com/css-has)
