@@ -99,7 +99,7 @@ Visualisation aquatique, [CSS SpeciFISHity](http://www.standardista.com/css3/css
 ## Calculateurs de spécificité: 
 
 
-- [http://specificity.keegan.st/](  )
+- [http://specificity.keegan.st/](http://specificity.keegan.st/)
 - Calculateur sous forme de graphique: [https://jonassebastianohlsson.com/specificity-graph/](https://jonassebastianohlsson.com/specificity-graph/)
 
 ## Ressources
