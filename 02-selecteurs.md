@@ -187,12 +187,36 @@ Depuis la version CSS3, la notation des pseudo-éléments comporte deux double-p
 #### Next-sibling combinator
 
 -----|-----:
-`E + F` | un élément F *directement* précédé d'un élément E.
+`E + F` | un élément F *directement précédé* d'un élément E.
 
-#### The subsequent-sibling combinator
+#### Subsequent-sibling combinator
 
 -----|-----:
-`E ~ F` | un élément F précédé par un élément E.
+`E ~ F` | un élément F *précédé* par un élément E.
+
+Ce sélecteur est parfois utilisé pour faire réagir un élément au clic sans recourir au Javascript. En effet, en utilisant une checkbox, on peut intercepter le clic:
+
+```css
+#menuToggle input:checked ~ ul
+{
+  /* code qui fait apparaître le menu, avec une transition */
+}
+```
+
+Un autre exemple similaire:
+
+```css
+.menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+```
+
+Trois exemples de cette technique:
+
+- [Responsive hamburger menu - pure CSS #1](https://codepen.io/mutedblues/pen/MmPNPG) by mutedblues
+- [Pure CSS Hamburger Menu](https://janessagarrow.com/blog/pure-css-hamburger-menu/)
+- [Pure CSS Hamburger fold-out menu](https://codepen.io/erikterwan/pen/EVzeRP?editors=1100) by Erik Terwan
+
 
 ##### The negation pseudo-class
 
