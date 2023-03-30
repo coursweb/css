@@ -89,6 +89,14 @@ Visualisation basée sur Star Wars, [Specificity Wars](https://stuffandnonsense.
 
 Visualisation aquatique, [CSS SpeciFISHity](http://www.standardista.com/css3/css-specificity/), par Estelle Weyl.
 
+## Bonnes pratiques
+
+Selon l'experte en performance du code CSS [Nicole Sullivan](http://www.stubbornella.org/content/2011/04/28/our-best-practices-are-killing-us/), il privilégier les classes et éviter les sélecteurs ID. Voici un exemple de code à éviter:
+
+```css
+#sidebar #accounts #accountDetails h3{}
+```
+
 ## Articles et tutoriels
 
 *[Cascade CSS et priorité des sélecteurs](http://openweb.eu.org/articles/cascade_css)*, par Laurent Denis, 2005
