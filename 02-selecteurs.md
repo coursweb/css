@@ -57,10 +57,10 @@ Ces pseudo-classes permettent de distinguer les liens déjà visités.
 
 -----|-----:
 `E:link` | tout élément E qui est l'ancre d'un hyperlien. permet de définir l’aspect d’un lien sur lequel on n’a pas encore cliqué.
-`E:visited` | un hyperlien qui a déjà été visité
-`E:focus` | un élément E faisant l'objet d'une sélection, notamment en utilisant le clavier
-`E:hover` | un élément E que l'utilisateur survole
-`E:active` | un élément E soumis à des actions utilisateur
+`E:visited` | un hyperlien qui a déjà été visité.
+`E:focus` | un élément E faisant l'objet d'une sélection, notamment en utilisant le clavier.
+`E:hover` | un élément E que l'utilisateur survole.
+`E:active` | un élément E soumis à des actions utilisateur.
 
 Exemple:
 
@@ -73,8 +73,8 @@ input:focus {
 ##### Les pseudo-elements typographiques
 
 -----|-----:
-`E::first‑line` | la première ligne d'un élément E
-`E::first‑letter` | la première lettre d'un élément E
+`E::first‑line` | la première ligne d'un élément E.
+`E::first‑letter` | la première lettre d'un élément E.
 
 Voici un exemple utilisant "first-letter" pour produire une lettrine:
 
@@ -101,11 +101,6 @@ Les sélecteurs du CSS 2, introduits en 1998, sont décrits ici: [https://www.w3
 
 -----|-----:
 `E > F` | un élément F enfant d'un élément E.
-
-##### Adjacent sibling selectors
-
------|-----:
-`E + F` | un élément F immédiatement précédé d'un élément E.
 
 ##### Les sélecteurs d'attribut
 
@@ -140,36 +135,44 @@ Cette règle est contenue dans les feuilles de style "print" (dédiées à l'imp
 
 Les sélecteurs CSS de niveau 3 sont ajoutés dans la spécification CSS3, qui était en travail depuis 1999, et est devenue une recommandation depuis 2011. Documentation: [https://www.w3.org/TR/selectors-3/](https://www.w3.org/TR/selectors-3/)
 
-##### Structural pseudo-classes
+### Pseudo-classes
+
+#### Pseudo-classes de structure
 
 -----|-----:
-`E:root` | an E element, root of the document
-`E:only‑child` | an E element, only child of its parent
-`E:only‑of‑type` | an E element, only sibling of its type
-`E:empty` | an E element that has no children (including text nodes)
+`E:root` | un élément E qui constitue la racine du document. Il s'agit toujours de l'élément `html`.
+`E:empty` | un élément E qui n'a pas d'enfants (donc sans contenu).
+`E:only‑child` | le seul enfant de son parent.
+`E:only‑of‑type` | le seul de son type.
 
-Pseudo-classes de position
+#### Pseudo-classes de position
 
 -----|-----:
 `E:first‑child` | un élément E qui est le premier enfant de son parent.
-`E:last‑child` | un élément E qui est le dernier enfant de son parent.
-`E:first‑of‑type` | an E element, first sibling of its type
-`E:last‑of‑type` | an E element, last sibling of its type
-`E:nth‑child(n)` | an E element, the n-th child of its parent
-`E:nth‑last‑child(n)` | an E element, the n-th child of its parent, counting from the last one
-`E:nth‑of‑type(n)` | an E element, the n-th sibling of its type
-`E:nth‑last‑of‑type(n)` | an E element, the n-th sibling of its type, counting from the last one
+`E:last‑child` | le dernier enfant de son parent.
+`E:first‑of‑type` | le premier de son type.
+`E:last‑of‑type` | le dernier de son type.
+`E:nth‑child(n)` | le n-ième enfant de son parent (n étant un nombre).
+`E:nth‑last‑child(n)` | le n-ième enfant de son parent, en comptant depuis la fin.
+`E:nth‑of‑type(n)` | le n-ième jumeau de son type.
+`E:nth‑last‑of‑type(n)` | le n-ième jumeau de son type, en comptant depuis la fin.
+
+### Substring matching attribute selectors
 
 -----|-----:
-`E[foo^="bar"]` | an E element whose "foo" attribute value begins exactly with the string "bar"
-`E[foo$="bar"]` | an E element whose "foo" attribute value ends exactly with the string "bar"
-`E[foo*="bar"]` | an E element whose "foo" attribute value contains the substring "bar"
-`E:target` | an E element being the target of the referring URI
-`E:enabled` | a user interface element E that is enabled
-`E:disabled` | a user interface element E that is disabled
-`E:checked` | a user interface element E that is checked (for instance a radio-button or checkbox)
+`E[foo^="bar"]` | an E element whose "foo" attribute value begins exactly with the string "bar".
+`E[foo$="bar"]` | an E element whose "foo" attribute value ends exactly with the string "bar".
+`E[foo*="bar"]` | an E element whose "foo" attribute value contains the substring "bar".
+`E:target` | un élément qui est la cible d'une URL.
 
-##### Les pseudo-éléments
+### UI element states pseudo-classes
+
+-----|-----:
+`E:enabled` | un élément d'interface E qui est activé.
+`E:disabled` | un élément d'interface E qui est désactivé.
+`E:checked` | un élément d'interface E qui est coché (par exemple un `radio-button` ou `checkbox`).
+
+### Les pseudo-éléments
 
 Depuis la version CSS3, la notation des pseudo-éléments comporte deux double-points (afin de les distinguer des pseudo-classes):
 
@@ -179,10 +182,17 @@ Depuis la version CSS3, la notation des pseudo-éléments comporte deux double-p
 `E::before` | du contenu généré avant le contenu de l'élément E.
 `E::after` | du contenu généré après le contenu de l'élément E.
 
-##### The subsequent-sibling combinator
+### Sibling combinators
+
+#### Next-sibling combinator
 
 -----|-----:
-`E ~ F` | an F element preceded by an E element
+`E + F` | un élément F *directement* précédé d'un élément E.
+
+#### The subsequent-sibling combinator
+
+-----|-----:
+`E ~ F` | un élément F précédé par un élément E.
 
 ##### The negation pseudo-class
 
@@ -222,4 +232,5 @@ La documentation se trouve sous [https://www.w3.org/TR/selectors-4/](https://www
 Quelques nouveautés:
 
 - La pseudo-classe `:is()` - voir [le support actuel](https://caniuse.com/css-matches-pseudo)
+- La pseudo-classe `:where()` - voir [le support actuel](https://caniuse.com/mdn-css_selectors_where)
 - La pseudo-classe `:has()` - voir [le support actuel](https://caniuse.com/css-has)
