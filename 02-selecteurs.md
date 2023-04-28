@@ -182,6 +182,38 @@ Depuis la version CSS3, la notation des pseudo-éléments comporte deux double-p
 `E::before` | du contenu généré avant le contenu de l'élément E.
 `E::after` | du contenu généré après le contenu de l'élément E.
 
+----
+
+[Un exercice Codepen](https://codepen.io/eracom/pen/KKxLegW?editors=1100): produisez une lettrine en trouvant le bon sélecteur.
+
+----
+
+Un exemple de contenu généré avec `:before` :
+
+```css
+a[href*="tumblr.com"]:before {
+	content: "\2b8a";
+}
+```
+
+Cette règle CSS a pour effet d'ajouter une icône (l'élément `\2b8a` qui correspond à un glyphe dans la fonte d'icônes [Icomoon](https://icomoon.io/)) devant chaque lien pointant vers [Tumblr](https://www.tumblr.com).
+
+<style>
+
+@font-face {
+  font-family: "icomoon";
+  src: url('/fonts/icomoon.woff') format('woff');
+}
+
+a[href*="tumblr.com"]:before {
+	content: "\2b8a";
+	font-family: "icomoon";
+	padding-right: 0.3em;
+    vertical-align: -0.1em;
+}
+</style>
+
+
 ### Sibling combinators
 
 #### Next-sibling combinator
@@ -222,32 +254,6 @@ Trois exemples de cette technique:
 
 `E:not(s)` | an E element that does not match simple selector s
 
-----
-
-Un exemple réel:
-
-```css
-a[href*="tumblr.com"]:before {
-	content: "\2b8a";
-}
-```
-
-Cette règle CSS a pour effet d'ajouter une icône (l'élément `\2b8a` qui correspond à un glyphe dans la fonte d'icônes [Icomoon](https://icomoon.io/)) devant chaque lien pointant vers [Tumblr](https://www.tumblr.com).
-
-<style>
-
-@font-face {
-  font-family: "icomoon";
-  src: url('/fonts/icomoon.woff') format('woff');
-}
-
-a[href*="tumblr.com"]:before {
-	content: "\2b8a";
-	font-family: "icomoon";
-	padding-right: 0.3em;
-    vertical-align: -0.1em;
-}
-</style>
 
 ## Sélecteurs du CSS niveau 4
 
