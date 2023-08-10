@@ -8,7 +8,7 @@ Les **fonctions CSS** `min()`, `max()` et `clamp()` sont des fonctions permettan
 
 ### La fonction min()
 
-La fonction CSS `min()` permet de spécifier plusieurs valeurs, et *la plus petite* sera retenue. Cela permet donc de défnir un seuil maximal. Exemple, pour limiter la largeur d'un élément à un maximum de 400 pixels:
+La fonction CSS `min()` permet de spécifier plusieurs valeurs, et *la plus petite* sera retenue. Cela permet donc de définir un seuil maximal. Exemple, pour limiter la largeur d'un élément à un maximum de 400 pixels:
 
 ```css
 width: min(50%, 400px);
