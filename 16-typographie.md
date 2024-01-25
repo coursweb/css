@@ -53,7 +53,7 @@ p {
 
 ## Charger une webfont
 
-Le code pour charger une webfont est documenté [https://cours-web.ch/typographie/webfonts.html](dans le cours typographie web).
+Le code pour charger une webfont est documenté [dans le cours typographie web](https://cours-web.ch/typographie/webfonts.html).
 
 Références:
 ===
