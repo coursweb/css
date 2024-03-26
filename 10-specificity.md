@@ -91,11 +91,13 @@ Visualisation aquatique, [CSS SpeciFISHity](http://www.standardista.com/css3/css
 
 ## Bonnes pratiques
 
-Selon l'experte en performance du code CSS [Nicole Sullivan](http://www.stubbornella.org/content/2011/04/28/our-best-practices-are-killing-us/), il privilégier les classes et éviter les sélecteurs ID. Voici un exemple de code à éviter:
+Selon l'experte en performance du code CSS [Nicole Sullivan](http://www.stubbornella.org/content/2011/04/28/our-best-practices-are-killing-us/), il faut privilégier les classes et éviter les sélecteurs ID. Voici un exemple de code à éviter:
 
 ```css
 #sidebar #accounts #accountDetails h3{}
 ```
+
+> Classes are our friends. Seeing a lot of IDs is actually very bad. Run from this kind of code!
 
 ## Articles et tutoriels
 
