@@ -99,21 +99,21 @@ Selon l'experte en performance du code CSS [Nicole Sullivan](http://www.stubborn
 
 > Classes are our friends. Seeing a lot of IDs is actually very bad. Run from this kind of code!
 
-## Articles et tutoriels
+## Ressources
 
-*[Cascade CSS et priorité des sélecteurs](http://openweb.eu.org/articles/cascade_css)*, par Laurent Denis, 2005
-
-*La spécificité des sélecteurs*, [Grafikart](https://grafikart.fr/tutoriels/specificite-selecteur-css-1045), 2018
-
-
-## Calculateurs de spécificité: 
-
+### Calculateurs de spécificité: 
 
 - [http://specificity.keegan.st/](http://specificity.keegan.st/)
 - Calculateur sous forme de graphique: [https://jonassebastianohlsson.com/specificity-graph/](https://jonassebastianohlsson.com/specificity-graph/)
 
-## Ressources
+### Explication en vidéo
 
+<iframe width="100%" style="aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/ygmYgNzlQ1E?si=pkTsH7zE7f21rteh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+### Articles et tutoriels
+
+*[Cascade CSS et priorité des sélecteurs](http://openweb.eu.org/articles/cascade_css)*, par Laurent Denis, 2005
+
+*La spécificité des sélecteurs*, [Grafikart](https://grafikart.fr/tutoriels/specificite-selecteur-css-1045), 2018
 
 ![](img/Strip-CSS-respect-650-final.jpg)
