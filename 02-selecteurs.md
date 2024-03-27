@@ -76,7 +76,7 @@ input:focus {
 `E::first‑line` | la première ligne d'un élément E.
 `E::first‑letter` | la première lettre d'un élément E.
 
-Voici un exemple utilisant "first-letter" pour produire une lettrine:
+Voici un exemple utilisant "first-letter" pour produire une lettrine ([essayer sur Codepen](https://codepen.io/eracom/pen/KKxLegW)):
 
 ```css
 p::first-letter {
