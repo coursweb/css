@@ -88,5 +88,5 @@ Quelques bonnes ressources pour assimiler les bases du CSS, en trois chapitres:
 ### Spécification
 
 - Documentation MDN: [Valeurs et unités CSS](https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Values_and_units)
-- La spécification W3C: [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
-- La spécification du W3C: [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
+- La spécification W3C Level 3: [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
+- La spécification du W3C Level 4: [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
