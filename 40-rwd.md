@@ -22,7 +22,7 @@ En théorie, le CSS peut donc définir des styles particuliers pour des "médias
 
 Cependant, dans la pratique réelle, les seuls medias qui soient supportés par les navigateurs sont `screen` et `print`.
 
-On utilise souvent l'attribut media `print` pour charger des styles CSS spécifiques pour l'impression d'une page web:
+On utilise l'attribut media `print` pour charger des styles CSS spécifiques pour l'impression d'une page web:
 
 ```html
 <link rel="stylesheet" media="print" href="impression.css">
@@ -41,26 +41,21 @@ Ou à l'intérieur d'une feuille de styles CSS, avec la syntaxe suivante:
 
 Pour un bon exemple de styles destinés à optimiser une page web pour l'impression, on peut se référer au [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/main/dist/css/style.css#L182). Lire également [cet article](https://medium.com/@matuzo/i-totally-forgot-about-print-style-sheets-f1e6604cfd6#.npcr2tohy) de Manuel Matuzovic.
 
-<h4>Références concernant @print:</h4> 
+#### Références concernant @print 
 
 - *[Faites bonne impression avec les CSS](http://www.pompage.net/traduction/impression)*, par Eric A. Meyer, 2002
 - *[Maîtriser l’impression CSS](http://openweb.eu.org/articles/maitriser_impression_css)*, par Nicolas Hoffmann, 2010
 - [La spécification CSS 2.1](https://www.w3.org/TR/CSS21/media.html)
 - [Les styles @print](https://github.com/h5bp/html5-boilerplate/blob/main/dist/css/style.css#L182) du HTML5Boilerplate - ces styles étaient aussi utilisés [dans Bootstrap 4](https://github.com/twbs/bootstrap/blob/6ffb0b48e455430f8a5359ed689ad64c1143fac2/dist/css/bootstrap.css#L10220) (mais plus depuis la version 5).
 
-Les Media Queries du CSS3
-===
+## Les Media Queries du CSS3
 
-Avec l'évolution du HTML5 et CSS3, les possibilités de l'attribut "media" sont étendues: on peut maintenant charger des styles selon le format de la fenêtre du navigateur, la largeur, la hauteur, la densité des pixels...
+
+Avec l'évolution du HTML5 et CSS3, les possibilités de l'attribut "media" sont étendues: on peut charger des styles selon le format de la fenêtre du navigateur, la largeur, la hauteur, la densité des pixels...
 
 Cela a rendu possible le "Responsive Web Design" (RWD).
 
-RWD (Responsive Web Design)
------
-
-TODO: explicatif et exemples...
-
-Quelques exemples de Media Query:
+Un exemple de Media Query:
 
 ```css
 @media screen and (min-width: 20em) {
@@ -96,7 +91,7 @@ Ce qu'on peut détecter avec des Media Queries:
 - L’**orientation** de l'écran, avec les valeurs `portrait` ou `landscape` (paysage).
 - Le **ratio hauteur/largeur** de l’écran, avec `aspect-ratio`. 
 - La **résolution**, mesurée en DPI, avec les préfixes `min-` et `max-` et une valeur comme `144dpi`. On peut aussi mesurer la densité par pixel (dppx), avec des valeurs comme `1.5dppx`ou `2dppx`.
-- La préférence d'un Dark-Mode avec `prefers-color-scheme: dark`.
+- La préférence d'un mode sombre avec `prefers-color-scheme: dark`.
 
 ```css
 @media (aspect-ratio: 16/9) {
@@ -113,11 +108,11 @@ Ce qu'on peut détecter avec des Media Queries:
 ```
 Concernant la résolution, selon Raphaël Goetter:
 
-> Il existe des tas de résolutions différentes à l’heure actuelle ; ça dépend entièrement de l’appareil. Certains, comme la majorité des ordinateurs sont à 1. Des téléphones sont à 1.3, d’autres à 1.5, des appareils de tout type sont à 2, certains sont à 3. C’est pour cette raison qu’il est préférable de tester une résolution supérieure à 1.3 ou 1.5, et de traiter tous ces écrans de la même façon.
+> Il existe des tas de résolutions différentes à l’heure actuelle ; ça dépend entièrement de l’appareil. Certains, comme les ordinateurs non-retina sont à 1. Des téléphones sont à 1.3, d’autres à 1.5, des appareils de tout type sont à 2, certains sont à 3. C’est pour cette raison qu’il est préférable de tester une résolution supérieure à 1.3 ou 1.5, et de traiter tous ces écrans de la même façon.
 
-Cas pratique : le design Mobile First
+### Le design Mobile First
 
-La méthode du design Mobile First consiste à prévoir un design pour les petits écrans en priorité, puis d'élargir le cadre pour les grands écrans. Cette méthode utilise une succession de Media Queries:
+La méthode du design "Mobile First" consiste à prévoir un design pour les petits écrans en priorité, puis d'élargir le cadre pour les grands écrans. Cette méthode utilise une succession de Media Queries:
 
 ```css
 /**
