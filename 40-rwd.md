@@ -31,19 +31,22 @@ On utilise souvent l'attribut media `print` pour charger des styles CSS spécifi
 Ou à l'intérieur d'une feuille de styles CSS, avec la syntaxe suivante:
 
 ```css
-@media screen {
-  * { font-family: sans-serif }
+@media print {
+  * { 
+      background: #fff;
+      color: #000;
+    }
 }
 ```
 
-Pour un bon exemple de styles destinés à optimiser une page web pour l'impression, on peut se référer au [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/dist/css/main.css#L205). Lire également [cet article](https://medium.com/@matuzo/i-totally-forgot-about-print-style-sheets-f1e6604cfd6#.npcr2tohy) de Manuel Matuzovic.
+Pour un bon exemple de styles destinés à optimiser une page web pour l'impression, on peut se référer au [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/main/dist/css/style.css#L182). Lire également [cet article](https://medium.com/@matuzo/i-totally-forgot-about-print-style-sheets-f1e6604cfd6#.npcr2tohy) de Manuel Matuzovic.
 
 <h4>Références concernant @print:</h4> 
 
 - *[Faites bonne impression avec les CSS](http://www.pompage.net/traduction/impression)*, par Eric A. Meyer, 2002
 - *[Maîtriser l’impression CSS](http://openweb.eu.org/articles/maitriser_impression_css)*, par Nicolas Hoffmann, 2010
 - [La spécification CSS 2.1](https://www.w3.org/TR/CSS21/media.html)
-- [Les styles @print](https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L197) du HTML5Boilerplate - ces styles sont aussi utilisés [dans Bootstrap](https://github.com/twbs/bootstrap/blob/master/dist/css/bootstrap.css#L190).
+- [Les styles @print](https://github.com/h5bp/html5-boilerplate/blob/main/dist/css/style.css#L182) du HTML5Boilerplate - ces styles étaient aussi utilisés [dans Bootstrap 4](https://github.com/twbs/bootstrap/blob/6ffb0b48e455430f8a5359ed689ad64c1143fac2/dist/css/bootstrap.css#L10220) (mais plus depuis la version 5).
 
 Les Media Queries du CSS3
 ===
@@ -57,7 +60,7 @@ RWD (Responsive Web Design)
 
 TODO: explicatif et exemples...
 
-Un exemple de media query:
+Quelques exemples de Media Query:
 
 ```css
 @media screen and (min-width: 20em) {
@@ -65,6 +68,41 @@ Un exemple de media query:
     column-count: 2;	
   }
 }
+```
+
+On peut aussi omettre le mot-clé `screen` si on souhaite que les styles s'appliquent sur tous les supports:
+
+```css
+@media (min-width: 20em) {
+  /* Déclarations */
+}
+```
+
+On peut cumuler différents critères avec le mot-clé `and`:
+
+```css
+@media (orientation: portrait) and (min-width: 20em) {
+  /* Déclarations */
+}
+```
+
+Ce qu'on peut détecter avec des Media Queries:
+
+- Les dimensions - `width` et `height` - avec les préfixes `min-` et `max-`.
+- L’orientation de l'écran, avec les valeurs `portrait` ou `landscape` (paysage).
+- Le ratio hauteur/largeur de l’écran, avec `aspect-ratio`. 
+- La résolution, mesurée en DPI.
+
+```css
+@media (aspect-ratio: 16/9) {
+  /* Déclarations */
+}
+
+@media (resolution: 150dpi) {
+  /* Déclarations */
+}
+
+
 ```
 
 Références:
