@@ -164,6 +164,13 @@ Bien que l’on teste souvent la largeur de l’écran, il peut parfois être ut
 }
 ```
 
+### Petit détail important
+
+Pour fonctionner en mode responsive, il faut que dans le `<head>` de la page HTML figure la ligne suivante (balise meta viewport):
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+```
 
 ### Références:
 
