@@ -15,6 +15,33 @@ Le modèle de mise en page du HTML / CSS repose sur un principe de "boîtes" (en
 - **Marge intérieure** (padding)
 - **Marge extérieure** (margin)
 
+On peut définir les quatre côtés séparément: 
+
+```css
+h1 {
+  margin: 0 16px 30px 16px;
+       /* haut, droite, bas, gauche */
+}
+```
+
+Les valeurs vont dans le sens des aiguilles d'une montre, en commençant par le haut (puis: droite, bas, gauche).
+
+Si on indique seulement deux valeurs, la première désigne "haut et bas", la deuxième "droite et gauche".
+
+```css
+h1 {
+  margin: 0px 16px;
+       /* haut/bas, droite/gauche */
+}
+```
+Si on indique une seule valeur, elle s'applique sur les quatre côtés de l'objet.
+
+```css
+h1 {
+  margin: 16px;
+}
+```
+
 ### Le border-collapsing
 
 Le comportement "border-collapsing" peut être surprenant: en cas de juxtaposition verticale, les marges verticales de deux éléments qui se suivent ne sont pas additionnées – elles "fusionnent". C'est uniquement la plus grande des deux marges qui est appliquée.
