@@ -44,11 +44,13 @@ h1 {
 
 ### Le border-collapsing
 
-Le comportement "border-collapsing" peut être surprenant: en cas de juxtaposition verticale, les marges verticales de deux éléments qui se suivent ne sont pas additionnées – elles "fusionnent". C'est uniquement la plus grande des deux marges qui est appliquée.
+Le comportement "border-collapsing" peut être surprenant: en cas de juxtaposition verticale, les **marges verticales** de deux éléments qui se suivent ne sont pas additionnées – elles "fusionnent". C'est uniquement *la plus grande* des deux marges qui est appliquée.
 
-Exemple: une suite de paragraphes ayant chacun une marge verticale (haut / bas) de 16px. Les marges de deux paragraphes ne s'aditionnent pas, l'espace entre deux paragraphes reste 16px (pas 32px).
+Exemple: une suite de paragraphes ayant chacun une marge verticale (haut / bas) de 16px. Les marges séparant deux paragraphes ne s'aditionnent pas, l'espace entre deux paragraphes reste 16px (pas 32px).
 
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="vYMwEKP" data-user="eracom" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+Cela est uniquement le cas dans l'axe vertical. Sur l'axe horizontal (par exemple des éléments juxtaposés dans une Flexbox), les marges des éléments s'additionnent.
+
+<p class="codepen" data-height="500" data-default-tab="result" data-slug-hash="vYMwEKP" data-user="eracom" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/eracom/pen/vYMwEKP">
   Collapsing margins</a> by Manuel Schmalstieg (<a href="https://codepen.io/eracom">@eracom</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
