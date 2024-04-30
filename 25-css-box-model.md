@@ -48,7 +48,7 @@ Cet élément aura une largeur effective de 200+(2x10)+(2x2)+(2x10) = 244 pixels
 
 Si on utilise `box-sizing: border-box`, alors la **marge intérieure** et la **bordure** sont compris dans la largeur (width). Un paragraphe situé dans cet élément de 200px n'aura donc que 176px de large (on soustrait aux 200px les 2x10px de padding et 2x2px de bordure). Il n'y a que la **marge extérieure** (2x10px) qui s'additionne. L'élément fait donc 220px de large. 
 
-<p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="wvzeWZB" data-editable="true" data-user="eracom" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="520" data-default-tab="result" data-slug-hash="wvzeWZB" data-editable="true" data-user="eracom" style="height: 520px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/eracom/pen/wvzeWZB">
   Box Model</a> by Manuel Schmalstieg (<a href="https://codepen.io/eracom">@eracom</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
