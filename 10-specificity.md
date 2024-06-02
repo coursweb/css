@@ -20,7 +20,7 @@ Quelques exemples:
 }
 ```
 
-Une règle utilisant comme sélecteur l'astérisque s'appliquera à tous les éléments d'une page, et aura la spécificité la plus basse, càd de zéro.
+Une règle utilisant comme sélecteur l'astérisque (le sélecteur universel) s'appliquera à tous les éléments d'une page. Ce sélecteur a la spécificité la plus basse, càd de zéro (0-0-0).
 
 ```css
 li {
@@ -28,7 +28,7 @@ li {
 }
 ```
 
-La même règle utilisant un sélecteur par élément. On aura une spécificité de (a=0 b=0 c=1), donc de 1.
+Une règle utilisant un sélecteur par élément (`li`est un élément HTML). On aura une spécificité de (a=0 b=0 c=1), donc 0-0-1.
 
 ```css
 ul li {
@@ -36,18 +36,18 @@ ul li {
 }
 ```
 
-Si on utilise deux sélecteurs de même type, leur puissance s'additionne. Avec le code qui précède, on aura une valeur de (a=0 b=0 c=2), donc 0-0-2.
+Si on utilise deux sélecteurs de même type, leur puissance s'additionne. Avec `ul li`, on a deux éléments. Cela donne une valeur de (a=0 b=0 c=2), donc 0-0-2.
 
 ```css
-.red {
+.menu {
     color: red;
 }
 ```
 
-On utilise maintenant sélecteur de type "classe". Un monte d'un niveau de puissance (a=0 b=1 c=0), ce qui se traduit par une spécificité de 0-1-0.
+On utilise maintenant un sélecteur de type "classe" (`.menu`). On monte d'un niveau de puissance (a=0 b=1 c=0), ce qui se traduit par une spécificité de 0-1-0.
 
 ```css
-header .red {
+header .menu {
     color: red;
 }
 ```
@@ -60,18 +60,20 @@ Ici le résultat sera (a=0 b=1 c=1), autrement dit: 0-1-1.
 }
 ```
 
-Avec l'utilisation d'un sélecteur ID (#), on monte au troisième niveau de puissance. La valeur de ce sélecteur sera (a=1 b=0 c=0), autrement dit: 1-0-0.
+Avec l'utilisation d'un sélecteur ID (`#sidebar`), on monte au troisième niveau de puissance. La valeur de ce sélecteur sera (a=1 b=0 c=0), autrement dit: 1-0-0.
 
-Les différences de puissance entre les sélecteurs font que l'ordre de la "cascade CSS" ne s'applique pas forcéement.
+## Spécificité et cascade 
+
+Les différences de puissance entre les sélecteurs font que l'ordre de la "cascade CSS" ne s'applique pas forcément.
 
 Par exemple dans ce code:
 
 ```css
 #header a { color: blue; }     /* a=1 b=0 c=1 -> specificity = 1-0-1 */
-.header nav > a { color: red } /* a=0 b=1 c=2 -> specificity = 0-1-2 */
+.menu a { color: red } /* a=0 b=1 c=1 -> specificity = 0-1-1 */
 ```
 
-De manière non intuitive, c'est la ligne du haut (couleur bleue) qui "gagne", car sa spécificité est plus puissante que celle du bas (1-0-1 vs. 0-1-2).
+De manière non intuitive, c'est la ligne du haut (couleur bleue) qui "gagne", car sa spécificité est plus puissante que celle du bas (1-0-1 vs. 0-1-1).
 
 Un codepen de démonstration:
 
@@ -114,6 +116,6 @@ Selon l'experte en performance du code CSS [Nicole Sullivan](http://www.stubborn
 
 *[Cascade CSS et priorité des sélecteurs](http://openweb.eu.org/articles/cascade_css)*, par Laurent Denis, 2005
 
-*La spécificité des sélecteurs*, [Grafikart](https://grafikart.fr/tutoriels/specificite-selecteur-css-1045), 2018
+*La spécificité des sélecteurs*, tutoriel vidéo sur [Grafikart](https://grafikart.fr/tutoriels/specificite-selecteur-css-1045), 2018
 
 ![](img/Strip-CSS-respect-650-final.jpg)
