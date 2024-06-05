@@ -42,9 +42,9 @@ h1 {
 }
 ```
 
-### Le border-collapsing
+### Le Margin Collapsing (Fusion des marges)
 
-Le comportement "border-collapsing" peut être surprenant: en cas de juxtaposition verticale, les **marges verticales** de deux éléments qui se suivent ne sont pas additionnées – elles "fusionnent". C'est uniquement *la plus grande* des deux marges qui est appliquée.
+Le comportement "margin-collapsing" peut être surprenant: en cas de juxtaposition verticale, les **marges verticales** de deux éléments qui se suivent ne sont pas additionnées – elles "fusionnent". C'est uniquement *la plus grande* des deux marges qui est appliquée.
 
 Exemple: une suite de paragraphes ayant chacun une marge verticale (haut / bas) de 16px. Les marges séparant deux paragraphes ne s'aditionnent pas, l'espace entre deux paragraphes reste 16px (pas 32px).
 
