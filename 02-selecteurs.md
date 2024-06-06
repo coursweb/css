@@ -216,7 +216,7 @@ a[href*="tumblr.com"]:before {
 
 ### Sibling combinators
 
-Les "sibling combinators" permettent de cibler en élément en fonction de sa position.
+Les "sibling combinators" - en français, opérateurs d'adjacence - permettent de cibler en élément en fonction de sa position.
 
 #### Next-sibling combinator
 
@@ -229,6 +229,8 @@ En français, on le nomme "opérateur d'ajacence directe". Il assure que l'élé
 
 -----|-----:
 `E ~ F` | un élément F *précédé* par un élément E.
+
+En français, "opérateur d'adjacence générale".
 
 Ce sélecteur est parfois utilisé pour faire réagir un élément au clic sans recourir au Javascript. En effet, en utilisant une checkbox, on peut intercepter le clic:
 
