@@ -223,7 +223,7 @@ Les "sibling combinators" - en français, opérateurs d'adjacence - permettent d
 -----|-----:
 `E + F` | un élément F *directement précédé* d'un élément E.
 
-En français, on le nomme "opérateur d'ajacence directe". Il assure que l'élément ciblé (F) est directement adjacent à un élément E qui le précède.
+En français, on le nomme "opérateur d'adjacence directe". Il assure que l'élément ciblé (F) est directement adjacent à un élément E qui le précède.
 
 #### Subsequent-sibling combinator
 
