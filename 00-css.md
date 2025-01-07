@@ -35,7 +35,7 @@ L'année 2010, qui marque une large adoption du standard HTML5, représente une 
 Principes de base
 ----------
 
-> "Fundamental concepts of CSS like cascading, specificity rules, selectors, inheritance, box model and stacking context must be well understood." - [Thanh Tran](https://blog.int3ractive.com/2015/06/baseline-for-modern-front-end-developers.html)
+> "Fundamental concepts of CSS like cascading, specificity rules, selectors, inheritance, box model and stacking context must be well understood." - [Thanh Tran](https://web.archive.org/web/20161116165031/https://blog.int3ractive.com/2015/06/baseline-for-modern-front-end-developers.html)
 
 La langage CSS permet de définir des règles, qui sont exprimées sous forme de couples `propriété: valeur`.
 
