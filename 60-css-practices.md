@@ -32,10 +32,7 @@ Quelques frameworks CSS en utilisation:
 
 * [ZURB Foundation](http://foundation.zurb.com/) - lancé en 2011 par ZURB, une agence de design californienne.
 * [Bootstrap](http://getbootstrap.com/) - lancé en 2011 par Mark Otto et Jacob Thornton, développeurs chez Twitter.
-* [KNACSS](http://knacss.com/), par Raphaël Goetter et Alsacréations.
 * [Röcssti](https://rocssti.net/), un micro-framework CSS, par Nicolas Hoffmann.
-* [Tiny Typo](http://romy.tetue.net/pourquoi-tiny-typo?lang=fr), "une base CSS pour le contenu éditorial web", par Romy Têtue.
-* [InuitCSS](https://github.com/inuitcss/inuitcss/), par Harry Roberts.
 
 Anciens frameworks (aperçu historique):
 
