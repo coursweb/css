@@ -89,9 +89,9 @@ p::first-letter {
 
 Les sélecteurs du CSS 2, introduits en 1998, sont décrits ici: [https://www.w3.org/TR/CSS2/](https://www.w3.org/TR/CSS2/)
 
------|-----:
-`*` | tous les éléments du document. Aussi appelé "the universal selector".
-`E:first‑child` | un élément E qui est le premier enfant de son parent.
+-----|-----|-------:
+`*` | tous les éléments du document. Aussi appelé "the universal selector". | [lien](https://codepen.io/Schems-Mahfoudh/pen/azZVRdy)
+`E:first‑child` | un élément E qui est le premier enfant de son parent. 
 `E:lang(fr)` | un élément E en langue "fr".
 `E::before` | du contenu généré avant le contenu de l'élément E.
 `E::after` | du contenu généré après le contenu de l'élément E.
