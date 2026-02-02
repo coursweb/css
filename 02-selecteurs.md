@@ -220,15 +220,15 @@ Les "sibling combinators" - en français, opérateurs d'adjacence - permettent d
 
 #### Next-sibling combinator
 
------|-----|-----::
+-----|-----|-----:
 `E + F` | un élément F *directement précédé* d'un élément E. | [lien codepen](https://codepen.io/a-lea-toire/pen/LEZOgEe)
 
 En français, on le nomme "opérateur d'adjacence directe". Il assure que l'élément ciblé (F) est directement adjacent à un élément E qui le précède.
 
 #### Subsequent-sibling combinator
 
------|-----:
-`E ~ F` | un élément F *précédé* par un élément E.
+-----|-----|-----:
+`E ~ F` | un élément F *précédé* par un élément E. | [lien codepen](https://codepen.io/a-lea-toire/pen/wBWPYGL) 
 
 En français, "opérateur d'adjacence générale".
 
