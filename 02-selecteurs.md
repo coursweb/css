@@ -220,8 +220,8 @@ Les "sibling combinators" - en français, opérateurs d'adjacence - permettent d
 
 #### Next-sibling combinator
 
------|-----:
-`E + F` | un élément F *directement précédé* d'un élément E.
+-----|-----|-----::
+`E + F` | un élément F *directement précédé* d'un élément E. | [lien codepen](https://codepen.io/a-lea-toire/pen/LEZOgEe)
 
 En français, on le nomme "opérateur d'adjacence directe". Il assure que l'élément ciblé (F) est directement adjacent à un élément E qui le précède.
 
@@ -258,7 +258,7 @@ Trois exemples de cette technique:
 
 ##### The negation pseudo-class
 
-`E:not(s)` | an E element that does not match simple selector s - voir [un codepen](https://codepen.io/mbuchmannn/pen/ogLoaoP)
+`E:not(s)` | an E element that does not match simple selector s |  [codepen](https://codepen.io/mbuchmannn/pen/ogLoaoP)
 
 
 ## Sélecteurs du CSS niveau 4
