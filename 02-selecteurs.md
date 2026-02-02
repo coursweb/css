@@ -72,8 +72,8 @@ input:focus {
 
 ##### Les pseudo-elements typographiques
 
------|-----:
-`E::first‑line` | la première ligne d'un élément E.
+-----|-----|-----:
+`E::first‑line` | la première ligne d'un élément E. | [lien codepen](https://codepen.io/JacksonU-Beats/pen/ZYOambx)
 `E::first‑letter` | la première lettre d'un élément E.
 
 Voici un exemple utilisant "first-letter" pour produire une lettrine ([essayer sur Codepen](https://codepen.io/eracom/pen/KKxLegW)):
