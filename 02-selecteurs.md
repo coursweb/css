@@ -43,8 +43,8 @@ Le choix des sélecteurs, au contraire, est très délicat, et repose sur des hy
 
 Introduits dès le début du CSS en 1996, ces sélecteurs sont décrits ici: [https://www.w3.org/TR/CSS1/](https://www.w3.org/TR/CSS1/)
 
------|-----:
-`E` | tout élément de type E
+-----|-----|-------:
+`E` | tout élément de type E | [lien codepen](https://codepen.io/andreajdsdnjkndk/pen/yyJPQOp)
 `#myid` | tout élément avec un ID égal à "myid"
 `E#myid` | tout élément E avec un ID égal à "myid"
 `.c` | tout élément ayant la classe "c"
@@ -90,7 +90,7 @@ p::first-letter {
 Les sélecteurs du CSS 2, introduits en 1998, sont décrits ici: [https://www.w3.org/TR/CSS2/](https://www.w3.org/TR/CSS2/)
 
 -----|-----|-------:
-`*` | tous les éléments du document. Aussi appelé "the universal selector". | [lien](https://codepen.io/Schems-Mahfoudh/pen/azZVRdy)
+`*` | tous les éléments du document. Aussi appelé "the universal selector". | [lien codepen](https://codepen.io/Schems-Mahfoudh/pen/azZVRdy)
 `E:first‑child` | un élément E qui est le premier enfant de son parent. 
 `E:lang(fr)` | un élément E en langue "fr".
 `E::before` | du contenu généré avant le contenu de l'élément E.
@@ -258,7 +258,7 @@ Trois exemples de cette technique:
 
 ##### The negation pseudo-class
 
-`E:not(s)` | an E element that does not match simple selector s
+`E:not(s)` | an E element that does not match simple selector s - voir [un codepen](https://codepen.io/mbuchmannn/pen/ogLoaoP)
 
 
 ## Sélecteurs du CSS niveau 4
@@ -267,6 +267,6 @@ Les sélecteurs de niveau 4 sont en élaboration depuis 2011. En mai 2022, ils s
 La documentation se trouve sous [https://www.w3.org/TR/selectors-4/](https://www.w3.org/TR/selectors-4/). 
 Quelques nouveautés:
 
-- La pseudo-classe `:is()` - voir [le support actuel](https://caniuse.com/css-matches-pseudo)
+- La pseudo-classe `:is()` - voir [le support actuel](https://caniuse.com/css-matches-pseudo) - voir [un codepen](https://codepen.io/mbuchmannn/pen/ogLoaoP)
 - La pseudo-classe `:where()` - voir [le support actuel](https://caniuse.com/mdn-css_selectors_where)
 - La pseudo-classe `:has()` - voir [le support actuel](https://caniuse.com/css-has)
