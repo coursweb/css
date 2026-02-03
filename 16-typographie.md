@@ -34,10 +34,10 @@ h1 {
 
 Les propriétés suivantes vous aideront à mettre un texte en page:
 
-
 - `text-align` : alignement (gauche, droite, centré, justifié)
 - `line-height` : hauteur des lignes, interlignage
 - `letter-spacing` : espacement des lettres
+- `word-spacing` : espacement des mots
 - `text-indent` : indentation de la première ligne
 
 Exemple de ces propriétés en action
@@ -46,10 +46,13 @@ Exemple de ces propriétés en action
 p {
   line-height: 1.3;
   text-align: left;
-  letter-spacing: .1em;
+  letter-spacing: -0.02em;
+  word-spacing: auto;
   text-indent: 1em
 }
 ```
+
+Voir [un exemple CodePen](https://codepen.io/eracom/pen/GgqddEJ?editors=1100).
 
 ## Charger une webfont
 
