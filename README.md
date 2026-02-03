@@ -24,18 +24,6 @@ Les contenus sont rédigés en syntaxe [Markdown](http://cours-web.ch/divers/mar
 
 ## Les auteurs
 
-Les auteurs et contributeurs de ce chapitre sont:
-
-* Manuel Schmalstieg – artiste, développeur et enseignant
-* Iris Gerbex - étudiante à l'Eracom
-* Trecy Henrioud - étudiante à l'Eracom
-* Anahé Marchand - étudiante à l'Eracom
-* Luca Reichenbach - étudiant à l'Eracom
-* Morgane Baudois - étudiante à l'Eracom
-* Giada De Vittori - étudiante à l'Eracom
-* Alison Demierre - étudiante à l'Eracom
-* ...
-
 Voir la liste actualisée sous [https://github.com/coursweb/cours-css/graphs/contributors
 ](https://github.com/coursweb/cours-css/graphs/contributors)
 
