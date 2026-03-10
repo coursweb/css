@@ -129,4 +129,4 @@ Vous pouvez voir l'exemple en action à cette page:
 
 ## Documentation 
 
-* [Sur le site Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Transitions/Utiliser_transitions_CSS) 
+* [Sur le site Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/Guides/Transitions/Using) 
